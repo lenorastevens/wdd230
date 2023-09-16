@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Mooli', sans-serif;
+    font-size: 30px;
+    color: rgb(186, 73, 53);
+    background-color: whitesmoke;
+    text-shadow: 1px 1px rgb(81, 65, 47);
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    padding: 3%;
+    background-color: rgb(63, 76, 96);
+}
+
+#photo {
+    width: 10%;
+    padding-right: 6%;
+}
+
+nav {
+    background-color: rgb(92, 106, 99);
+    color: rgb(186, 73, 53);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    padding: 3%;
+}
+
+nav a:hover {
+    color: black;
+}
+
+
+main {
+    text-align: center;
+}
+
+h3 {
+    background-color: rgb(26, 26, 20);
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 15px;
+    position: relative;
+    height: auto;
+}
+
+
+footer {
+    background-color: rgb(63, 76, 96);
+    padding: 5px;
+    text-align: center;
+}
+
+#flag {
+    width: 10%;
+}
