@@ -73,11 +73,11 @@ h3 {
 section {
     margin-bottom: 4%;
     background-color: #51412f;
-
 }
 
 div {
     display: list-item;
+    padding: 2%;
 }
 
 .card {
