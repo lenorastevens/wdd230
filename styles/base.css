@@ -20,42 +20,52 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     padding: 3%;
     background-color: #3A4C64;
 }
 
 h1 {
-    padding-top: 2%;
-    padding-right: 20%;
+    padding: 2rem;
 }
 
 #photo {
     width: 10%;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 nav {
     background-color: rgb(92, 106, 99);
+    margin: 0 auto;
+    padding: 2%;
+}
+
+
+nav ul li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2%;
+    text-align: center;
+    padding: 1rem;
 }
 
-nav a:hover {
-    color: black;
-}
-
-a {
-    padding: 2%;
+ul a {
     color: #E4EBDB;
 }
 
+ul a:hover {
+    color: black;
+}
+
 main {
+    display: block;
+    margin: auto;
     text-align: center;
-    margin-left: 8%;
-    margin-right: 8%;
+    max-width: 90%;
 }
 
 h2 {
@@ -63,38 +73,40 @@ h2 {
     color: rgb(9, 8, 8, .6);
 }
 
+
 h3 {
-    background-color: rgb(9, 8, 8, .6);
+    background-color: rgb(9, 8, 8, .3);
     padding: 10px;
     margin: 0%;
 }
 
-section {
-    margin-bottom: 4%;
-    background-color: #51412f;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div ul a {
+    color: rgb(9, 8, 8);
+}
+
+.card {
+    margin-bottom: 2rem;
+    background-color: #d4d1ce;
+    color: rgb(9, 8, 8);
+    text-shadow: 1px 1px #E4EBDB;
+    border: 2px solid black;
+    border-radius: .5em;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3)
 }
 
 #lessons {
     text-align: left;
-    padding: 0%;
+    padding: 2%;
 }
 
-div {
-    display: list-item;
-}
-
-.card {
-    border: 2px solid black;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.18)
-}
-
-ul li {
-    color: black;
-    list-style-type: none;
-}
-
-ul a:hover {
-    color: black;
+#info {
+    padding: 1%;
 }
 
 footer {
