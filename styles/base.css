@@ -10,7 +10,7 @@ content {
 
 body {
     font-family: 'Mooli', sans-serif;
-    font-size: 2.35vw;
+    font-size: 2.1vw;
     margin: 0;
     padding: 0;
     color: #E4EBDB;
@@ -38,7 +38,7 @@ nav {
     background-color: rgb(92, 106, 99);
     display: flex;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     padding: 3%;
 }
