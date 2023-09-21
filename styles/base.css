@@ -10,7 +10,7 @@ content {
 
 body {
     font-family: 'Mooli', sans-serif;
-    font-size: 2.5vw;
+    font-size: 2.35vw;
     margin: 0;
     padding: 0;
     color: #E4EBDB;
@@ -80,7 +80,7 @@ section {
 
 div {
     display: list-item;
-    padding: 2%;
+    padding: .25%;
 }
 
 .card {
