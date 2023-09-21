@@ -5,7 +5,6 @@
 }
 
 content {
-    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -73,6 +72,10 @@ h3 {
 section {
     margin-bottom: 4%;
     background-color: #51412f;
+}
+
+#lessons {
+    text-align: left;
 }
 
 div {

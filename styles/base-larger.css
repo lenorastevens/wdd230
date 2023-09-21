@@ -1,0 +1,10 @@
+/* @media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+} */
