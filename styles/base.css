@@ -38,9 +38,12 @@ nav {
     background-color: rgb(92, 106, 99);
     display: flex;
     text-align: center;
-    flex-direction: row;
     justify-content: center;
     padding: 3%;
+}
+
+#links {
+    flex-direction: column;
 }
 
 nav a:hover {
@@ -48,7 +51,7 @@ nav a:hover {
 }
 
 a {
-    padding: 2%;
+    padding: 1.5%;
     color: #E4EBDB;
 }
 
@@ -80,7 +83,6 @@ section {
 
 div {
     display: list-item;
-    padding: .25%;
 }
 
 .card {
