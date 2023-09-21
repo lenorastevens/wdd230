@@ -51,7 +51,7 @@ nav a:hover {
 }
 
 a {
-    padding: 1.5%;
+    padding: 2%;
     color: #E4EBDB;
 }
 
@@ -79,6 +79,7 @@ section {
 
 #lessons {
     text-align: left;
+    padding: 0%;
 }
 
 div {
