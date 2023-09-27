@@ -7,9 +7,17 @@
         padding: 3rem;
     }
 
-    nav ul {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
         display: flex;
         flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
         justify-content: center;
         flex: 1 1 100%;
         margin: 0;
@@ -23,7 +31,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        font-size: 1.8vw;
+        font-size: 1.6vw;
     }
 
     .card {

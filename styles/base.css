@@ -45,12 +45,52 @@ nav {
     padding: 2%;
 }
 
+#menu {
+    border: 1px solid #E4EBDB;
+    padding: 3px 7px 6px;
+    background-color: #3A4C64;
+    color: #E4EBDB;
+    position: relative;
+    /* top: 1rem;
+    left: 1rem; */
+    font-size: 1.5rem;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '❌';
+    background-color: #3A4C64;
+}
 
 nav ul li {
     display: flex;
     flex-direction: column;
     text-align: center;
+    list-style: none;
     padding: 1rem;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
 }
 
 ul a {
@@ -61,6 +101,10 @@ ul a {
 
 ul a:hover {
     color: black;
+}
+
+.active {
+    border: 1px solid #E4EBDB;
 }
 
 main {
