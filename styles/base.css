@@ -15,7 +15,7 @@ body {
     padding: 0;
     color: #E4EBDB;
     background-color: whitesmoke;
-    text-shadow: 2px 1px rgb(96, 25, 25);
+    text-shadow: 1px 1px rgb(96, 25, 25);
 }
 
 header {
@@ -37,23 +37,21 @@ h1 {
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav {
     background-color: rgb(92, 106, 99);
     margin: 0 auto;
-    padding: 2%;
+    padding: 1%;
 }
 
 #menu {
     border: 1px solid #E4EBDB;
-    padding: 3px 7px 6px;
+    padding: 1%;
     background-color: #3A4C64;
     color: #E4EBDB;
-    position: relative;
-    /* top: 1rem;
-    left: 1rem; */
-    font-size: 1.5rem;
+    font-size: .5rem;
 }
 
 #menu::before {
@@ -61,7 +59,7 @@ nav {
 }
 
 #menu.open::before {
-    content: '❌';
+    content: '✖';
     background-color: #3A4C64;
 }
 
@@ -70,6 +68,7 @@ nav ul li {
     flex-direction: column;
     text-align: center;
     list-style: none;
+    margin: 0;
     padding: 1rem;
 }
 
@@ -100,7 +99,8 @@ ul a {
 }
 
 ul a:hover {
-    color: black;
+    color: #3A4C64;
+    text-shadow: 1px 1px rgb(96, 25, 25);
 }
 
 .active {
