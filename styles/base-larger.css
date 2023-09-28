@@ -7,6 +7,10 @@
         padding: 3rem;
     }
 
+    #photo {
+        max-width: 70px;
+    }
+
     #menu {
         display: none;
     }
