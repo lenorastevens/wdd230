@@ -51,4 +51,8 @@
         padding: 1rem;
     }
 
+    #map {
+        max-height: 400px;
+    }
+
 }
