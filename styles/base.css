@@ -10,7 +10,7 @@ content {
 
 body {
     font-family: 'Mooli', sans-serif;
-    font-size: 2.4vw;
+    font-size: 2.6vw;
     margin: 0;
     padding: 0;
     color: #E4EBDB;
@@ -50,8 +50,8 @@ nav {
     color: #E4EBDB;
     font-size: 1rem;
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 1rem;
+    right: 1rem;
 }
 
 #menu::before {
@@ -129,6 +129,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.1em;
 }
 
 div ul a {
@@ -148,36 +149,17 @@ div ul a {
 #lessons {
     text-align: left;
     margin-left: 5%;
-    /* padding: 1%; */
     list-style: numeric;
 }
 
-#lesson01,
-#lesson02,
-#lesson03,
-#lesson04,
-#lesson05,
-#lesson06,
-#lesson07,
-#lesson08,
-#lesson09,
-#lesson10 {
+#lesson {
     display: flex;
     flex-direction: row;
     justify-content: left;
     padding: .5em;
 }
 
-#lesson01 li,
-#lesson02 li,
-#lesson03 li,
-#lesson04 li,
-#lesson05 li,
-#lesson06 li,
-#lesson07 li,
-#lesson08 li,
-#lesson09 li,
-#lesson10 li {
+#lesson li {
     padding: .1em;
 }
 

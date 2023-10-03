@@ -1,6 +1,6 @@
 @media (min-width: 580px) {
     body {
-        font-size: 2.5vw;
+        font-size: 2.3vw;
     }
 
     h1 {
@@ -35,7 +35,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        font-size: 1.6vw;
+        font-size: .85rem;
     }
 
     .card {
@@ -46,6 +46,9 @@
         flex-grow: 3;
     }
 
+    #lessons {
+        margin-left: 4%;
+    }
 
     section p {
         padding: 1rem;
