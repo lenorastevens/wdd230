@@ -4,7 +4,7 @@ body {
     margin: 0 auto;
     padding: 3em;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2.3vw;
     background-color: whitesmoke;
 }
 
@@ -45,7 +45,6 @@ header>h2 {
 
 p {
     font-family: "Arima";
-    /* color: ; */
     padding: 1em;
 }
 
@@ -111,7 +110,7 @@ nav {
     background-color: #474044;
     line-height: 3em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.4em;
     list-style-type: none;
     display: flex;
     justify-content: center;

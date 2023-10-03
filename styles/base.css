@@ -147,7 +147,38 @@ div ul a {
 
 #lessons {
     text-align: left;
-    padding: 2%;
+    margin-left: 5%;
+    /* padding: 1%; */
+    list-style: numeric;
+}
+
+#lesson01,
+#lesson02,
+#lesson03,
+#lesson04,
+#lesson05,
+#lesson06,
+#lesson07,
+#lesson08,
+#lesson09,
+#lesson10 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: .5em;
+}
+
+#lesson01 li,
+#lesson02 li,
+#lesson03 li,
+#lesson04 li,
+#lesson05 li,
+#lesson06 li,
+#lesson07 li,
+#lesson08 li,
+#lesson09 li,
+#lesson10 li {
+    padding: .1em;
 }
 
 #info {
@@ -164,7 +195,6 @@ div ul a {
     border-radius: .5em;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
-
 
 footer {
     margin-top: 2%;
