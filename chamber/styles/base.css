@@ -41,9 +41,9 @@ body {
     background-color: whitesmoke;
 }
 
-p {
+/* p {
     font-weight: bold;
-}
+} */
 
 header {
     display: flex;
@@ -180,10 +180,6 @@ div #downtown #city {
     text-shadow: .5px .5px var(--primary-color);
     padding: 1%;
 }
-
-/* #highlights h2 {
-    color: var(--accent3-color);
-} */
 
 #highlights #businesses {
     display: grid;
