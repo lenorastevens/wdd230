@@ -76,7 +76,7 @@ ul {
 
 nav {
     background-color: var(--secondary-color);
-    margin: 0 auto;
+    margin: .5% auto;
 }
 
 #menu {
@@ -127,7 +127,7 @@ nav ul li {
 }
 
 ul a {
-    color: #E4EBDB;
+    color: var(--primary-color);
     padding-right: 1%;
     padding-left: 1%;
 }
@@ -211,7 +211,6 @@ div #downtown #city {
 }
 
 #events #eventCard {
-    font-weight: bold;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
@@ -221,6 +220,7 @@ div #downtown #city {
 #eventCard section {
     border: 2px ridge var(--accent1-color);
     background-color: var(--accent3-color);
+    font-weight: bold;
 }
 
 #temp {
