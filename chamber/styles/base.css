@@ -47,6 +47,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
+    border: 3px ridge var(--secondary-color);
 }
 
 h1,
@@ -148,7 +149,7 @@ main {
 }
 
 .card {
-    border: 2px solid var(--accent1-color);
+    border: 3px ridge var(--accent1-color);
     margin-top: 1%;
     margin-bottom: 1%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
@@ -156,7 +157,7 @@ main {
 
 div #downtown #city {
     max-width: 100%;
-    border: 2px solid var(--secondary-color);
+    border: 3px ridge var(--secondary-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -173,6 +174,13 @@ div #downtown #city {
 
 #highlights h2 {
     color: var(--accent3-color);
+}
+
+#highlights #businesses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
 }
 
 #explanation {
@@ -202,4 +210,5 @@ footer {
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
+    border: 3px ridge var(--secondary-color);
 }
