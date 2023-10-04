@@ -36,8 +36,13 @@
 body {
     margin: 0 auto;
     text-align: center;
+    font-family: var(--paragraph-font);
     font-size: 2.3vw;
     background-color: whitesmoke;
+}
+
+p {
+    font-weight: bold;
 }
 
 header {
@@ -47,7 +52,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
-    border: 3px ridge var(--secondary-color);
+    border-bottom: 3px ridge var(--secondary-color);
     text-shadow: 1px 1px var(--accent3-color);
 }
 
@@ -56,6 +61,7 @@ h2,
 h3,
 h4 {
     color: var(--secondary-color);
+    font-family: var(--heading-font);
 }
 
 #logo {
@@ -74,7 +80,7 @@ nav {
 }
 
 #menu {
-    border: 1px solid var(--accent3-color);
+    border: 2px ridge var(--accent3-color);
     background-color: var(--accent2-color);
     color: var(--primary-color);
     font-size: .7rem;
@@ -133,7 +139,7 @@ ul a:hover {
 }
 
 /* .active {
-    border: 1px solid #E4EBDB;
+    border: 2px ridge #E4EBDB;
 } */
 
 main {
@@ -168,21 +174,27 @@ div #downtown #city {
 }
 
 #highlights {
-    background-color: var(--accent1-color);
+    /* background-color: var(--accent1-color); */
     color: var(--accent3-color);
-    border: 2px ridge var(--accent3-color);
+    border: 3px ridge var(--accent3-color);
     text-shadow: .5px .5px var(--primary-color);
+    padding: 1%;
 }
 
-#highlights h2 {
+/* #highlights h2 {
     color: var(--accent3-color);
-}
+} */
 
 #highlights #businesses {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
+}
+
+#businesses section {
+    border: 2px ridge #547AA5;
+    background-color: var(--accent1-color);
 }
 
 #explanation {
@@ -192,9 +204,23 @@ div #downtown #city {
 }
 
 #events {
-    background-color: var(--accent3-color);
+    /* background-color: var(--accent3-color); */
     color: var(--secondary-color);
     text-shadow: .5px .5px var(--primary-color);
+    padding: 1%;
+}
+
+#events #eventCard {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#eventCard section {
+    border: 2px ridge var(--accent1-color);
+    background-color: var(--accent3-color);
 }
 
 #temp {
@@ -216,6 +242,6 @@ footer {
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    border: 3px ridge var(--secondary-color);
+    border-top: 3px ridge var(--secondary-color);
     text-shadow: .5px .5px var(--accent3-color);
 }
