@@ -22,16 +22,18 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://coolors.co/visualizer/293132-474044-4f5165-547aa5-50d8d7">
     <meta property="og:title" content="Lenora Stevens - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://lenorastevens.github.io/wdd230/chamber/images/rsz_downtownaustin.jpg">
     <meta property="og:url" content="https://lenorastevens.github.io/wdd230/chamber">
+
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/rsz_chamberLogo.jpg" alt="Austin Chamber Logo">
-        <h1>Austin Chamber of Commerce</h1>
+        <img id="logo" src="images/2019_ChamberLogo_Horizontal_Black.png" alt="Austin Chamber Logo">
+        <h1 id="title">Austin Chamber of Commerce</h1>
     </header>
 
     <nav>
@@ -60,9 +62,10 @@
 
             <section id="downtown" class="card">
                 <img id="city" src="images/rsz_downtownaustin.jpg" alt="Downtown Austin Picture">
+                <!-- <button id="join" title="Join"></button> -->
             </section>
 
-            <section>
+            <section id="explanation" class="card">
                 <p>Description of Austin Chamber and what it can do for businesses.</p>
             </section>
 
@@ -91,11 +94,13 @@
     <footer>
         <p>Austin Chamber<br>Address</p>
         <p>&copy; <span id="year"></span> *|* Lenora Stevens *|* WDD 230 Project</p>
-        <p id="lastModified"></p>
         <p>Contact Information</p>
+        <p id="lastModified"></p>
         <p>Location Map</p>
     </footer>
 
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>

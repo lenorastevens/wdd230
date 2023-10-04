@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap');
+
+:root {
+
+    /* change the values below to your colors from your palette */
+    --primary-color: #50d8d7;
+    --secondary-color: #474044;
+    --accent1-color: #293132;
+    --accent2-color: #4F5165;
+    --accent3-color: #547AA5;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Young Serif";
+    --paragraph-font: "Arima", sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #474044;
+    /* headlines on a white background */
+    --headline-color-on-color: #474044;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #293132;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #50d8d7;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #4F5165;
+    --nav-link-color: #50d8d7;
+    --nav-background-color: #474044;
+    --nav-hover-link-color: #293132;
+    --nav-hover-background-color: #547AA5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.3vw;
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--secondary-color);
+}
+
+#logo {
+    max-width: 10%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+}
+
+#menu {
+    border: 1px solid var(--accent3-color);
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    font-size: .7rem;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    padding: 0 .2rem;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '✖';
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: .5rem;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+ul a {
+    color: #E4EBDB;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+ul a:hover {
+    color: var(--accent1-color);
+    background-color: var(--accent3-color);
+    text-shadow: 1px 1px var(--accent3-color);
+}
+
+/* .active {
+    border: 1px solid #E4EBDB;
+} */
+
+main {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 95%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 1.1em;
+}
+
+.card {
+    border: 2px solid var(--accent1-color);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+div #downtown #city {
+    max-width: 100%;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+#downtown {
+    border: none;
+    box-shadow: none;
+}
+
+#highlights {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+    border: 2px solid var(--accent3-color);
+}
+
+#highlights h2 {
+    color: var(--accent3-color);
+}
+
+#explanation {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+#events {
+    background-color: var(--accent3-color);
+    color: var(--secondary-color);
+}
+
+#temp {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#temp h3 {
+    color: var(--primary-color);
+}
+
+footer {
+    margin-top: 2%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
