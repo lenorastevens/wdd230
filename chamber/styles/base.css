@@ -41,10 +41,6 @@ body {
     background-color: whitesmoke;
 }
 
-/* p {
-    font-weight: bold;
-} */
-
 header {
     display: flex;
     flex-direction: row;
@@ -152,7 +148,6 @@ main {
 .container {
     display: grid;
     grid-template-columns: auto;
-    font-size: 1.1em;
 }
 
 .card {
@@ -175,15 +170,15 @@ div #downtown #city {
 
 #highlights {
     /* background-color: var(--accent1-color); */
-    color: var(--accent3-color);
+    color: var(--primary-color);
     border: 3px ridge var(--accent3-color);
-    text-shadow: .5px .5px var(--primary-color);
+    text-shadow: 1px 1px var(--accent1-color);
     padding: 1%;
 }
 
 #highlights #businesses {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     row-gap: 10px;
     column-gap: 10px;
 }
@@ -201,14 +196,14 @@ div #downtown #city {
 
 #events {
     /* background-color: var(--accent3-color); */
-    color: var(--secondary-color);
-    text-shadow: .5px .5px var(--primary-color);
+    color: var(--primary-color);
+    text-shadow: 1px 1px var(--secondary-color);
     padding: 1%;
 }
 
 #events #eventCard {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     row-gap: 10px;
     column-gap: 10px;
 }
