@@ -13,17 +13,7 @@
     --heading-font: "Young Serif";
     --paragraph-font: "Arima", sans-serif;
 
-
     --border-color: #293132;
-    --headline-color-on-white: #474044;
-    --headline-color-on-color: #474044;
-    --paragraph-color-on-white: #293132;
-    --paragraph-color-on-color: #50d8d7;
-    --paragraph-background-color: #4F5165;
-    --nav-link-color: #50d8d7;
-    --nav-background-color: #474044;
-    --nav-hover-link-color: #293132;
-    --nav-hover-background-color: #547AA5;
 }
 
 * {
@@ -127,11 +117,14 @@ ul a {
 ul a:hover {
     color: var(--accent1-color);
     background-color: var(--accent3-color);
-    /* text-shadow: 1px 1px var(--accent3-color); */
 }
 
 .active::before {
     content: "* ";
+}
+
+.active::after {
+    content: " *";
 }
 
 main {
@@ -165,6 +158,10 @@ div #downtown #city {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
+#downtown h4 {
+    color: var(--secondary-color);
+}
+
 #downtown p {
     background-color: var(--accent2-color);
     border: 2px ridge var(--accent3-color);
@@ -172,7 +169,6 @@ div #downtown #city {
     margin-right: 2%;
     padding: 1%;
     color: var(--primary-color);
-
 }
 
 #highlights {
@@ -194,7 +190,6 @@ div #downtown #city {
 
 #events {
     color: var(--primary-color);
-    /* text-shadow: 1px 1px var(--secondary-color); */
     padding: 1%;
 }
 
@@ -208,17 +203,16 @@ div #downtown #city {
 #eventCard section {
     border: 2px ridge var(--secondary-color);
     background-color: var(--accent3-color);
+    text-shadow: 1px 1px var(--secondary-color);
 }
 
 #temp {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    /* text-shadow: .5px .5px var(--accent3-color); */
 }
 
 #temp h3 {
     color: var(--primary-color);
-    /* text-shadow: .5px .5px var(--accent3-color); */
 }
 
 footer {
@@ -231,7 +225,6 @@ footer {
     align-items: center;
     justify-content: center;
     border-top: 3px ridge var(--border-color);
-    /* text-shadow: .5px .5px var(--accent3-color); */
 }
 
 #map {
