@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link href="https://coolors.co/visualizer/293132-474044-4f5165-547aa5-50d8d7">
+    <link href="https://coolors.co/visualizer/293132-474044-4f5165-547aa5-50d8d7" rel="stylesheet">
     <meta property="og:title" content="Lenora Stevens - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://lenorastevens.github.io/wdd230/chamber/images/rsz_downtownaustin.jpg">
@@ -40,9 +40,9 @@
         <button id="menu" title="Hamburger Menu"></button>
         <ul class="navigation">
             <li><a href="#" title="Home" class="active">Home</a></li>
-            <li><a href="#" title="Discover" class="active">Discover</a></li>
-            <li><a href="#" title="Directory" class="active">Directory</a></li>
-            <li><a href="#" title="Join" class="active">Join</a></li>
+            <li><a href="#" title="Discover" class="">Discover</a></li>
+            <li><a href="#" title="Directory" class="">Directory</a></li>
+            <li><a href="#" title="Join" class="">Join</a></li>
         </ul>
     </nav>
 
@@ -50,27 +50,44 @@
         <div class="container">
 
             <section id="downtown" class="card">
+                <h2>Helping people live, work & thrive in Austin</h2>
                 <img id="city" src="images/rsz_downtownaustin.jpg" alt="Downtown Austin Picture">
+                <h4>An Independent Organization</h4>
+                <p>We are not a part of the City of Austin. We are a nonprofit organization whose members are local
+                    businesses that are invested in developing their business, growing our economy, and strengthening
+                    our community.</p>
+                <h4>We Provide Leadership</h4>
+                <p>We work with businesses looking to create or expand their presence in the Austin region and help them
+                    create more jobs. More jobs means more opportunities for people to find work and provide for their
+                    families. This leads to increased community prosperity.</p>
                 <!-- <button id="join" title="Join"></button> -->
             </section>
 
-            <section id="explanation" class="card">
+            <!-- <section id="explanation" class="card">
+                <h2>The Chamber</h2>
                 <p>Description of Austin Chamber and what it can do for businesses.</p>
-            </section>
+            </section> -->
 
             <section id="highlights" class="card">
                 <h2>Business Highlights</h2>
                 <div id="businesses">
                     <section>
-                        <p>1st Business<br>Address<br> promotional element</p>
+                        <h4>1st Business</h4>
+                        <p>Address<br> promotional element</p>
                     </section>
 
                     <section>
-                        <p>2nd Business<br>Address<br> promotional element</p>
+                        <h4>2nd Business</h4>
+                        <p>Address<br> promotional element</p>
                     </section>
 
                     <section>
-                        <p>3rd Business<br>Address<br> promotional element</p>
+                        <h4>3rd Business</h4>
+                        <p>Address<br> promotional element</p>
+                    </section>
+                    <section>
+                        <h4>4th Business</h4>
+                        <p>Address<br> promotional element</p>
                     </section>
                 </div>
             </section>
@@ -79,15 +96,22 @@
                 <h2>Chamber Events</h2>
                 <div id="eventCard">
                     <section>
-                        <p>1st Event<br>Details Where<br>Details When</p>
+                        <h4>1st Event</h4>
+                        <p>Details Where<br>Details When</p>
                     </section>
 
                     <section>
-                        <p>2nd Event<br>Details Where<br>Details When</p>
+                        <h4>2nd Event</h4>
+                        <p>Details Where<br>Details When</p>
                     </section>
 
                     <section>
-                        <p>3rd Event<br>Details Where<br>Details When</p>
+                        <h4>3rd Event</h4>
+                        <p>Details Where<br>Details When</p>
+                    </section>
+                    <section>
+                        <h4>4th Event</h4>
+                        <p>Details Where<br>Details When</p>
                     </section>
                 </div>
             </section>
@@ -104,11 +128,16 @@
     </main>
 
     <footer>
-        <p>Austin Chamber<br>Address</p>
-        <p>&copy; <span id="year"></span> *|* Lenora Stevens *|* WDD 230 Project</p>
-        <p>Contact Information</p>
+        <p id="address">Austin Chamber<br>1234 Professional Street<br>Austin, TX 78739</p>
+        <p id="name">&copy; <span id="year"></span> *|* Lenora Stevens *|* WDD 230 Project</p>
+        <p id="maps">Location Map</p>
+        <p id="contact">Contact Information<br>512-555-2121</p>
         <p id="lastModified"></p>
-        <p>Location Map</p>
+        <iframe id="map" title="Map of Austin"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62772.49809662241!2d-97.71571604968625!3d30.29020448749193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695871235594!5m2!1sen!2sus"
+            width="800" height="600" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </footer>
 
     <script src="scripts/getdates.js"></script>

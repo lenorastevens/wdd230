@@ -2,26 +2,23 @@
 
 :root {
 
-    /* change the values below to your colors from your palette */
+    /* colors from palette */
     --primary-color: #50d8d7;
     --secondary-color: #474044;
     --accent1-color: #293132;
     --accent2-color: #4F5165;
     --accent3-color: #547AA5;
 
-    /* change the values below to your chosen font(s) */
+    /* chosen font(s) */
     --heading-font: "Young Serif";
     --paragraph-font: "Arima", sans-serif;
 
-    /* these colors below should be chosen from among your palette colors above */
+
+    --border-color: #293132;
     --headline-color-on-white: #474044;
-    /* headlines on a white background */
     --headline-color-on-color: #474044;
-    /* headlines on a colored background */
     --paragraph-color-on-white: #293132;
-    /* paragraph text on a white background */
     --paragraph-color-on-color: #50d8d7;
-    /* paragraph text on a colored background */
     --paragraph-background-color: #4F5165;
     --nav-link-color: #50d8d7;
     --nav-background-color: #474044;
@@ -37,7 +34,7 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: var(--paragraph-font);
-    font-size: 2.3vw;
+    font-size: 1.7vw;
     background-color: whitesmoke;
 }
 
@@ -48,7 +45,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
-    border-bottom: 3px ridge var(--secondary-color);
+    border-bottom: 3px ridge var(--accent1-color);
     text-shadow: 1px 1px var(--accent3-color);
 }
 
@@ -72,7 +69,6 @@ ul {
 
 nav {
     background-color: var(--secondary-color);
-    margin: .5% auto;
 }
 
 #menu {
@@ -131,48 +127,56 @@ ul a {
 ul a:hover {
     color: var(--accent1-color);
     background-color: var(--accent3-color);
-    text-shadow: 1px 1px var(--accent3-color);
+    /* text-shadow: 1px 1px var(--accent3-color); */
 }
 
-/* .active {
-    border: 2px ridge #E4EBDB;
-} */
+.active::before {
+    content: "* ";
+}
 
 main {
     display: block;
+    align-items: center;
     margin: auto;
     text-align: center;
     max-width: 95%;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
 .container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+    grid-gap: .3%;
 }
 
 .card {
-    border: 3px ridge var(--accent1-color);
-    margin-top: 1%;
-    margin-bottom: 1%;
+    border: 3px ridge var(--border-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card h4 {
+    color: var(--primary-color);
 }
 
 div #downtown #city {
-    max-width: 100%;
-    border: 3px ridge var(--secondary-color);
+    max-width: 90%;
+    border: 2px ridge var(--accent3-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
-#downtown {
-    border: none;
-    box-shadow: none;
+#downtown p {
+    background-color: var(--accent2-color);
+    border: 2px ridge var(--accent3-color);
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 1%;
+    color: var(--primary-color);
+
 }
 
 #highlights {
-    /* background-color: var(--accent1-color); */
     color: var(--primary-color);
-    border: 3px ridge var(--accent3-color);
-    text-shadow: 1px 1px var(--accent1-color);
     padding: 1%;
 }
 
@@ -184,20 +188,13 @@ div #downtown #city {
 }
 
 #businesses section {
-    border: 2px ridge #547AA5;
+    border: 2px ridge var(--accent3-color);
     background-color: var(--accent1-color);
 }
 
-#explanation {
-    background-color: var(--accent2-color);
-    color: var(--primary-color);
-    text-shadow: .5px .5px var(--accent1-color);
-}
-
 #events {
-    /* background-color: var(--accent3-color); */
     color: var(--primary-color);
-    text-shadow: 1px 1px var(--secondary-color);
+    /* text-shadow: 1px 1px var(--secondary-color); */
     padding: 1%;
 }
 
@@ -209,30 +206,36 @@ div #downtown #city {
 }
 
 #eventCard section {
-    border: 2px ridge var(--accent1-color);
+    border: 2px ridge var(--secondary-color);
     background-color: var(--accent3-color);
-    font-weight: bold;
 }
 
 #temp {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    text-shadow: .5px .5px var(--accent3-color);
+    /* text-shadow: .5px .5px var(--accent3-color); */
 }
 
 #temp h3 {
     color: var(--primary-color);
-    text-shadow: .5px .5px var(--accent3-color);
+    /* text-shadow: .5px .5px var(--accent3-color); */
 }
 
 footer {
-    margin-top: 2%;
+    font-weight: bold;
+    margin-top: 1%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    border-top: 3px ridge var(--secondary-color);
-    text-shadow: .5px .5px var(--accent3-color);
+    border-top: 3px ridge var(--border-color);
+    /* text-shadow: .5px .5px var(--accent3-color); */
+}
+
+#map {
+    max-width: 60px;
+    max-height: 40px;
+    justify-self: center;
 }

@@ -1,0 +1,51 @@
+@media only screen and (min-width: 35em) {
+    :root {
+        --primary-color: #50d8d7;
+        --secondary-color: #474044;
+        --accent1-color: #293132;
+        --accent2-color: #4F5165;
+        --accent3-color: #547AA5;
+        --border-color: #293132;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 3px ridge var(--accent1-color);
+    }
+
+    .navigation li {
+        display: block;
+        justify-content: center;
+        flex: 1 1 100%;
+        margin: 0;
+    }
+
+    main {
+        padding-bottom: 2%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #map {
+        max-width: 100px;
+        max-height: 60px;
+        justify-self: center;
+    }
+
+
+}

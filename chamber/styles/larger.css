@@ -1,0 +1,24 @@
+@media only screen and (min-width: 60em) {
+    :root {
+        --primary-color: #50d8d7;
+        --secondary-color: #474044;
+        --accent1-color: #293132;
+        --accent2-color: #4F5165;
+        --accent3-color: #547AA5;
+        --border-color: #293132;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .container #highlights {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .container #downtown {
+        grid-column: 2/6;
+        grid-row: 1/3;
+    }
+}
