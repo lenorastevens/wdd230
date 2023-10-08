@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap');
+/* @import url('https://coolors.co/293132-474044-4f5165-547aa5-50d8d7') */
 
 :root {
 
-    /* colors from palette */
     --primary-color: #50d8d7;
     --secondary-color: #474044;
     --accent1-color: #293132;
     --accent2-color: #4F5165;
     --accent3-color: #547AA5;
 
-    /* chosen font(s) */
     --heading-font: "Young Serif";
     --paragraph-font: "Arima", sans-serif;
 
@@ -23,7 +22,7 @@
 body {
     margin: 0 auto;
     text-align: center;
-    font-family: var(--paragraph-font);
+    font-family: "Arima", sans-serif;
     font-size: 2.1vw;
     background-color: whitesmoke;
 }
