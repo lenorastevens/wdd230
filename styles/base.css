@@ -152,14 +152,14 @@ div ul a {
     list-style: numeric;
 }
 
-#lesson {
+.lesson {
     display: flex;
     flex-direction: row;
     justify-content: left;
     padding: .5em;
 }
 
-#lesson li {
+.lesson li {
     padding: .1em;
 }
 
