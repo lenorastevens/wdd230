@@ -16,6 +16,11 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
+    #join {
+        bottom: 20px;
+        left: 60px;
+    }
+
     .container #events {
         grid-column: 1/2;
         grid-row: 1/3;
