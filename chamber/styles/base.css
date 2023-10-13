@@ -34,7 +34,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
-    border-bottom: 3px ridge var(--accent1-color);
+    border-bottom: 3px ridge var(--accent3-color);
     text-shadow: 1px 1px var(--accent3-color);
 }
 
@@ -152,7 +152,8 @@ main {
 }
 
 div #downtown #city {
-    max-width: 90%;
+    margin: 2%;
+    max-width: 95%;
     border: 2px ridge var(--accent3-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
@@ -163,7 +164,7 @@ div #downtown #city {
 
 #join {
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
     left: 30px;
     background-color: var(--primary-color);
     font-weight: bolder;
@@ -174,16 +175,10 @@ div #downtown #city {
     opacity: .75;
 }
 
-#downtown h4 {
-    color: var(--secondary-color);
-}
-
-#downtown p {
+#duties div {
     background-color: var(--accent2-color);
     border: 2px ridge var(--accent3-color);
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 1%;
+    margin: 2%;
     color: var(--primary-color);
 }
 
@@ -202,16 +197,18 @@ div #downtown #city {
 #businesses div {
     border: 2px ridge var(--accent3-color);
     background-color: var(--accent1-color);
+    margin: 2%;
+
 }
 
 #events {
-    color: var(--accent1-color);
+    color: var(--primary-color);
     font-weight: bolder;
     padding: 1%;
 }
 
 #events h4 {
-    color: var(--accent1-color)
+    color: var(--primary-color)
 }
 
 #events #eventCard {
@@ -222,9 +219,9 @@ div #downtown #city {
 }
 
 #eventCard div {
-    border: 2px ridge var(--secondary-color);
-    background-color: var(--accent3-color);
-    /* text-shadow: 1px 1px var(--secondary-color); */
+    border: 2px ridge var(--accent3-color);
+    background-color: var(--accent1-color);
+    margin: 2%;
 }
 
 #temp {
@@ -245,7 +242,7 @@ footer {
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    border-top: 3px ridge var(--border-color);
+    border-top: 3px ridge var(--accent3-color);
 }
 
 #map {

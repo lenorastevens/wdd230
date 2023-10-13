@@ -15,7 +15,7 @@
     .navigation {
         display: flex;
         flex-direction: row;
-        border-bottom: 3px ridge var(--accent1-color);
+        border-bottom: 3px ridge var(--accent3-color);
     }
 
     .navigation li {
@@ -37,7 +37,7 @@
     }
 
     #join {
-        bottom: 20px;
+        bottom: 30px;
         left: 45px;
     }
 
@@ -52,8 +52,4 @@
         justify-self: center;
     }
 
-    #duties {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 }
