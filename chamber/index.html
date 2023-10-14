@@ -28,8 +28,13 @@
 
 <body>
     <header>
-        <img id="logo" src="images/2019_ChamberLogo_Horizontal_Black.png" alt="Austin Chamber Logo">
-        <h1 id="title">Austin Chamber of Commerce</h1>
+        <div class="items">
+            <img id="logo" src="images/2019_ChamberLogo_Horizontal_Black.png" alt="Austin Chamber Logo">
+            <h1 id="title">Austin Chamber of Commerce</h1>
+            <div id="mode">
+                🌙
+            </div>
+        </div>
     </header>
 
     <nav>
@@ -47,7 +52,7 @@
 
             <section id="downtown" class="card">
                 <div class="hero">
-                    <h2>Helping people live, work & thrive in Austin</h2>
+                    <h2 id="head1D">Helping people live, work & thrive in Austin</h2>
                     <button id="join" title="Join">Join the Chamber</button>
                     <img id="city" src="images/rsz_downtownaustin.jpg" alt="Downtown Austin Picture">
                 </div>
@@ -76,7 +81,7 @@
             </section>
 
             <section id="events" class="card">
-                <h3>Chamber Events</h3>
+                <h3 id="head2D">Chamber Events</h3>
                 <div id="eventCard">
                     <div>
                         <h4>Greater Austin Business Awards</h4>
@@ -103,7 +108,7 @@
             </section>
 
             <section id="highlights" class="card">
-                <h3>Business Highlights</h3>
+                <h3 id="head3D">Business Highlights</h3>
                 <div id="businesses">
                     <div>
                         <h4>1st Business</h4>
@@ -138,7 +143,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="bottom">
         <p id="address">Austin Chamber<br>1234 Professional Street<br>Austin, TX 78739</p>
         <p id="name">&copy; <span id="year"></span> *|* Lenora Stevens *|* WDD 230 Project</p>
         <p id="maps">Location Map</p>
@@ -153,6 +158,8 @@
 
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+
 </body>
 
 </html>

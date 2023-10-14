@@ -24,18 +24,22 @@ body {
     text-align: center;
     font-family: "Arima", sans-serif;
     font-size: 2.1vw;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
+header div {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     column-gap: 8%;
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
-    border-bottom: 3px ridge var(--accent3-color);
     text-shadow: 1px 1px var(--accent3-color);
+    padding: 2%;
+}
+
+header {
+    border-bottom: 3px ridge var(--accent3-color);
 }
 
 h1,
@@ -47,7 +51,15 @@ h4 {
 }
 
 #logo {
-    max-width: 10%;
+    max-width: 100%;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 ul {
