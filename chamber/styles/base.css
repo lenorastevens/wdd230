@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap');
 
-/* root color assignments
-:root {
-
-    --primary-color: #50d8d7;
-    --secondary-color: #474044;
-      --accent1-color: #293132;
-    --accent2-color: #4F5165;
-    --accent3-color: #547AA5;
-
-    --heading-font: "Young Serif";
-    --paragraph-font: "Arima", sans-serif;
-
-    --border-color: #293132;
-    --dark-mode-background: #4F5165;
-    --dark-mode-text: #50d8d7;
-  --dark-mode-body: black;
-} */
-
 
 /* body styles */
 * {
