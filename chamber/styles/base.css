@@ -5,7 +5,7 @@
 
     --primary-color: #50d8d7;
     --secondary-color: #474044;
-    --accent1-color: #293132;
+      --accent1-color: #293132;
     --accent2-color: #4F5165;
     --accent3-color: #547AA5;
 
@@ -15,7 +15,7 @@
     --border-color: #293132;
     --dark-mode-background: #4F5165;
     --dark-mode-text: #50d8d7;
-    --dark-mode-body: black;
+  --dark-mode-body: black;
 } */
 
 
@@ -86,7 +86,8 @@ h4 {
 #darkMode {
     display: inline-block;
     align-self: self-end;
-    margin: 0 20% 0 20%;
+    /* margin: 0 20% 0 20%; */
+    width: 50%;
     border: 2px ridge #293132;
     background-color: #50d8d7;
 }
