@@ -1,4 +1,6 @@
+// create a function to swich specific elements to dark mode colors
 function darkMode() {
+    // create variables to select the specific elements that need to change
     const body = document.body;
     const darkT = document.querySelector(".items");
     const darkHT = document.querySelector("#title");
@@ -8,7 +10,7 @@ function darkMode() {
     const darkH3 = document.querySelector("#head3D");
     const logoB = document.querySelector("#logo");
 
-
+    //assign the variables to the right CSS style setting
     body.classList.toggle("dark-mode");
     darkT.classList.toggle("darkHF")
     darkHT.classList.toggle("darkHF");

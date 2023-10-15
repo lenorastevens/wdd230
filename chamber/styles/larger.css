@@ -1,9 +1,16 @@
 @media only screen and (min-width: 60em) {
 
+    /* body styles */
+    content {
+        max-width: 1600px;
+    }
+
     body {
         font-size: 1.0vw;
     }
 
+
+    /* header styles */
     header div {
         grid-template-columns: 1fr 7 1fr;
     }
@@ -12,6 +19,8 @@
         margin: 0 35% 0 35%;
     }
 
+
+    /* main section styles */
     .container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }

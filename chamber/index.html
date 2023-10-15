@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Meta setting for Chamber index page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-32x32.png">
@@ -29,15 +30,23 @@
 <body>
     <header id="top">
         <div class="items">
+            <!-- header logo -->
             <img id="logo" src="images/2019_ChamberLogo_Horizontal_Black.png" alt="Austin Chamber Logo">
+
+            <!-- index title -->
             <h1 id="title">Austin Chamber of Commerce</h1>
+
+            <!-- dark mode button -->
             <button id="darkMode" onclick="darkMode()"><img id="modeImg" src="images/day-and-night-dark.png"
                     alt="Dark Mode idcon"></button>
         </div>
     </header>
 
     <nav>
+        <!-- hamber button -->
         <button id="menu" title="Hamburger Menu"></button>
+
+        <!-- nav labels -->
         <ul class="navigation">
             <li><a href="#" title="Home" class="active">Home</a></li>
             <li><a href="#" title="Discover" class="">Discover</a></li>
@@ -48,13 +57,15 @@
 
     <main>
         <div class="container">
-
+            <!-- biggest section of main container -->
             <section id="downtown" class="card">
+                <!-- picture and join button div -->
                 <div class="hero">
                     <h2 id="head1D">Helping people live, work & thrive in Austin</h2>
                     <button id="join" title="Join">Join the Chamber</button>
                     <img id="city" src="images/rsz_downtownaustin.jpg" alt="Downtown Austin Picture">
                 </div>
+                <!-- duties dive -->
                 <div id="duties">
                     <div>
                         <h4>We Are Your Advocates</h4>
@@ -79,6 +90,7 @@
                 </div>
             </section>
 
+            <!-- events section of the main container -->
             <section id="events" class="card">
                 <h3 id="head2D">Chamber Events</h3>
                 <div id="eventCard">
@@ -107,6 +119,7 @@
                 </div>
             </section>
 
+            <!-- business highlight section of the main container -->
             <section id="highlights" class="card">
                 <h3 id="head3D">Business Highlights</h3>
                 <div id="businesses">
@@ -131,6 +144,7 @@
                 </div>
             </section>
 
+            <!-- temp and info section of the main container -->
             <section id="temp" class="card">
                 <h3>Local Weather</h3>
 
@@ -138,10 +152,11 @@
 
                 <p>Number of Visits to Page: <span id="visits">250</span></p>
             </section>
-
         </div>
+
     </main>
 
+    <!-- footer section -->
     <footer id="bottom">
         <p id="address">Austin Chamber<br>1234 Professional Street<br>Austin, TX 78739</p>
         <p id="name">&copy; <span id="year"></span> *|* Lenora Stevens *|* WDD 230 Project</p>
@@ -154,6 +169,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     </footer>
 
+    <!-- script sources for dom manipulation -->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
