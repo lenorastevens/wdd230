@@ -35,13 +35,13 @@ body {
 
 /* dark mode styles */
 .dark-mode {
-    background-color: var(--dark-mode-body);
-    color: var(--dark-mode-text);
+    background-color: black;
+    color: #50d8d7;
 }
 
 .darkHF {
-    background-color: var(--dark-mode-background);
-    color: var(--dark-mode-text)
+    background-color: #4F5165;
+    color: #50d8d7;
 }
 
 
@@ -52,21 +52,21 @@ header div {
     column-gap: 8%;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
-    text-shadow: 1px 1px var(--accent3-color);
+    background-color: #50d8d7;
+    text-shadow: 1px 1px #547AA5;
     padding: 2%;
 }
 
 header {
-    border-bottom: 3px ridge var(--accent3-color);
+    border-bottom: 3px ridge #547AA5;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    color: var(--secondary-color);
-    font-family: var(--heading-font);
+    color: #474044;
+    font-family: "Young Serif";
 }
 
 
@@ -78,7 +78,7 @@ h4 {
 }
 
 .logo-dark {
-    background-color: var(--primary-color);
+    background-color: #50d8d7;
 }
 
 
@@ -87,8 +87,8 @@ h4 {
     display: inline-block;
     align-self: self-end;
     margin: 0 20% 0 20%;
-    border: 2px ridge var(--accent1-color);
-    background-color: var(--primary-color);
+    border: 2px ridge #293132;
+    background-color: #50d8d7;
 }
 
 #modeImg {
@@ -107,13 +107,13 @@ ul {
 }
 
 nav {
-    background-color: var(--secondary-color);
+    background-color: #474044;
 }
 
 #menu {
-    border: 2px ridge var(--accent3-color);
-    background-color: var(--accent2-color);
-    color: var(--primary-color);
+    border: 2px ridge #547AA5;
+    background-color: #4F5165;
+    color: #50d8d7;
     font-size: .7rem;
     position: absolute;
     top: .5rem;
@@ -158,14 +158,14 @@ nav ul li {
 }
 
 ul a {
-    color: var(--primary-color);
+    color: #50d8d7;
     padding-right: 1%;
     padding-left: 1%;
 }
 
 ul a:hover {
-    color: var(--accent1-color);
-    background-color: var(--accent3-color);
+    color: #293132;
+    background-color: #547AA5;
 }
 
 .active::before {
@@ -196,18 +196,18 @@ main {
 }
 
 .card {
-    border: 3px ridge var(--border-color);
+    border: 3px ridge #547AA5;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
 .card h4 {
-    color: var(--primary-color);
+    color: #50d8d7;
 }
 
 div #downtown #city {
     margin: 2%;
     max-width: 95%;
-    border: 2px ridge var(--accent3-color);
+    border: 2px ridge #547AA5;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -219,26 +219,26 @@ div #downtown #city {
     position: absolute;
     bottom: 8%;
     left: 5%;
-    background-color: var(--primary-color);
+    background-color: #50d8d7;
     font-weight: bolder;
-    color: var(--secondary-color);
-    border: 2px ridge var(--accent1-color);
+    color: #474044;
+    border: 2px ridge #293132;
     padding: .3rem;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
     opacity: .75;
 }
 
 #duties div {
-    background-color: var(--accent2-color);
-    border: 2px ridge var(--accent3-color);
+    background-color: #4F5165;
+    border: 2px ridge #547AA5;
     margin: 2%;
-    color: var(--primary-color);
+    color: #50d8d7;
 }
 
 
 /* highlights section */
 #highlights {
-    color: var(--primary-color);
+    color: #50d8d7;
     padding: 1%;
 }
 
@@ -250,8 +250,8 @@ div #downtown #city {
 }
 
 #businesses div {
-    border: 2px ridge var(--accent3-color);
-    background-color: var(--accent1-color);
+    border: 2px ridge #547AA5;
+    background-color: #293132;
     margin: 2%;
 
 }
@@ -259,13 +259,13 @@ div #downtown #city {
 
 /* events section */
 #events {
-    color: var(--primary-color);
+    color: #50d8d7;
     font-weight: bolder;
     padding: 1%;
 }
 
 #events h4 {
-    color: var(--primary-color)
+    color: #50d8d7;
 }
 
 #events #eventCard {
@@ -276,20 +276,20 @@ div #downtown #city {
 }
 
 #eventCard div {
-    border: 2px ridge var(--accent3-color);
-    background-color: var(--accent1-color);
+    border: 2px ridge #547AA5;
+    background-color: #293132;
     margin: 2%;
 }
 
 
 /* temp section */
 #temp {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: #474044;
+    color: #50d8d7;
 }
 
 #temp h3 {
-    color: var(--primary-color);
+    color: #50d8d7;
 }
 
 
@@ -297,13 +297,13 @@ div #downtown #city {
 footer {
     font-weight: bold;
     margin-top: 2%;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: #50d8d7;
+    color: #474044;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    border-top: 3px ridge var(--accent3-color);
+    border-top: 3px ridge #547AA5;
 }
 
 #map {

@@ -24,7 +24,7 @@
     .navigation {
         display: flex;
         flex-direction: row;
-        border-bottom: 3px ridge var(--accent3-color);
+        border-bottom: 3px ridge #547AA5;
     }
 
     .navigation li {
