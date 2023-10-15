@@ -1,12 +1,16 @@
 @media only screen and (min-width: 35em) {
-    /* :root {
-        --primary-color: #50d8d7;
-        --secondary-color: #474044;
-        --accent1-color: #293132;
-        --accent2-color: #4F5165;
-        --accent3-color: #547AA5;
-        --border-color: #293132;
-    } */
+
+    body {
+        font-size: 2.1vw;
+    }
+
+    header div {
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+
+    #darkMode {
+        margin: 0 30% 0 30%;
+    }
 
     #menu {
         display: none;
@@ -34,11 +38,6 @@
         grid-template-columns: 3fr 1fr;
         column-gap: 10px;
         row-gap: 10px;
-    }
-
-    #join {
-        bottom: 30px;
-        left: 45px;
     }
 
     footer {

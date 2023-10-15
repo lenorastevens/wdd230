@@ -1,24 +1,19 @@
 @media only screen and (min-width: 60em) {
-    /* :root {
-        --primary-color: #50d8d7;
-        --secondary-color: #474044;
-        --accent1-color: #293132;
-        --accent2-color: #4F5165;
-        --accent3-color: #547AA5;
-        --border-color: #293132;
-    } */
 
     body {
-        font-size: 1.2vw;
+        font-size: 1.0vw;
+    }
+
+    header div {
+        grid-template-columns: 1fr 7 1fr;
+    }
+
+    #darkMode {
+        margin: 0 35% 0 35%;
     }
 
     .container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    #join {
-        bottom: 30px;
-        left: 45px;
     }
 
     .container #events {
