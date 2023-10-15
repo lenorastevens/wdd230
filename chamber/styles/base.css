@@ -196,7 +196,7 @@ main {
 }
 
 .card {
-    border: 3px ridge #547AA5;
+    border: 3px ridge #293132;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -222,7 +222,7 @@ div #downtown #city {
     background-color: #50d8d7;
     font-weight: bolder;
     color: #474044;
-    border: 2px ridge #293132;
+    border: 2px ridge #547AA5;
     padding: .3rem;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
     opacity: .75;
@@ -253,7 +253,6 @@ div #downtown #city {
     border: 2px ridge #547AA5;
     background-color: #293132;
     margin: 2%;
-
 }
 
 
