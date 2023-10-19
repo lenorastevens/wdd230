@@ -112,6 +112,29 @@ main {
     max-width: 90%;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero picture {
+    width: 100%;
+}
+
+.herolabel {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background: rgb(248, 129, 93, .70);
+    padding: 1%;
+    border-radius: .5em;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.temple {
+    width: 100%;
+    height: auto;
+}
+
 h2 {
     border-bottom: 1px solid rgb(9, 8, 8, .75);
     color: rgb(9, 8, 8, .6);
