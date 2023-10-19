@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/roseFavicon.ico">
+    <title>Resized Picture - WDD 230 - Web Frontend Development</title>
+    <meta name="author" content="Lenora Stevens">
+    <meta name="description"
+        content="Picture resized by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+
+</head>
+
+<body>
+    <main>
+        <h1>Bountiful Temple</h1>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-wdith: 1000xp)">
+                <img class="temple" src="images/hero-large.webp" alt="Bountiful Temple at Sunset" width="1500"
+                    height="750">
+            </picture>
+        </div>
+    </main>
+
+</body>
+
+</html>
