@@ -1,14 +1,17 @@
 @media (min-width: 580px) {
     body {
-        font-size: 1.6vw;
+        font-size: 1.8vw;
     }
 
     h1 {
         padding: 3rem;
+        margin: 0;
+        align-self: center;
+        justify-self: center;
     }
 
     #photo {
-        max-width: 80px;
+        max-width: 100%;
     }
 
     #menu {
@@ -56,6 +59,10 @@
 
     section ul {
         padding: 1rem;
+    }
+
+    #flag {
+        width: 100%;
     }
 
     #map {
