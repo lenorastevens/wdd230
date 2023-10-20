@@ -1,4 +1,6 @@
 @media (min-width: 580px) {
+
+    /* body styles */
     body {
         font-size: 1.8vw;
     }
@@ -17,6 +19,8 @@
         display: none;
     }
 
+
+    /* nav styles */
     .navigation {
         display: flex;
         flex-direction: row;
@@ -33,6 +37,7 @@
         padding: 1rem;
     }
 
+    /* main container styles */
     .container {
         display: flex;
         flex-direction: row;
@@ -60,13 +65,17 @@
         padding: 1rem;
     }
 
-    #flag {
-        width: 100%;
-    }
-
+    /* map styles */
     #map {
         max-height: 400px;
         width: 87%;
     }
+
+    /* flag styles */
+    #flag {
+        width: 100%;
+    }
+
+
 
 }

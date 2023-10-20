@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- html information section -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +21,13 @@
         content="This is the course assignment portal created and maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
     <meta property="og:image" content="https://lenorastevens.github.io/wdd230/images/familyPicSmall.jpg">
     <meta property="og:url" content="https://lenorastevens.github.io/wdd230">
-
 </head>
+
+<!-- beginning of code for webpage content -->
 
 <body>
     <header class="beginning">
+        <!-- profile pic -->
         <div class="profile">
             <picture>
                 <source srcset="images/profilePic-small.webp" media="(max-wdith: 250px)">
@@ -31,14 +35,19 @@
                 <img id="photo" src="images/profilePic-medium.webp" alt="Lenora & Hubby at Grand Canyon" width="500">
             </picture>
         </div>
+
+        <!-- name heading -->
         <h1>Lenora Stevens</h1>
+
+        <!-- menu button for mobile screen -->
         <div>
             <button id="menu" title="Hamburger Menu"></button>
         </div>
+
     </header>
 
     <nav>
-        <!-- <button id="menu" title="Hamburger Menu"></button> -->
+        <!-- navigation menu html -->
         <ul class="navigation">
             <li><a href="#" title="Home" class="active">Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a></li>
@@ -49,7 +58,9 @@
         </ul>
     </nav>
 
+
     <main>
+        <!-- temple picture and label -->
         <div class="hero">
             <picture>
                 <source srcset="images/hero-small.webp" media="(max-width: 500px)">
@@ -62,8 +73,12 @@
             </div>
         </div>
 
+        <!-- main section heading -->
         <h2>WDD 230: Web Frontend Development</h2>
+
+        <!-- container for lesson and info sections -->
         <div class="container">
+            <!-- lesson section -->
             <section id="card1" class="card">
                 <h3>Learning Activities</h3>
                 <ul id="lessons">
@@ -143,6 +158,7 @@
                 </ul>
             </section>
 
+            <!-- info section -->
             <section id="card2" class="card">
                 <h3>Information</h3>
                 <p>City: <span id="city">Austin, Texas</span></p>
@@ -155,9 +171,12 @@
 
     </main>
 
+    <!-- map of home area -->
     <iframe id="map" title="Map of Austin"
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62772.49809662241!2d-97.71571604968625!3d30.29020448749193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695871235594!5m2!1sen!2sus"
         width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- footer section -->
     <footer>
         <p id="copywright">&copy; <span id="year"></span> *|* Lenora Stevens *|* Texas</p>
         <div>
@@ -167,6 +186,7 @@
 
     </footer>
 
+    <!-- script section for dom manipulation -->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>
