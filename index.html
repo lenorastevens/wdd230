@@ -23,13 +23,22 @@
 </head>
 
 <body>
-    <header>
-        <img id="photo" src="images/familyPicSmall.webp" alt="Family Photo">
+    <header class="beginning">
+        <div class="profile">
+            <picture>
+                <source srcset="images/profilePic-small.webp" media="(max-wdith: 250px)">
+                <!-- <source srcset="images/profilePic-medium.webp" media="(max-width: 500px)"> -->
+                <img id="photo" src="images/profilePic-medium.webp" alt="Lenora & Hubby at Grand Canyon" width="500">
+            </picture>
+        </div>
         <h1>Lenora Stevens</h1>
+        <div>
+            <button id="menu" title="Hamburger Menu"></button>
+        </div>
     </header>
 
     <nav>
-        <button id="menu" title="Hamburger Menu"></button>
+        <!-- <button id="menu" title="Hamburger Menu"></button> -->
         <ul class="navigation">
             <li><a href="#" title="Home" class="active">Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a></li>
@@ -43,8 +52,8 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-                <source srcset="images/hero-medium.webp" media="(max-wdith: 960xp)">
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-wdith: 1000px)">
                 <img class="temple" src="images/hero-large.webp" alt="Bountiful Temple at Sunset" width="1500"
                     height="750">
             </picture>
@@ -150,9 +159,10 @@
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62772.49809662241!2d-97.71571604968625!3d30.29020448749193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695871235594!5m2!1sen!2sus"
         width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
-        <p>&copy; <span id="year"></span> *|* Lenora Stevens *|* Texas</p>
-        <img id="flag" src="images/texasFlagSmall.jpg" alt="Texas Flag">
-
+        <p id="copywright">&copy; <span id="year"></span> *|* Lenora Stevens *|* Texas</p>
+        <div>
+            <img id="flag" src="images/texasFlagSmall.webp" alt="Texas Flag" width="250">
+        </div>
         <p id="lastModified"></p>
 
     </footer>
