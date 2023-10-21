@@ -40,6 +40,10 @@
         padding-bottom: 2%;
     }
 
+    .sizelabel p::after {
+        content: "Medium";
+    }
+
     .container {
         display: grid;
         grid-template-columns: 3fr 1fr;
