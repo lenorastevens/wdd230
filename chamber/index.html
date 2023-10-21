@@ -143,12 +143,16 @@
             </section>
 
             <!-- temp and info section of the main container -->
-            <section id="temp" class="card">
+            <section id="weather" class="card">
                 <h3>Local Weather</h3>
-
-                <p><span id="weather"></span></p>
-
-                <p>Number of Visits to Page: <span id="visits">250</span></p>
+                <label>Temperature (°F): <input type="number" id="temp"></label><br>
+                <br>
+                <label>Wind Speed (mph): <input type="number" id="speed"></label><br>
+                <br>
+                <p><span id="windChill"></span></p>
+                <p></p>
+                <p>Number of Visits to Page: <span id="visits"></span></p>
+                <p></p>
             </section>
         </div>
 
@@ -171,6 +175,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 

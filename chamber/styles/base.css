@@ -265,12 +265,12 @@ div #downtown #city {
 
 
 /* temp section */
-#temp {
+#weather {
     background-color: #474044;
     color: #50d8d7;
 }
 
-#temp h3 {
+#weather h3 {
     color: #50d8d7;
 }
 
