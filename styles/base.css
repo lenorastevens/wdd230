@@ -38,6 +38,8 @@ h1 {
 
 #photo {
     max-width: 100%;
+    height: auto;
+
 }
 
 /* hamburger button styles in header */
@@ -135,6 +137,7 @@ main {
 
 .hero picture {
     width: 100%;
+    height: auto;
 }
 
 .herolabel {
@@ -148,7 +151,7 @@ main {
 }
 
 .temple {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -224,7 +227,7 @@ div ul a {
 /* footer styles */
 footer {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     margin-top: 2%;
     background-color: rgb(63, 76, 96);
     padding: 3%;
@@ -238,9 +241,10 @@ footer {
 }
 
 #lastModified {
-    grid-column: 1/4;
+    grid-column: 1/5;
 }
 
 #flag {
-    width: 75%;
+    max-width: 100%;
+    height: auto;
 }
