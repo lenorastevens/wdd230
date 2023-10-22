@@ -9,6 +9,7 @@ function darkMode() {
     const darkH2 = document.querySelector("#head2D");
     const darkH3 = document.querySelector("#head3D");
     const logoB = document.querySelector("#logo");
+    const mapLink = document.querySelector("#maps");
 
     //assign the variables to the right CSS style setting
     body.classList.toggle("dark-mode");
@@ -19,5 +20,6 @@ function darkMode() {
     darkH2.classList.toggle("dark-mode");
     darkH3.classList.toggle("dark-mode");
     darkF.classList.toggle("darkHF");
+    mapLink.classList.toggle("darkHF");
 
 }

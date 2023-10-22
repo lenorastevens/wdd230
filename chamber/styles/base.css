@@ -198,6 +198,8 @@ div .meeting {
     padding: 1%;
     background: #50d8d7;
     border: 2px ridge #547AA5;
+    color: #474044;
+    font-weight: bolder;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
     opacity: .75;
 }
