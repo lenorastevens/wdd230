@@ -185,13 +185,14 @@ div .meeting {
 
 .sizelabel {
     position: absolute;
-    top: 2%;
-    left: 1%;
+    line-height: .1em;
+    bottom: 4%;
+    right: 2%;
     padding: 1%;
     background: #50d8d7;
     border: 2px ridge #547AA5;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
-    content: "small";
+    opacity: .75;
 }
 
 .sizelabel p::after {
@@ -214,19 +215,21 @@ div .meeting {
 }
 
 div #downtown #city {
-    margin: 2%;
-    max-width: 95%;
+    width: 100%;
+    height: auto;
+    /* max-width: 95%; */
     border: 2px ridge #547AA5;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
 .hero {
     position: relative;
+    width: 100%;
 }
 
 #join {
     position: absolute;
-    bottom: 8%;
+    top: 5%;
     left: 5%;
     background-color: #50d8d7;
     font-weight: bolder;
@@ -298,6 +301,13 @@ div #downtown #city {
 
 #weather h3 {
     color: #50d8d7;
+}
+
+input {
+    background-color: #50d8d7;
+    color: #474044;
+    border: 2px ridge #547AA5;
+
 }
 
 

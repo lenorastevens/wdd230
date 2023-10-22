@@ -69,9 +69,15 @@
             <section id="downtown" class="card">
                 <!-- picture and join button div -->
                 <div class="hero">
-                    <h2 id="head1D">Helping people live, work & thrive in Austin</h2>
+
                     <button id="join" title="Join">Join the Chamber</button>
-                    <img id="city" src="images/downtownAustin.jpg" alt="Downtown Austin Picture">
+                    <picture>
+                        <source srcset="images/downtown-large.jpg" media="(min-width: 960px)">
+                        <source srcset="images/downtown-medium.jpg" media="(min-width: 560px)">
+                        <img id="city" src="images/downtown-small.jpg" alt="Downtown Austin Picture" width="500"
+                            height="281">
+                    </picture>
+                    <h2 id="head1D">Helping people live, work & thrive in Austin</h2>
                 </div>
                 <!-- duties dive -->
                 <div id="duties">
