@@ -329,8 +329,10 @@ footer {
     border-top: 3px ridge #547AA5;
 }
 
-#map {
-    max-width: 60px;
-    max-height: 40px;
-    justify-self: center;
+#maps a {
+    text-decoration: none;
+}
+
+#maps::before {
+    content: "👉  ";
 }
