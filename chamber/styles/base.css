@@ -331,8 +331,14 @@ footer {
 
 #maps a {
     text-decoration: none;
+    color: #474044;
 }
 
 #maps::before {
     content: "👉  ";
+}
+
+#maps a:hover {
+    color: #293132;
+    background-color: #547AA5;
 }
