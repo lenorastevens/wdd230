@@ -144,7 +144,8 @@ main {
     position: absolute;
     top: 1%;
     right: 1%;
-    background: rgb(248, 129, 93, .70);
+    background: rgb(248, 129, 93, .75);
+    color: rgb(9, 8, 8);
     padding: 1%;
     border-radius: .5em;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
@@ -178,7 +179,7 @@ h3 {
 }
 
 div ul a {
-    color: rgb(9, 8, 8);
+    color: #3a4c64;
 }
 
 .card {
