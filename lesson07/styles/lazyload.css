@@ -20,7 +20,7 @@ img {
     width: 100%;
     height: auto;
     background-color: black;
-    animation: fade 15s;
+    animation: fade 5s;
 }
 
 footer {
