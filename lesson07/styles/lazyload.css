@@ -1,5 +1,5 @@
 body {
-    font-family: Mooli;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: coral;
     background-color: black;
 
@@ -10,14 +10,15 @@ h1 {
 }
 
 main {
-    margin: 0 auto;
     width: 400px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
 img {
     width: 100%;
+    height: auto;
     background-color: black;
     animation: fade 15s;
 }
