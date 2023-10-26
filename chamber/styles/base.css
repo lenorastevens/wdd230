@@ -195,13 +195,13 @@ div .meeting {
     line-height: .1em;
     bottom: 4%;
     right: 2%;
-    padding: 1%;
+    padding: .3rem;
     background: #50d8d7;
     border: 2px ridge #547AA5;
-    color: #474044;
+    color: #293132;
     font-weight: bolder;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
-    opacity: .75;
+    opacity: .85;
 }
 
 .sizelabel p::after {
@@ -242,11 +242,11 @@ div #downtown #city {
     left: 5%;
     background-color: #50d8d7;
     font-weight: bolder;
-    color: #474044;
+    color: #293132;
     border: 2px ridge #547AA5;
     padding: .3rem;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
-    opacity: .75;
+    opacity: .85;
 }
 
 #duties div {
