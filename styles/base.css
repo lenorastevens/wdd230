@@ -96,6 +96,8 @@ nav ul li {
     display: block;
     text-align: center;
     text-decoration: none;
+    text-shadow: .5px .5px rgb(9, 8, 8);
+
 }
 
 .open li {
