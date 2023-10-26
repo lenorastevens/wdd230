@@ -181,13 +181,13 @@ h3 {
 }
 
 div ul a {
-    color: #3a4c64;
+    color: black;
 }
 
 .card {
     margin-bottom: 2rem;
     background-color: #d4d1ce;
-    color: rgb(9, 8, 8);
+    color: black;
     /* text-shadow: 1px 1px #fdfffa; */
     border: 2px solid black;
     border-radius: .5em;
