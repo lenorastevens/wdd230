@@ -328,9 +328,17 @@ input {
     background-color: #50d8d7;
     color: #474044;
     border: 2px ridge #547AA5;
-
 }
 
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px ridge #293132;
+}
 
 /* footer section styles */
 footer {
