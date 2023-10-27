@@ -47,6 +47,9 @@
         row-gap: 10px;
     }
 
+    .discovery {
+        grid-template-columns: 2fr 1fr;
+    }
 
     /* footer styles */
     footer {

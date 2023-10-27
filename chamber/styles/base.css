@@ -152,7 +152,7 @@ ul a {
 }
 
 ul a:hover {
-    color: #293132;
+    color: whitesmoke;
     background-color: #547AA5;
 }
 
@@ -214,9 +214,21 @@ div .meeting {
     grid-gap: .3%;
 }
 
-.card {
+.discovery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1%;
+}
+
+.card,
+article {
     border: 3px ridge #293132;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
 }
 
 .card h4 {
