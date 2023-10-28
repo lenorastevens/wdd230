@@ -39,5 +39,12 @@
         grid-template-columns: 3fr 2fr;
     }
 
+    #goSee {
+        gap: 2.5%;
+        font-size: 1.9vw;
+    }
 
+    footer {
+        margin-top: 1%;
+    }
 }
