@@ -221,7 +221,8 @@ div .meeting {
 /* container grid main page */
 main {
     padding-bottom: 2%;
-    margin: 0 auto;
+    margin-left: .5%;
+    margin-right: .5%;
 }
 
 .container {
@@ -360,7 +361,8 @@ input {
 /* discovery page main container styles for   */
 #discovery {
     display: grid;
-    gap: .15%
+    gap: .15%;
+    column-gap: 1%;
 }
 
 #discovery h2 {
