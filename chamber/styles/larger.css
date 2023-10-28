@@ -6,7 +6,7 @@
     }
 
     body {
-        font-size: 1.0vw;
+        font-size: 1.5vw;
     }
 
 
@@ -34,5 +34,10 @@
         grid-column: 2/6;
         grid-row: 1/3;
     }
+
+    .discovery {
+        grid-template-columns: 3fr 2fr;
+    }
+
 
 }

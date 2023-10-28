@@ -19,6 +19,8 @@ body {
     height: auto;
 }
 
+
+
 /* dark mode styles */
 .dark-mode {
     background-color: black;
@@ -29,6 +31,7 @@ body {
     background-color: #4F5165;
     color: #50d8d7;
 }
+
 
 
 /* header styles */
@@ -56,6 +59,7 @@ h4 {
 }
 
 
+
 /* logo styles */
 #logo {
     max-width: 100%;
@@ -67,6 +71,7 @@ h4 {
 .logo-dark {
     background-color: #50d8d7;
 }
+
 
 
 /* dark mode button styles */
@@ -85,6 +90,7 @@ h4 {
     padding: 0;
     margin: 0;
 }
+
 
 
 /* navigation menu styles */
@@ -136,6 +142,8 @@ nav ul li {
     text-decoration: none;
 }
 
+
+/* nav open styles */
 .open li {
     display: block;
     width: 100%;
@@ -151,6 +159,7 @@ ul a {
     padding-left: 1%;
 }
 
+/* nav hover */
 ul a:hover {
     color: whitesmoke;
     background-color: #547AA5;
@@ -165,7 +174,8 @@ ul a:hover {
 }
 
 
-/* main section styles */
+
+/* ***main section styles*** */
 /* city section styles */
 main {
     display: block;
@@ -177,6 +187,7 @@ main {
     padding-bottom: 3%;
 }
 
+/* temp image */
 .optImage {
     position: relative;
     width: 100%;
@@ -187,7 +198,6 @@ div .meeting {
     height: auto;
     border: 3px ridge #293132;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
-
 }
 
 .sizelabel {
@@ -208,27 +218,25 @@ div .meeting {
     content: "Small";
 }
 
+/* container grid main page */
+main {
+    padding-bottom: 2%;
+    margin: 0 auto;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: .3%;
-}
-
-.discovery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1%;
+    grid-gap: .2%;
 }
 
 .card,
-article {
+#pics,
+#to-do,
+.news,
+#popTable {
     border: 3px ridge #293132;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
 }
 
 .card h4 {
@@ -330,29 +338,9 @@ input {
     border: 2px ridge #547AA5;
 }
 
-table {
-    width: 100%;
-}
 
-table,
-th,
-td {
-    border: 1px ridge #293132;
-}
 
-/* footer section styles */
-footer {
-    font-weight: bold;
-    margin-top: 2%;
-    background-color: #50d8d7;
-    color: #474044;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    border-top: 3px ridge #547AA5;
-}
-
+/* main index page map styles */
 #maps a {
     text-decoration: none;
     color: #474044;
@@ -365,4 +353,85 @@ footer {
 #maps a:hover {
     color: #293132;
     background-color: #547AA5;
+}
+
+
+
+/* discovery page main container styles for   */
+#discovery {
+    display: grid;
+    gap: .15%
+}
+
+#discovery h2 {
+    margin: 1%;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-top: 3px ridge #293132;
+    border-bottom: 3px ridge #293132;
+}
+
+figcaption {
+    font-weight: bolder;
+}
+
+.attractions section {
+    background-color: #474044;
+    color: #50d8d7;
+    border: 2px ridge #547AA5;
+    margin: 1%;
+}
+
+.attractions h3 {
+    color: #50d8d7;
+}
+
+.population table {
+    background-color: #4F5165;
+    color: #50d8d7;
+    padding: 1%;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 2px ridge #547AA5;
+    padding: 1%;
+}
+
+#goSee,
+#newsA {
+    display: grid;
+}
+
+.news section {
+    background-color: #293132;
+    color: #50d8d7;
+    border: 2px ridge #547AA5;
+    margin: 1%;
+}
+
+.news h3 {
+    color: #50d8d7;
+    padding: 1%;
+}
+
+/* footer section styles */
+footer {
+    font-weight: bold;
+    margin-top: 3%;
+    background-color: #50d8d7;
+    color: #474044;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px ridge #547AA5;
 }
