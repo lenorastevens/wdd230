@@ -328,7 +328,8 @@ div #downtown #city {
     color: #50d8d7;
 }
 
-#weather h3 {
+#weather h3,
+.tracking h3 {
     color: #50d8d7;
 }
 

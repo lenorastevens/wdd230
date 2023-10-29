@@ -56,7 +56,14 @@
         grid-row: 1/6;
     }
 
+    .gallery img:hover {
+        box-shadow: 0 0 5px 3px #547AA5;
+        opacity: 0.6;
+    }
 
+    /* .gallery-hover-opacity:hover {
+        opacity: .6;
+    } */
 
     #to-do {
         grid-column: 9/13;
