@@ -32,8 +32,8 @@ body {
     color: #50d8d7;
 }
 
-.darkHF a {
-    color: #50d8d7 !important;
+.darkHF #maps a {
+    color: #50d8d7;
 }
 
 
