@@ -32,6 +32,10 @@ body {
     color: #50d8d7;
 }
 
+.darkHF a {
+    color: #50d8d7 !important;
+}
+
 
 
 /* header styles */
@@ -399,7 +403,9 @@ figure {
 }
 
 .attractions h3,
-.news h3 {
+.attractions h4,
+.news h3,
+.news h4 {
     color: #50d8d7;
 }
 

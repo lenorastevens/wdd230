@@ -4,22 +4,39 @@ function darkMode() {
     const body = document.body;
     const darkT = document.querySelector(".items");
     const darkHT = document.querySelector("#title");
-    const darkF = document.querySelector("footer");
-    const darkH1 = document.querySelector("#head1D");
-    const darkH2 = document.querySelector("#head2D");
-    const darkH3 = document.querySelector("#head3D");
     const logoB = document.querySelector("#logo");
-    const mapLink = document.querySelector("#maps");
 
     //assign the variables to the right CSS style setting
     body.classList.toggle("dark-mode");
     darkT.classList.toggle("darkHF")
     darkHT.classList.toggle("darkHF");
     logoB.classList.toggle("logo-dark")
-    darkH1.classList.toggle("dark-mode");
-    darkH2.classList.toggle("dark-mode");
-    darkH3.classList.toggle("dark-mode");
+
+    // all the H2 headers
+    const darkH2 = document.querySelectorAll("h2.head2D");
+    darkH2.forEach(element => {
+        element.classList.toggle("dark-mode");
+    })
+
+    // all the h3 headers
+    const darkH3 = document.querySelectorAll("h3.head3D");
+    darkH3.forEach(element => {
+        element.classList.toggle("dark-mode");
+    })
+
+
+    // all the footer elements
+    const darkF = document.querySelector("footer");
     darkF.classList.toggle("darkHF");
-    mapLink.classList.toggle("darkHF");
+
+    const darkP = document.querySelectorAll("footer p");
+    darkP.forEach(element => {
+        element.classList.toggle("darkHF");
+
+        const link = element.querySelector("a");
+        if (link) {
+            link.classList.toggle("darkHF");
+        }
+    });
 
 }
