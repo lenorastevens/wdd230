@@ -233,9 +233,8 @@ main {
 
 .card,
 .gallery,
-#to-do,
-.news,
-#popTable {
+#popTable,
+#to-do {
     border: 3px ridge #293132;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
@@ -361,8 +360,8 @@ input {
 /* discovery page main container styles for   */
 #discovery {
     display: grid;
-    gap: .15%;
     column-gap: 1%;
+    row-gap: .1%;
 }
 
 #discovery h2 {
@@ -378,16 +377,26 @@ input {
 
 figcaption {
     font-weight: bolder;
+    padding: 1%;
 }
 
-.attractions section {
+.attractions {
     background-color: #474044;
+}
+
+.news {
+    background-color: #293132;
+}
+
+.news,
+.attractions {
     color: #50d8d7;
     border: 2px ridge #547AA5;
     margin: 1%;
 }
 
-.attractions h3 {
+.attractions h3,
+.news h3 {
     color: #50d8d7;
 }
 
@@ -397,8 +406,13 @@ figcaption {
     padding: 1%;
 }
 
-table {
+/* table {
     width: 100%;
+} */
+
+.population table {
+    margin: 1%;
+    width: 98%;
 }
 
 table,
@@ -409,22 +423,11 @@ td {
 }
 
 #pics,
-#goSee,
-#newsA {
+#to-do {
     display: grid;
 }
 
-.news section {
-    background-color: #293132;
-    color: #50d8d7;
-    border: 2px ridge #547AA5;
-    margin: 1%;
-}
 
-.news h3 {
-    color: #50d8d7;
-    padding: 1%;
-}
 
 /* footer section styles */
 footer {
