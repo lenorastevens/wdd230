@@ -376,9 +376,9 @@ input {
     border-bottom: 3px ridge #293132;
 }
 
-figcaption {
+.gallery p {
     font-weight: bolder;
-    padding: 1%;
+    margin: 0;
 }
 
 .attractions,
