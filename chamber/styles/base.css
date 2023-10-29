@@ -376,7 +376,7 @@ input {
     border-bottom: 3px ridge #293132;
 }
 
-figcaption {
+figure {
     font-weight: bolder;
     margin: 0;
 }
