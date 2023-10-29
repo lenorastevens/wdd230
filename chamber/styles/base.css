@@ -380,7 +380,8 @@ figcaption {
     padding: 1%;
 }
 
-.attractions {
+.attractions,
+.tracking {
     background-color: #474044;
 }
 
@@ -389,7 +390,8 @@ figcaption {
 }
 
 .news,
-.attractions {
+.attractions,
+.tracking {
     color: #50d8d7;
     border: 2px ridge #547AA5;
     margin: 1%;

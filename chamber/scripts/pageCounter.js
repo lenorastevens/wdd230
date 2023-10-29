@@ -1,3 +1,12 @@
+const currentDate = new Date();
+document.querySelector('#year').textContent = currentDate.getFullYear();
+
+const date = new Date(document.lastModified);
+document.querySelector('#lastModified').innerHTML = date;
+
+
+
+
 const visitsDisplay = document.querySelector(".visits")
 
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
