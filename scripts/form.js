@@ -1,8 +1,9 @@
 const rangeValue = document.getElementById("rangevalues");
 const range = document.getElementById("r");
 
-range.addEventListener("input", displayRatingValue);
+
 range.addEventListener("change", displayRatingValue);
+range.addEventListener("input", displayRatingValue);
 
 
 function displayRatingValue() {
@@ -34,19 +35,15 @@ const form = document.querySelector("#setup");
 const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$/;
 
 form.addEventListener("submit", function (event) {
-    if (!emailRegex.test(emailInput.Value)) {
+    if (!emailRegex.test(emailInput.value)) {
         event.preventDefault(); // Prevent form submission
         message.textContent = "❗Please enter a valid email address";
         message.style.display = "block";
         emailInput.style.backgroundColor = "#fff0f3";
         emailInput.value = "";
         emailInput.focus();
-    } else
-        true;
+    }
 });
 
-// function validateEmail(email) {
-//     const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$/;
-//     return emailRegex.test(email);
-// }
+
 
