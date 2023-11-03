@@ -10,7 +10,7 @@
     <title>Lenora Stevens - WDD 230 - Web Frontend Development</title>
     <meta name="author" content="Lenora Stevens">
     <meta name="description"
-        content="This is the user setup confirmation page maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
+        content="User Form for home page maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
@@ -60,10 +60,11 @@
                 <legend>User Setup</legend>
                 <div id="formmessage"></div>
                 <label class="top">Username:* <input type="text" id="username" name="username" required></label>
-                <label class="top">Password:* <input type="password" id="pwd" name="pwd"
-                        placeholder="At least 8 or more alpha-numeric characters" pattern=".{8,}" required></label>
+                <label class="top">Password:* <input type="password" id="pwd" name="pwd" pattern=".{8,}"
+                        title="At least 8 or more alpha-numeric characters"
+                        placeholder="At least 8 or more alpha-numeric characters" required></label>
                 <label class="top">Password (repeat):* <input type="password" id="pwd2" name="pwd2" pattern=".{8,}"
-                        placeholder="must match" required></label>
+                        title="Please match passwords" placeholder="must match" required></label>
                 <label class="top">Email:* <input type="email" id="email" name="email"
                         pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$"
                         placeholder="Please enter a valid email address" required></label>
