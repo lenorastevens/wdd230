@@ -42,7 +42,8 @@ form.addEventListener("submit", function (event) {
         emailInput.style.backgroundColor = "#fff0f3";
         emailInput.value = "";
         emailInput.focus();
-    }
+    } else
+        return;
 });
 
 
