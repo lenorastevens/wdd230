@@ -28,3 +28,18 @@ function checkSame() {
         thispwd2.style.color = "#000";
     }
 }
+
+const emailInput = document.querySelector("#email");
+const form = document.querySelector("#setup");
+
+form.addEventListener("submit", function (event) {
+    if (!emailInput.checkValidity()) {
+        event.preventDefault(); // Prevent form submission
+        message.textContent = "❗Please enter a valid BYUI email address";
+        message.style.visibility = "visible";
+        emailInput.style.backgroundColor = "#fff0f3";
+        emailInput.value = "";
+        emailInput.focus();
+    }
+});
+
