@@ -10,15 +10,15 @@ function displayRatingValue() {
 }
 
 const thispwd = document.querySelector("#pwd");
-const thispwd2 = document.querySelector("pwd2");
-const message = document.querySelector("formmessage");
+const thispwd2 = document.querySelector("#pwd2");
+const message = document.querySelector("#formmessage");
 
-pwd2.addEventListener("focusout", checkSame);
+thispwd2.addEventListener("focusout", checkSame);
 
 function checkSame() {
     if (thispwd.value !== thispwd2.value) {
         message.textContent = "❗Passwords DO NOT MATCH";
-        message.style.visibility = "show";
+        message.style.visibility = "visible";
         thispwd2.style.backgroundColor = "#fff0f3";
         thispwd2.value = "";
         thispwd2.focus();
