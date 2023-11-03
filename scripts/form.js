@@ -36,8 +36,8 @@ const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$/;
 form.addEventListener("submit", function (event) {
     if (!emailRegex.test(emailInput.Value)) {
         event.preventDefault(); // Prevent form submission
-        message.textContent = "❗Please enter a valid BYUI email address";
-        message.style.visibility = "visible";
+        message.textContent = "❗Please enter a valid email address";
+        message.style.display = "block";
         emailInput.style.backgroundColor = "#fff0f3";
         emailInput.value = "";
         emailInput.focus();

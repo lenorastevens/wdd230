@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
-    <meta property="og:title" content="Lenora Stevens - WDD 230 - Web Frontend Development">
+    <meta property="og:title" content="Lenora Stevens - WDD 230">
     <meta property="og:type" content="website">
     <meta property="og:description"
         content="This is a form for the class home page by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
@@ -54,39 +54,42 @@
 
 
     <main>
+        <div class="form-container">
 
-        <form id="setup" method="get" action="record.html">
-            <fieldset>
-                <legend>User Setup</legend>
-                <div id="formmessage"></div>
-                <label class="top">Username:* <input type="text" id="username" name="username" required></label>
-                <label class="top">Password:* <input type="password" id="pwd" name="pwd" pattern=".{8,}"
-                        title="At least 8 or more alpha-numeric characters"
-                        placeholder="At least 8 or more alpha-numeric characters" required></label>
-                <label class="top">Password (repeat):* <input type="password" id="pwd2" name="pwd2" pattern=".{8,}"
-                        title="Please match passwords" placeholder="must match" required></label>
-                <label class="top">Email:* <input type="email" id="email" name="email"
-                        pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$"
-                        placeholder="Please enter a valid email address" required></label>
-                <label class="top">Page Rating<input type="range" id="r" name="r" min="1" max="10" step="1"
-                        list="rangevalues">
-                    <datalist id="rangevalues">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="0">6</option>
-                        <option value="1">7</option>
-                        <option value="2">8</option>
-                        <option value="3">9</option>
-                        <option value="4">10</option>
-                    </datalist>
-                </label>
-                <input type="submit" value="Complete Setup" name="submit" class="submitBtn">
-            </fieldset>
+            <form id="setup" method="get" action="record.html">
+                <fieldset>
+                    <legend>User Setup</legend>
+                    <div id="formmessage"></div>
+                    <label class="top">Username:* <input type="text" id="username" name="username"
+                            title="enter a user name" required></label>
+                    <label class="top">Password:* <input type="password" id="pwd" name="pwd" pattern=".{8,}"
+                            title="At least 8 or more alpha-numeric characters"
+                            placeholder="At least 8 or more alpha-numeric characters" required></label>
+                    <label class="top">Password (repeat):* <input type="password" id="pwd2" name="pwd2" pattern=".{8,}"
+                            title="Please match passwords" placeholder="re-type password" required></label>
+                    <label class="top">Email:* <input type="email" id="email" name="email"
+                            pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$"
+                            placeholder="Please enter a valid email address" required></label>
+                    <label class="top">Page Rating<input type="range" id="r" name="r" min="1" max="10" step="1"
+                            list="rangevalues">
+                        <datalist id="rangevalues">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="0">6</option>
+                            <option value="1">7</option>
+                            <option value="2">8</option>
+                            <option value="3">9</option>
+                            <option value="4">10</option>
+                        </datalist>
+                    </label>
+                    <input type="submit" value="Complete Setup" name="submit" class="submitBtn">
+                </fieldset>
 
-        </form>
+            </form>
+        </div>
     </main>
 
 
