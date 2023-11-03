@@ -10,11 +10,9 @@
     <title>Lenora Stevens - WDD 230 - Web Frontend Development</title>
     <meta name="author" content="Lenora Stevens">
     <meta name="description"
-        content="This is the course assignment portal created and maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
+        content="This is the user setup confirmation page maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/base-larger.css">
     <link rel="stylesheet" href="styles/form.css">
     <meta property="og:title" content="Lenora Stevens - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
@@ -41,37 +39,34 @@
         <!-- name heading -->
         <h1>Lenora Stevens</h1>
 
-        <!-- menu button for mobile screen -->
-        <div>
-            <button id="menu" title="Hamburger Menu"></button>
-        </div>
-
     </header>
 
     <nav>
         <!-- navigation menu html -->
-        <ul class="navigation">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a></li>
-            <li><a href="chamber/index.html" target="_blank">Chamber</a></li>
-            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/4?lang=eng&id=p28#p28"
-                    target="_blank">Scripture</a></li>
-        </ul>
+        <a href="index.html" class="">Home</a>
+        <a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a>
+        <a href="chamber/index.html" target="_blank">Chamber</a>
+        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/4?lang=eng&id=p28#p28"
+            target="_blank">Scripture</a>
+
     </nav>
 
 
     <main>
-        <form id="formmessage" method="get" action="record.html">
 
+        <form id="setup" method="get" action="record.html">
             <fieldset>
+                <div id="formmessage"></div>
                 <legend>User Setup</legend>
                 <label class="top">Username:* <input type="text" id="username" name="username" required></label>
                 <label class="top">Password:* <input type="password" id="pwd" name="pwd"
-                        title="At least 8 or more alpha-numeric characters" pattern=".{8,}" required></label>
-                <label class="top">Password (repeat):* <input type="password2" id="pwd2" name="pwd2" required></label>
+                        title="At least 8 or more alpha-numeric characters"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                <label class="top">Password (repeat):* <input type="password" id="pwd2" name="pwd2"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
                 <label class="top">Email:* <input type="email" id="email" name="email"
-                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid BYUI email address"
                         required></input></label>
                 <label class="top">Page Rating<input type="range" id="r" name="r" min="1" max="10" step="1"
                         list="rangevalues"></input>
@@ -88,30 +83,21 @@
                         <option value="4">10</option>
                     </datalist>
                 </label>
-                <input type="submit" value="Complete Setup" class="submitBtn">
-
+                <input type="submit" value="Complete Setup" name="submit" class="submitBtn">
             </fieldset>
 
-
         </form>
-
     </main>
 
 
     <!-- footer section -->
     <footer>
         <p id="copywright">&copy; <span id="year"></span> *|* Lenora Stevens *|* Texas</p>
-        <div>
-            <img id="flag" src="images/flag-extraSmall.webp" alt="Texas Flag" width="175" height="103">
-        </div>
         <p id="lastModified"></p>
-
     </footer>
 
     <!-- script section for dom manipulation -->
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/pageCounter.js"></script>
     <script src="scripts/form.js"></script>
 </body>
 
