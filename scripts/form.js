@@ -31,15 +31,22 @@ function checkSame() {
 
 const emailInput = document.querySelector("#email");
 const form = document.querySelector("#setup");
+const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$/;
 
 form.addEventListener("submit", function (event) {
-    if (!emailInput.checkValidity()) {
+    if (!emailRegex.test(emailInput.Value)) {
         event.preventDefault(); // Prevent form submission
         message.textContent = "❗Please enter a valid BYUI email address";
         message.style.visibility = "visible";
         emailInput.style.backgroundColor = "#fff0f3";
         emailInput.value = "";
         emailInput.focus();
-    }
+    } else
+        true;
 });
+
+// function validateEmail(email) {
+//     const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$/;
+//     return emailRegex.test(email);
+// }
 
