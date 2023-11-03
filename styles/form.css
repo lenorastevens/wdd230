@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Mooli', sans-serif;
-    font-size: 2.0vw;
+    font-size: 3.0vw;
     margin: 0 auto;
     padding: 0;
     color: #fdfffa;
@@ -28,6 +28,13 @@ h1 {
     align-self: center;
     justify-self: center;
 }
+
+#photo {
+    max-width: 100%;
+    height: auto;
+    float: right;
+}
+
 
 /* ------------ navigation ------------------- */
 
@@ -172,4 +179,12 @@ footer {
     background-color: rgb(63, 76, 96);
     padding: 2%;
     margin-top: 5%;
+}
+
+@media (min-width: 580px) {
+
+    /* body styles */
+    body {
+        font-size: 1.8vw;
+    }
 }
