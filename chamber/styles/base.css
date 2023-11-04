@@ -455,3 +455,12 @@ footer {
     justify-content: center;
     border-top: 3px ridge #547AA5;
 }
+
+footer a {
+    text-decoration: none;
+    color: #474044;
+}
+
+footer #classHome:before {
+    content: "🏠";
+}
