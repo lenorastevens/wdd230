@@ -446,22 +446,11 @@ table {
 
 
 /* -------- Join page sytles ------------ */
-/* body.join {
-    background-image: url('/chamber/images/downtown-large.webp');
-    background-color: rgba(40, 40, 48, 0.3);
-} */
-
 main.joinBack {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
     gap: 1%;
-}
-
-#contact,
-#business,
-#memLevel {
-    background-color: #3d3e4f;
 }
 
 #levels div {
@@ -480,6 +469,7 @@ form fieldset {
     margin: 1%;
     border: 2px ridge #547AA5;
     padding: .5rem 2%;
+    background-color: #3d3e4f;
 }
 
 #joinForm legend {
@@ -488,7 +478,7 @@ form fieldset {
     background-color: #f5f5f5;
     font-weight: bolder;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: 1%;
 }
 
 #joinForm label {
@@ -510,11 +500,20 @@ textarea {
     border: 2px ridge #547AA5;
 }
 
-.memLevel {
-    display: inline;
+#joinForm #memLevel label {
+    padding: 1%;
 }
 
-#joinForm input {
+#joinForm input[type="radio"] {
+    margin: 2%;
+}
+
+/* #joinForm input[type="radio"]:hover {
+    text-transform: uppercase;
+} */
+
+#joinForm #contact input,
+#joinForm #business input {
     width: 100%;
     padding: .75rem 0;
 }
@@ -524,6 +523,7 @@ textarea {
     width: 96%;
     padding: .75rem .75rem;
     margin: 2%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
 
