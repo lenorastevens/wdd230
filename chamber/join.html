@@ -56,6 +56,81 @@
     </nav>
 
     <main class="joinBack">
+        <div class="form">
+            <h2 class="head2D">Join the Chamber</h2>
+            <form id="joinForm" method="get" action="thankyou.html">
+
+                <fieldset id="contact">
+                    <legend>Contact Information</legend>
+                    <label class="contact">*First Name: <input type="text" id="fname" name="fname" required></label>
+                    <label class="contact">*Last Name: <input type="text" id="lname" name="lname" required></label>
+                    <label class="contact">*Title/Position: <input type="text" id="position" name="position"
+                            placeholder="ex of accepted input" required></label>
+                    <label class="contact">*Email: <input type="email" id="email" name="email"
+                            placeholder="ex email input" required></label>
+                    <label class="contact">*Mobile Number: <input type="telephone" id="mobile" name="mobile"
+                            placeholder="1235551234" required></label>
+                </fieldset>
+
+                <fieldset id="business">
+                    <legend>Business Information</legend>
+                    <label class="business">*Business/Organization Name: <input type="text" id="bname" name="bname"
+                            required></label>
+                    <label class="business">*Descripton of Business: <input type="text area" id="description"
+                            name="description" required></label>
+                </fieldset>
+
+                <fieldset id="memLevel">
+                    <legend class="memLevel">Membership Level</legend>
+                    <label class="memLevel">NP Membership<input type="radio" name="level" value="np"></label>
+                    <label class="memLevel"><input type="radio" name="level" value="bronze"> Bronze Membership</label>
+                    <label class="memLevel"><input type="radio" name="level" value="silver"> Silver Membership</label>
+                    <label class="memLevel"><input type="radio" name="level" value="gold"> Gold Membership</label>
+                </fieldset>
+
+                <input type="submit" value="Ready to Join" class="submitBtn">
+            </form>
+
+        </div>
+
+        <div class="benefits">
+            <h2 class="head2D">Membership Benefits</h2>
+            <div id="levels">
+                <div>
+                    <h3>Non Profit(NP)</h3>
+                    <p>events:</p>
+                    <p>training:</p>
+                    <p>advertising:</p>
+                    <p>discounts:</p>
+                </div>
+
+                <div>
+                    <h3>Bronze</h3>
+                    <p>events:</p>
+                    <p>training:</p>
+                    <p>advertising:</p>
+                    <p>discounts:</p>
+                </div>
+
+                <div>
+                    <h3>Silver</h3>
+                    <p>events:</p>
+                    <p>training:</p>
+                    <p>advertising:</p>
+                    <p>discounts:</p>
+                </div>
+                <div>
+                    <h3>Gold</h3>
+                    <p>events:</p>
+                    <p>training:</p>
+                    <p>advertising:</p>
+                    <p>discounts:</p>
+                </div>
+            </div>
+
+
+
+        </div>
 
 
     </main>

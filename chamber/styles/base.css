@@ -237,7 +237,9 @@ main {
 .card,
 .gallery,
 #popTable,
-#to-do {
+#to-do,
+.benefits,
+.form {
     border: 3px ridge #293132;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
@@ -444,9 +446,75 @@ table {
 
 
 /* -------- Join page sytles ------------ */
-body.join {
+/* body.join {
     background-image: url('/chamber/images/downtown-large.webp');
+    background-color: rgba(40, 40, 48, 0.3);
+} */
+
+main.joinBack {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 1%;
 }
+
+#contact,
+#business,
+#memLevel {
+    background-color: #3d3e4f;
+}
+
+#levels div {
+    border: 2px ridge #547AA5;
+    background-color: #474044;
+    color: #50d8d7;
+    margin: 2%;
+}
+
+#levels h3 {
+    color: #50d8d7;
+}
+
+form fieldset {
+    display: block;
+    margin: 1%;
+    border: 2px ridge #547AA5;
+    padding: .5rem 2%;
+}
+
+#joinForm legend {
+    color: #474044;
+    border: 2px ridge #547AA5;
+    background-color: #f5f5f5;
+    font-weight: bolder;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+#joinForm label {
+    display: block;
+    text-align: left;
+    padding-top: 1rem;
+    color: #50d8d7;
+    font-weight: bolder;
+}
+
+.memLevel {
+    display: inline;
+}
+
+#joinForm input {
+    width: 100%;
+    padding: .75rem 0;
+}
+
+#joinForm input.submitBtn {
+    font-weight: bolder;
+    width: 96%;
+    padding: .75rem .75rem;
+    margin: 2%;
+}
+
 
 
 /*--------- footer section styles --------*/
