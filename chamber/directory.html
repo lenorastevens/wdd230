@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta setting for Chamber index page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-32x32.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Austin Chamber of Commerce</title>
+    <meta name="author" content="Lenora Stevens">
+    <meta name="description"
+        content="This is the Chamber project created and maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Lenora Stevens - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lenorastevens.github.io/wdd230/chamber/images/downtownAustin.jpg">
+    <meta property="og:url" content="https://lenorastevens.github.io/wdd230/chamber">
+</head>
+
+<body>
+    <header id="top">
+        <div class="items">
+            <!-- header logo -->
+            <img id="logo" src="images/2019_ChamberLogo_Horizontal_Black.webp" alt="Austin Chamber Logo" width="200"
+                height="53">
+
+            <!-- index title -->
+            <h1 id="title">Austin Chamber of Commerce</h1>
+
+            <!-- dark mode button -->
+            <button id="darkMode" onclick="darkMode()">
+                <img id="modeImg" src="images/day-and-night.webp" alt="Dark Mode idcon" width="40" height="40">
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <!-- hamber button -->
+        <button id="menu" title="Hamburger Menu"></button>
+
+        <!-- nav labels -->
+        <ul class="navigation">
+            <li><a href="index.html" title="navHome" class="">Home</a></li>
+            <li><a href="discover.html" title="navDiscover" class="">Discover</a></li>
+            <li><a href="directory.html" title="navDirectory" class="active">Directory</a></li>
+            <li><a href="join.html" title="navJoin" class="">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Directory is Under Construction. Please come back!</h2>
+
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <p id="address" class="bottom">Austin Chamber<br>1234 Professional Street<br>Austin, TX 78739</p>
+        <p id="name" class="bottom">&copy; <span id="year"></span> *|* Lenora Stevens *|* WDD 230 Project</p>
+        <p id="maps" class="bottom"><a id="mapLink"
+                href="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62772.49809662241!2d-97.71571604968625!3d30.29020448749193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695871235594!5m2!1sen!2sus"
+                target="blank">Location Map</a></p>
+        <p id="contact" class="bottom">Contact Information<br>512-555-2121</p>
+        <p id="lastModified" class="bottom"></p>
+        <a id="classHome" href="../index.html">Class Home Page</a>
+
+    </footer>
+
+
+    <!-- script sources for dom manipulation -->
+    <!-- <script src="scripts/getdates.js"></script> -->
+    <script src="scripts/pageCounter.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>

@@ -39,4 +39,8 @@ function darkMode() {
         }
     });
 
+    //a classHome link
+    const darkA = document.querySelector("#classHome");
+    darkA.classList.toggle("darkHF");
+
 }

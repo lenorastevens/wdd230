@@ -32,7 +32,8 @@ body {
     color: #50d8d7;
 }
 
-.darkHF #maps a {
+.darkHF #maps a,
+.darkHF #classHome a {
     color: #50d8d7;
 }
 
