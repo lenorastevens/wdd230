@@ -1,16 +1,16 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    const rangeValue = document.getElementById("rangevalue");
+    let rangeValue = document.getElementById("rangevalue");
     const range = document.getElementById("r");
 
-    range.addEventListener("input", displayRatingValue);
+
     range.addEventListener("change", displayRatingValue);
-
-
+    range.addEventListener("input", displayRatingValue);
 
     function displayRatingValue() {
         rangeValue.innerHTML = range.value;
     }
+
 
     const thispwd = document.querySelector("#pwd");
     const thispwd2 = document.querySelector("#pwd2");
