@@ -59,18 +59,19 @@
         <div class="form">
             <h2 class="head2D">Join the Chamber</h2>
             <form id="joinForm" method="get" action="thankyou.html">
-                <div id="formmessage"></div>
+                <!-- <div id="formmessage"></div> -->
                 <fieldset id="contact">
                     <legend>Contact Information</legend>
                     <label class="contact">*First Name: <input type="text" id="fname" name="fname" required
-                            pattern="[A-Za-z]*"></label>
+                            pattern="[A-Za-z]*" title="letters only" autofocus></label>
                     <label class="contact">*Last Name: <input type="text" id="lname" name="lname" required
-                            pattern="[A-Za-z]*"></label>
+                            pattern="[A-Za-z]*" title="letters only" /></label>
                     <label class="contact">Title/Position: <input type="text" id="position" name="position"
-                            placeholder="ex of accepted input"></label>
+                            pattern="[A-Za-z\s-]{7,}"></label>
                     <label class="contact">*Email: <input type="email" id="email" name="email"
-                            placeholder="ex email input" required></label>
-                    <label class="contact">*Mobile Number: <input type="tel" id="mobile" name="mobile" required></label>
+                            pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="abc12345@byui.edu" required></label>
+                    <label class="contact">*Mobile Number: <input type="tel" id="mobile" name="mobile" pattern="^\d{10}"
+                            required></label>
                 </fieldset>
 
                 <fieldset id="business">
@@ -78,7 +79,7 @@
                     <label class="business">*Business/Organization Name: <input type="text" id="bname" name="bname"
                             required></label>
                     <label class="business">Descripton of Business: <textarea id="description" name="description"
-                            rows="3"></textarea></label>
+                            pattern="[a-zA-Z0-9._%+-]" rows="3"></textarea></label>
                 </fieldset>
 
                 <fieldset id="memLevel">
@@ -151,10 +152,9 @@
 
 
     <!-- script sources for dom manipulation -->
-    <!-- <script src="scripts/getdates.js"></script> -->
+    <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/form.js"></script>
 
 </body>
 

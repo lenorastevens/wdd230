@@ -508,10 +508,6 @@ textarea {
     margin: 2%;
 }
 
-/* #joinForm input[type="radio"]:hover {
-    text-transform: uppercase;
-} */
-
 #joinForm #contact input,
 #joinForm #business input {
     width: 100%;
@@ -526,6 +522,38 @@ textarea {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
+#formmessage {
+    display: none;
+    margin: 10px;
+    padding: 0.5rem;
+    color: rgb(105, 2, 2);
+}
+
+form label input[type="email"]:valid {
+    border-left: rgb(0, 100, 0) solid 6px;
+}
+
+form label #position:invalid {
+    border-left: rgb(131, 0, 0) solid 6px;
+}
+
+
+form label.contact input:required,
+form label.business input:required {
+    border-left: rgb(131, 0, 0) solid 6px;
+}
+
+form label.business input:required:valid,
+form label.contact input:required:valid {
+    border-left: rgb(0, 100, 0) solid 6px;
+}
+
+/* ------- thankyou page styles  ------- */
+
+#thankyou {
+    width: 70%;
+    margin: auto;
+}
 
 
 /*--------- footer section styles --------*/
