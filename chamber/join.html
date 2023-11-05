@@ -60,21 +60,23 @@
             <h2 class="head2D">Join the Chamber</h2>
             <form id="joinForm" method="get" action="thankyou.html">
                 <fieldset id="contact">
-                    <legend>Contact Information</legend>
+                    <legend class="legend">Contact Information</legend>
                     <label class="contact">*First Name: <input type="text" id="fname" name="fname" required
                             pattern="[A-Za-z]*" title="letters only" autofocus></label>
                     <label class="contact">*Last Name: <input type="text" id="lname" name="lname" required
                             pattern="[A-Za-z]*" title="letters only"></label>
                     <label class="contact">Title/Position: <input type="text" id="position" name="position"
-                            pattern="^(?=(?:[^\s\-]*[\w \-]){7,})[^\s\-][\w \-]+[^\s\-]$"></label>
+                            pattern="^(?=(?:[^\s\-]*[\w \-]){7,})[^\s\-][\w \-]+[^\s\-]$"
+                            placeholder="7+ characters (alphanumeric, spaces, hypens)"
+                            title="7+ characters (alphanumeric, spaces, hypens)"></label>
                     <label class="contact">*Email: <input type="email" id="email" name="email"
                             pattern="^[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="abc12345@byui.edu" required></label>
                     <label class="contact">*Mobile Number: <input type="tel" id="mobile" name="mobile" pattern="^\d{10}"
-                            required></label>
+                            title="10 digits only" required></label>
                 </fieldset>
 
                 <fieldset id="business">
-                    <legend>Business Information</legend>
+                    <legend class="legend">Business Information</legend>
                     <label class="business">*Business/Organization Name: <input type="text" id="bname" name="bname"
                             required></label>
                     <label class="business">Descripton of Business: <textarea id="description" name="description"
@@ -82,7 +84,7 @@
                 </fieldset>
 
                 <fieldset id="memLevel">
-                    <legend>Membership Level</legend>
+                    <legend class="legend">Membership Level</legend>
                     <label class="memLevel"><input type="radio" id="np" name="level" value="np"> NP Membership</label>
                     <label class="memLevel"><input type="radio" id="bronze" name="level" value="bronze"> Bronze
                         Membership</label>
