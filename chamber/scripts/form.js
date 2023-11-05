@@ -1,4 +1,4 @@
-document.getElementById("joinFor").addEventListener("submit", function (event) {
+document.getElementById("joinForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the form from submitting by default
 
     // Get the current timestamp in milliseconds
