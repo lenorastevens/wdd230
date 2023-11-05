@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
+:root {
+    --main-primary: #3A4C64;
+    --main-secondary: rgb(78, 92, 85);
+    --main-accent1: #d4d1ce;
+    --main-accent2: rgb(105, 2, 2);
+    --main-accent3: rgb(0, 100, 0);
+}
+
+
 /* ---------Body--------- */
 * {
     box-sizing: border-box;
@@ -19,7 +28,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     padding: 2%;
-    background-color: #3A4C64;
+    background-color: var(--main-primary);
     align-items: center;
 }
 
@@ -38,7 +47,7 @@ h1 {
 /* ------------ navigation ------------------- */
 
 nav {
-    background-color: rgb(78, 92, 85);
+    background-color: var(--main-secondary);
     padding: 1%;
     list-style-type: none;
     display: grid;
@@ -76,7 +85,7 @@ main {
 
 
 form fieldset {
-    background-color: #d4d1ce;
+    background-color: var(--main-accent1);
     color: black;
     border: 2px solid black;
     border-radius: .5em;
@@ -145,11 +154,11 @@ input.submitBtn:hover {
 
 
 form label.top input:required {
-    border-left: rgb(131, 0, 0) solid 6px;
+    border-left: var(--main-accent2) solid 6px;
 }
 
 form label.top input:required:valid {
-    border-left: rgb(0, 100, 0) solid 6px;
+    border-left: var(--main-accent3) solid 6px;
 }
 
 input:focus,
