@@ -81,6 +81,11 @@
         width: 98%;
     }
 
+    .form,
+    .benefits {
+        align-self: stretch;
+    }
+
 
     /* footer styles */
     footer {

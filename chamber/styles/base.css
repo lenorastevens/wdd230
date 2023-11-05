@@ -32,6 +32,11 @@ body {
     color: #50d8d7;
 }
 
+.darkHF form legend {
+    background-color: #4F5165;
+    color: #50d8d7;
+}
+
 .darkHF #maps a,
 .darkHF #classHome a {
     color: #50d8d7;
@@ -45,7 +50,6 @@ body {
 #darkMode {
     display: inline-block;
     align-self: center;
-    /* margin: 0 20% 0 20%; */
     width: 50%;
     border: 2px ridge #293132;
     background-color: #50d8d7;
@@ -53,7 +57,7 @@ body {
 
 #modeImg {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
     padding: 0;
     margin: 0;
 }
@@ -251,7 +255,6 @@ main {
 div #downtown #city {
     width: 100%;
     height: auto;
-    /* max-width: 95%; */
     border-bottom: 3px ridge #293132;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
@@ -520,6 +523,10 @@ textarea {
     padding: .75rem .75rem;
     margin: 2%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+#joinForm input.submitBtn:hover::after {
+    content: "👏";
 }
 
 #formmessage {

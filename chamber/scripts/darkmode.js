@@ -5,12 +5,15 @@ function darkMode() {
     const darkT = document.querySelector(".items");
     const darkHT = document.querySelector("#title");
     const logoB = document.querySelector("#logo");
+    const darkA = document.querySelector("#classHome");
 
     //assign the variables to the right CSS style setting
     body.classList.toggle("dark-mode");
     darkT.classList.toggle("darkHF")
     darkHT.classList.toggle("darkHF");
     logoB.classList.toggle("logo-dark")
+    darkA.classList.toggle("darkHF");
+
 
     // all the H2 headers
     const darkH2 = document.querySelectorAll("h2.head2D");
@@ -39,8 +42,12 @@ function darkMode() {
         }
     });
 
-    //a classHome link
-    const darkA = document.querySelector("#classHome");
-    darkA.classList.toggle("darkHF");
+    // all form legend elements
+    const darkL = document.querySelectorAll("form legend");
+    darkL.forEach(element => {
+        element.classList.toggle("darkHF");
+    })
+
+
 
 }
