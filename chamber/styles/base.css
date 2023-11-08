@@ -32,11 +32,6 @@ body {
     color: #50d8d7;
 }
 
-.darkHF form legend {
-    background-color: #4F5165;
-    color: #50d8d7;
-}
-
 .darkHF #maps a,
 .darkHF #classHome a {
     color: #50d8d7;
@@ -475,10 +470,10 @@ form fieldset {
     background-color: #3d3e4f;
 }
 
-#joinForm legend {
-    color: #474044;
+.legend {
+    color: #50d8d7;
     border: 2px ridge #547AA5;
-    background-color: #f5f5f5;
+    background-color: #474044;
     font-weight: bolder;
     margin: 0 1rem;
     padding: 1%;

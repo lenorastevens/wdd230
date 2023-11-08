@@ -42,12 +42,5 @@ function darkMode() {
         }
     });
 
-    // all form legend elements
-    const darkL = document.querySelectorAll("form legend");
-    darkL.forEach(element => {
-        element.classList.toggle("darkHF");
-    })
-
-
 
 }
