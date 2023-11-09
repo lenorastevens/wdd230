@@ -83,11 +83,11 @@
             "links": [
                 {
                     "url": "lesson07/lazyload.html",
-                    "title": "Lazy Loading"
+                    "title": "Lazy-Loading"
                 },
                 {
                     "url": "lesson07/bom.html",
-                    "title": "BOM Enhanced"
+                    "title": "BOM-Enhanced"
                 }
             ]
         },
@@ -96,7 +96,7 @@
             "links": [
                 {
                     "url": "lesson08/tablebuild.html",
-                    "title": "Table"
+                    "title": "HTML-Table"
                 },
                 {
                     "url": "form-start/index.html",

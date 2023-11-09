@@ -199,20 +199,19 @@ ul a:hover {
 
 #card1 ul {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 }
 
 #card2 h4 {
     padding: 1%;
 }
 
-.lessons {
+#lessons {
     text-align: left;
     margin-left: 1%;
 }
 
-.lesson {
+.lessons {
     display: flex;
     flex-direction: row;
     justify-content: left;
