@@ -1,0 +1,63 @@
+body {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header,
+main,
+footer {
+    margin: 1rem;
+    position: relative;
+}
+
+h1 {
+    color: rgb(79, 68, 127);
+    text-shadow: 0 0 15px #777;
+    /* width: 60%; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(79, 68, 127);
+    padding: 2%;
+    margin: 0;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    margin: 0.25rem;
+    padding: .35rem;
+    background-color: rgb(203, 198, 225);
+    border: 1px solid rgb(79, 68, 127);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section>p {
+    padding: 1%;
+    margin: 0;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    max-width: 60%;
+    box-shadow: 0 0 30px #777;
+    border: 1px solid rgb(79, 68, 127);
+}
+
+li>img {
+    width: auto;
+    height: auto;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
