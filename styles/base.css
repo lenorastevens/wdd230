@@ -178,8 +178,13 @@ h3 {
     font-weight: bolder;
 }
 
-div ul a {
+div li a {
     color: black;
+}
+
+li a:hover {
+    color: rgb(9, 8, 8);
+    text-shadow: 1px 1px rgb(96, 25, 25);
 }
 
 .card {
@@ -191,7 +196,7 @@ div ul a {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
-#card1 ul {
+#card1 li {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -211,10 +216,6 @@ div ul a {
     flex-direction: row;
     justify-content: left;
     padding: .5em;
-}
-
-.lesson li {
-    padding: .1em;
 }
 
 #info {

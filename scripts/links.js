@@ -29,7 +29,7 @@ const displayLinks = (lessons) => {
         container.insertBefore(card, container.firstChild);
 
         // ul list for lesson, set attributes and text content
-        let weeks = document.createElement('ul');
+        let weeks = document.createElement('li');
         weeks.textContent = `Week ${lesson.lesson}: `;
         weeks.setAttribute('id', `lesson${lesson.lesson}`);
         weeks.setAttribute('class', "lessons")

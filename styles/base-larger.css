@@ -50,18 +50,6 @@
         margin-right: 1%;
     }
 
-    .lessons {
-        padding: 0%;
-    }
-
-    section p {
-        padding: 1rem;
-    }
-
-    section ul {
-        padding: 1rem;
-    }
-
     /* map styles */
     #map {
         max-height: 400px;
