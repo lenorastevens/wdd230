@@ -9,7 +9,7 @@ async function getLinks() {
 }
 
 
-// create card and set attributes
+// create card and set attributes for section
 let card = document.createElement('section');
 card.setAttribute('id', "card1");
 card.setAttribute('class', "card");
@@ -21,6 +21,7 @@ cardTitle.textContent = "Learning Activities";
 // append header to card
 card.appendChild(cardTitle);
 
+// create an unordered list for lessons
 let weeks = document.createElement('ul');
 weeks.setAttribute('id', "lessons");
 
@@ -31,13 +32,13 @@ const displayLinks = (lessons) => {
         const container = document.getElementById('container');
         container.insertBefore(card, container.firstChild);
 
-        // li for lesson, set attributes and text content
+        // create li for lesson, set attributes and text content
         let week = document.createElement('li');
         week.textContent = `Week ${lesson.lesson}: `;
         week.setAttribute('id', `lesson${lesson.lesson}`);
         week.setAttribute('class', "lessons")
 
-        // loop through links list and create a element for each link
+        // loop through links list and create a element for each lesson link
         lesson.links.forEach((link) => {
             let lessonLink = document.createElement('a');
             lessonLink.setAttribute('id', link.title);
@@ -50,12 +51,13 @@ const displayLinks = (lessons) => {
             week.appendChild(lessonLink);
         });
 
+        // append week (with links) to weeks ul
         weeks.append(week);
-        // append week to card
-        ;
 
     });
-    card.appendChild(weeks)
+
+    // append weeks to card
+    card.appendChild(weeks);
 }
 
 getLinks();
