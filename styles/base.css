@@ -186,10 +186,15 @@ div ul a {
     margin-bottom: 2rem;
     background-color: #d4d1ce;
     color: black;
-    /* text-shadow: 1px 1px #fdfffa; */
     border: 2px solid black;
     border-radius: .5em;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+#card1 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #card2 h4 {
@@ -198,8 +203,7 @@ div ul a {
 
 #lessons {
     text-align: left;
-    margin-left: 5%;
-    list-style: numeric;
+    margin-left: 1%;
 }
 
 .lesson {
