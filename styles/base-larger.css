@@ -45,16 +45,13 @@
         font-size: 1.8vw;
     }
 
-    .card {
-        margin: 1rem;
-    }
-
     .container #card1 {
-        flex-grow: 3;
+        flex-grow: 2;
+        margin-right: 1%;
     }
 
-    #lessons {
-        margin-left: 4%;
+    .lessons {
+        padding: 0%;
     }
 
     section p {

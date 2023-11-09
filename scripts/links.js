@@ -24,10 +24,15 @@ card.appendChild(cardTitle);
 // loop through json data and create ul list for lessons
 const displayLinks = (lessons) => {
     lessons.forEach((lesson) => {
+        // get container and declare insert order
+        const container = document.getElementById('container');
+        container.insertBefore(card, container.firstChild);
+
         // ul list for lesson, set attributes and text content
         let weeks = document.createElement('ul');
         weeks.textContent = `Week ${lesson.lesson}: `;
-        weeks.setAttribute('id', "lessons");
+        weeks.setAttribute('id', `lesson${lesson.lesson}`);
+        weeks.setAttribute('class', "lessons")
 
         // loop through links list and create a element for each link
         lesson.links.forEach((link) => {
@@ -43,9 +48,6 @@ const displayLinks = (lessons) => {
 
         // append week to card
         card.appendChild(weeks);
-
-        // append card to container in html
-        container.appendChild(card);
 
     });
 
