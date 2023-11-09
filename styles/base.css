@@ -176,6 +176,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     font-weight: bolder;
+    font-size: 13px;
 }
 
 div ul a {
@@ -243,6 +244,7 @@ footer {
     padding: 3%;
     align-items: center;
     justify-items: center;
+    font-size: 12px;
 }
 
 #copywright {
