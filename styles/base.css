@@ -11,7 +11,7 @@ content {
 
 body {
     font-family: 'Mooli', sans-serif;
-    font-size: 3.0vw;
+    font-size: 2.5vw;
     margin: 0;
     padding: 0;
     color: #fdfffa;
@@ -178,11 +178,11 @@ h3 {
     font-weight: bolder;
 }
 
-div li a {
+div ul a {
     color: black;
 }
 
-li a:hover {
+ul a:hover {
     color: rgb(9, 8, 8);
     text-shadow: 1px 1px rgb(96, 25, 25);
 }
@@ -196,7 +196,7 @@ li a:hover {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
-#card1 li {
+#card1 ul {
     display: flex;
     flex-direction: row;
     align-items: center;
