@@ -37,6 +37,7 @@ const displayLinks = (lessons) => {
         // loop through links list and create a element for each link
         lesson.links.forEach((link) => {
             let lessonLink = document.createElement('a');
+            lessonLink.setAttribute('id', link.title);
             lessonLink.setAttribute('class', 'lesson');
             lessonLink.setAttribute('href', link.url);
             lessonLink.setAttribute('target', "_blank");
