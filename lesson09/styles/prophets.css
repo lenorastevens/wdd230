@@ -1,13 +1,15 @@
 body {
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 header,
 main,
 footer {
-    margin: 1rem;
-    position: relative;
+    /* margin: 1rem; */
+    /* position: relative; */
+    margin: 0 auto;
 }
 
 h1 {
@@ -29,7 +31,7 @@ h2 {
 }
 
 section {
-    margin: 0.25rem;
+    margin: 0.75rem;
     padding: .35rem;
     background-color: rgb(203, 198, 225);
     border: 1px solid rgb(79, 68, 127);
@@ -47,13 +49,8 @@ img {
     width: 50%;
     height: auto;
     max-width: 60%;
-    box-shadow: 0 0 30px #777;
+    box-shadow: 0 0 20px #777;
     border: 1px solid rgb(79, 68, 127);
-}
-
-li>img {
-    width: auto;
-    height: auto;
 }
 
 footer {

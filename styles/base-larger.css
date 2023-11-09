@@ -1,6 +1,6 @@
 @media (min-width: 580px) {
 
-    /* body styles */
+    /*-------- body styles --------*/
     body {
         font-size: 1.8vw;
     }
@@ -20,7 +20,7 @@
     }
 
 
-    /* nav styles */
+    /*-------- nav styles --------*/
     .navigation {
         display: flex;
         flex-direction: row;
@@ -37,7 +37,7 @@
         padding: 1rem;
     }
 
-    /* main container styles */
+    /*-------- main container styles --------*/
     .container {
         display: flex;
         flex-direction: row;
@@ -50,7 +50,7 @@
         margin-right: 1%;
     }
 
-    /* map styles */
+    /*-------- map styles --------*/
     #map {
         max-height: 400px;
         width: 87%;
