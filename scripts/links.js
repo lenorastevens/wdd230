@@ -29,14 +29,14 @@ const displayLinks = (lessons) => {
         container.insertBefore(card, container.firstChild);
 
         // ul list for lesson, set attributes and text content
-        let weeks = document.createElement('li');
+        let weeks = document.createElement('ul');
         weeks.textContent = `Week ${lesson.lesson}: `;
         weeks.setAttribute('id', `lesson${lesson.lesson}`);
         weeks.setAttribute('class', "lessons")
 
         // loop through links list and create a element for each link
         lesson.links.forEach((link) => {
-            let lessonLink = document.createElement('a');
+            let lessonLink = document.createElement('li');
             lessonLink.setAttribute('id', link.title);
             lessonLink.setAttribute('class', 'lesson');
             lessonLink.setAttribute('href', link.url);
