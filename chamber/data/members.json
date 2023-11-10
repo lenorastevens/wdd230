@@ -1,18 +1,18 @@
 {
     "members": [
         {
-            "name": "Community Impact Newspaper",
+            "name": "Shop LC",
             "address": [
                 {
-                    "street": "16225 Impact Way",
-                    "suite": "Suite 1",
-                    "city": "Pflugerville",
+                    "street": "100 Michael Angelo Way",
+                    "suite": "Suite 200",
+                    "city": "Austin",
                     "state": "TX",
-                    "zipcode": "78660"
+                    "zipcode": "78728"
                 }
             ],
-            "phoneNumber": "",
-            "url": "",
+            "phoneNumber": "(512) 852-7000",
+            "url": "https://www.shoplc.com/",
             "memLevel": "Non Profit",
             "icon": ""
         },
@@ -60,7 +60,7 @@
                 }
             ],
             "phoneNumber": "(512) 324-1902",
-            "url": "https://www.austinchamber.com/directory/ascension-seton",
+            "url": "https://healthcare.ascension.org/",
             "memLevel": "Silver",
             "icon": ""
         },

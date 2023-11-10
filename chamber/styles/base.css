@@ -233,6 +233,7 @@ main {
     grid-gap: .2%;
 }
 
+.dircard,
 .card,
 .gallery,
 #popTable,
@@ -549,6 +550,13 @@ form label.business input:required:valid,
 form label.contact input:required:valid {
     border-left: rgb(0, 100, 0) solid 6px;
 }
+
+/*-------  Directory Page styles  -------*/
+
+.dircard {
+    margin: 2%;
+}
+
 
 /* ------- thankyou page styles  ------- */
 

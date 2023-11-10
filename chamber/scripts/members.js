@@ -14,10 +14,16 @@ const displayMembers = (members) => {
     members.forEach((member) => {
         // Create elements to add to the div.cards element
         let card = document.createElement('section');
-        let busName = document.createElement('h2'); // fill in the blank
+        card.setAttribute('class', 'dircard');
+        let busName = document.createElement('h3');
+        busName.setAttribute('class', 'head3D');
+
         // let icon = document.createElement('img');
         let phoneNum = document.createElement('p');
         let memLevel = document.createElement('p');
+        let website = document.createElement('a');
+        website.setAttribute('href', member.url);
+        website.setAttribute('target', "_blank");
 
         // Build the h2 content out to show the prophet's full name
         busName.textContent = `${member.name}`; // fill in the blank
@@ -25,6 +31,7 @@ const displayMembers = (members) => {
         // building p elements
         phoneNum.textContent = `${member.phoneNumber}`;
         memLevel.textContent = `Member Level: ${member.memLevel}`;
+        website.textContent = `${member.url}`;
         // Build the image portrait by setting all the relevant attributes
         // portrait.setAttribute('src', prophet.imageurl);
         // portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); // fill in the blank
@@ -36,6 +43,7 @@ const displayMembers = (members) => {
         card.appendChild(busName); //fill in the blank
         card.appendChild(phoneNum);
         card.appendChild(memLevel);
+        card.appendChild(website);
         // card.appendChild(portrait);
 
         cards.appendChild(card);
