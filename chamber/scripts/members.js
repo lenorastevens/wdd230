@@ -16,7 +16,6 @@ const displayMembers = (members) => {
         let card = document.createElement('section');
         card.setAttribute('class', 'dircard');
         let busName = document.createElement('h3');
-        busName.setAttribute('class', 'head3D');
 
         // let icon = document.createElement('img');
         let phoneNum = document.createElement('p');
@@ -28,23 +27,39 @@ const displayMembers = (members) => {
         // Build the h3 content out to show the business name
         busName.textContent = `${member.name}`;
 
+
+        // loop through to address to make address line
+        let street = document.createElement('p');
+        let suite = document.createElement('p');
+        let city = document.createElement('p');
+        member.address.forEach((part) => {
+            street.innerHTML = `${part.street}`;
+            suite.innerHTML = `${part.suite}`;
+            city.innerHTML = `${part.city} ${part.state} ${part.zipcode}`;
+        });
+
         // building p elements
         phoneNum.textContent = `${member.phoneNumber}`;
         memLevel.textContent = `Member Level: ${member.memLevel}`;
         website.textContent = `${member.url}`;
+
         // Build the image portrait by setting all the relevant attributes
-        // portrait.setAttribute('src', prophet.imageurl);
-        // portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); // fill in the blank
-        // portrait.setAttribute('loading', 'lazy');
-        // portrait.setAttribute('width', '340');
-        // portrait.setAttribute('height', '440');
+        // icon.setAttribute('src', );
+        // icon.setAttribute('alt', ``); 
+        // icon.setAttribute('loading', 'lazy');
+        // icon.setAttribute('width', '340');
+        // icon.setAttribute('height', '440');
 
         // Append the section(card) with the created elements
-        card.appendChild(busName); //fill in the blank
+        card.appendChild(busName);
+        card.appendChild(street);
+        card.appendChild(suite);
+        card.appendChild(city);
         card.appendChild(phoneNum);
-        card.appendChild(memLevel);
         card.appendChild(website);
-        // card.appendChild(portrait);
+        card.appendChild(memLevel);
+
+        // card.appendChild(icon);
 
         cards.appendChild(card);
     });
