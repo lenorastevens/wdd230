@@ -1,0 +1,132 @@
+{
+    "members": [
+        {
+            "name": "Community Impact Newspaper",
+            "address": [
+                {
+                    "street": "16225 Impact Way",
+                    "suite": "Suite 1",
+                    "city": "Pflugerville",
+                    "state": "TX",
+                    "zipcode": "78660"
+                }
+            ],
+            "phoneNumber": "",
+            "url": "",
+            "memLevel": "Non Profit",
+            "icon": ""
+        },
+        {
+            "name": "Invoice Home",
+            "address": [
+                {
+                    "street": "600 Congress Ave.",
+                    "suite": "Floor 14",
+                    "city": "Austin",
+                    "state": "TX",
+                    "zipcode": "78701"
+                }
+            ],
+            "phoneNumber": "(512) 333-2264",
+            "url": "https://invoicehome.com/",
+            "memLevel": "Gold",
+            "icon": ""
+        },
+        {
+            "name": "ICode",
+            "address": [
+                {
+                    "street": "4301 W William Cannon Dr",
+                    "suite": "Bldg. K Suite 200",
+                    "city": "Austin",
+                    "state": "TX",
+                    "zipcode": "78749"
+                }
+            ],
+            "phoneNumber": "(512) 301-3721",
+            "url": "https://icodeschool.com/austin113/",
+            "memLevel": "Bronze",
+            "icon": ""
+        },
+        {
+            "name": "Ascension Seton",
+            "address": [
+                {
+                    "street": "1345 Philomena Street",
+                    "suite": "Suite 402",
+                    "city": "Austin",
+                    "state": "TX",
+                    "zipcode": "78723"
+                }
+            ],
+            "phoneNumber": "(512) 324-1902",
+            "url": "https://www.austinchamber.com/directory/ascension-seton",
+            "memLevel": "Silver",
+            "icon": ""
+        },
+        {
+            "name": "Origis Services",
+            "address": [
+                {
+                    "street": "6500 River Pl Blvd",
+                    "suite": "Bldg. 2 Suite 102",
+                    "city": "Austin",
+                    "state": "TX",
+                    "zipcode": "78730"
+                }
+            ],
+            "phoneNumber": "(512) 287-7424",
+            "url": "https://origisservices.com/",
+            "memLevel": "Gold",
+            "icon": ""
+        },
+        {
+            "name": "Vrbo",
+            "address": [
+                {
+                    "street": "1011 West 5th Street",
+                    "suite": "Suite 300",
+                    "city": "Austin",
+                    "state": "TX",
+                    "zipcode": "78703"
+                }
+            ],
+            "phoneNumber": "(512) 684-1100",
+            "url": "https://www.vrbo.com/",
+            "memLevel": "Silver",
+            "icon": ""
+        },
+        {
+            "name": "Bluebonnet Electric Cooperative",
+            "address": [
+                {
+                    "street": "155 Electric Avenue",
+                    "suite": "",
+                    "city": "Bastrop",
+                    "state": "TX",
+                    "zipcode": "78602"
+                }
+            ],
+            "phoneNumber": "(888) 622-2583",
+            "url": "https://www.bluebonnet.coop/",
+            "memLevel": "Non Profit",
+            "icon": ""
+        },
+        {
+            "name": "Spurs Sports & Entertainment",
+            "address": [
+                {
+                    "street": "1 AT&T Center Parkway",
+                    "suite": "",
+                    "city": "San Antonio",
+                    "state": "TX",
+                    "zipcode": "78219"
+                }
+            ],
+            "phoneNumber": "(210) 422-5002",
+            "url": "https://www.nba.com/spurs/",
+            "memLevel": "Bronze",
+            "icon": ""
+        }
+    ]
+}
