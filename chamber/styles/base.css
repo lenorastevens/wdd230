@@ -233,7 +233,6 @@ main {
     grid-gap: .2%;
 }
 
-.dircard,
 .card,
 .gallery,
 #popTable,
@@ -553,9 +552,28 @@ form label.contact input:required:valid {
 
 /*-------  Directory Page styles  -------*/
 
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
 .dircard {
     margin: 2%;
+    border: 3px ridge #293132;
+    padding-bottom: 2%;
+    color: #474044;
+    box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.6), 0 3px 12px 0 rgba(71, 64, 68, 0.6);
 }
+
+.dircard a {
+    color: #474044;
+}
+
+.dircard a:hover {
+    color: whitesmoke;
+    background-color: #547AA5;
+}
+
 
 
 /* ------- thankyou page styles  ------- */

@@ -25,8 +25,8 @@ const displayMembers = (members) => {
         website.setAttribute('href', member.url);
         website.setAttribute('target', "_blank");
 
-        // Build the h2 content out to show the prophet's full name
-        busName.textContent = `${member.name}`; // fill in the blank
+        // Build the h3 content out to show the business name
+        busName.textContent = `${member.name}`;
 
         // building p elements
         phoneNum.textContent = `${member.phoneNumber}`;
