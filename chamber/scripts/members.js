@@ -1,5 +1,5 @@
-const baseURL = "https://lenorastevens.github.io/wdd230/";
-const membersURL = "https://lenorastevens.github.io/wdd230/data/links.json";
+const baseURL = "https://lenorastevens.github.io/wdd230/chamber/directory.html";
+const membersURL = "https://lenorastevens.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector("#cards");
 
 
@@ -7,7 +7,7 @@ async function getMembers() {
     const response = await fetch(membersURL);
     const data = await response.json();
     console.log(data);
-    displayMemberss(data.members);
+    displayMembers(data.members);
 }
 
 const displayMembers = (members) => {
