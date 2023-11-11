@@ -562,12 +562,20 @@ form label.contact input:required:valid {
     padding: .3%;
 }
 
+#directory {
+    display: block;
+}
+
+#directory h2 {
+    margin-bottom: 0;
+}
+
 .dircard {
-    margin: 2%;
+    font-size: 14px;
     border: 3px ridge #293132;
-    padding-bottom: 2%;
+    padding: 2%;
     color: #474044;
-    background-color: rgb(205, 205, 205);
+    background-color: white;
     box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.5), 0 3px 12px 0 rgba(80, 216, 215, .5);
 }
 
@@ -590,31 +598,43 @@ form label.contact input:required:valid {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: .3%;
     align-items: center;
 }
 
-.grid section {
-    text-align: center;
-    align-self: center;
+.grid .dircard {
+    display: grid;
+    grid-template-rows: 2fr 20px 20px 30px 15px;
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+    min-height: 220px;
+    align-items: center;
+    justify-items: center;
 }
 
 .grid img {
-    border: 2px ridge #547AA5;
     background-color: white;
     box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.3), 0 3px 12px 0 rgba(80, 216, 215, .3);
-    max-height: 80px;
+    max-height: 60px;
     width: auto;
+    margin: 2%;
 }
 
 .grid section>* {
     margin: .1rem;
 }
 
+.grid section a {
+    letter-spacing: 1.1pt;
+}
+
 .grid section h3 {
     display: none;
 }
+
+/* .grid section p {
+    padding: 2%;
+} */
 
 .list {
     display: flex;
@@ -622,17 +642,25 @@ form label.contact input:required:valid {
 }
 
 .list section {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+
     margin: 0;
     padding: .25rem;
     width: 80%;
 }
 
+.list .dircard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-size: 12px;
+    text-align: left;
+    justify-items: left;
+    min-height: 40px;
+}
+
 .list section h3 {
     display: block;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .list section>* {
@@ -643,23 +671,13 @@ form label.contact input:required:valid {
     display: none;
 }
 
+.list section a {
+    letter-spacing: .1pt;
+}
+
 .list section:nth-child(even) {
     background-color: #50d8d7;
 }
-
-.direct h3 {
-    font-size: .8rem;
-}
-
-.direct {
-    font-weight: 600;
-    font-size: small;
-}
-
-section a {
-    font-size: .8rem;
-}
-
 
 
 /* ------- thankyou page styles  ------- */
@@ -673,7 +691,7 @@ section a {
 /*--------- footer section styles --------*/
 footer {
     font-weight: bold;
-    margin-top: 4%;
+    margin-top: 6%;
     background-color: #50d8d7;
     color: #474044;
     display: grid;
