@@ -552,9 +552,14 @@ form label.contact input:required:valid {
 
 /*-------  Directory Page styles  -------*/
 
-#cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+#grid,
+#list {
+    margin: 1rem auto;
+    border: 3px ridge #293132;
+    background-color: #4F5165;
+    color: #50d8d7;
+    text-align: center;
+    padding: .3%;
 }
 
 .dircard {
@@ -583,6 +588,57 @@ form label.contact input:required:valid {
         'opsz' 24
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1%;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.grid section>* {
+    margin: .1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: .25rem;
+}
+
+.list section h3 {
+    font-size: .7rem;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section:nth-child(even) {
+    background-color: #50d8d7;
+}
+
+section h3 {
+    font-size: .8rem;
+}
+
+section p {
+    font-weight: 600;
+    font-size: x-small;
+}
+
+section a {
+    font-size: .8rem;
+}
 
 
 

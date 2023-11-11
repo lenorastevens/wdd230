@@ -66,3 +66,21 @@ const displayMembers = (members) => {
 }
 
 getMembers();
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+listbutton.addEventListener("click", () => {
+    cards.classList.toggle("list");
+
+});
+
+gridbutton.addEventListener("click", () => {
+    cards.classList.remove("list");
+});
+
+
+// listbutton.addEventListener("click", () => {
+//     cards.classList.add("list");
+//     cards.classList.remove("grid");
+// });
