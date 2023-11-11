@@ -56,7 +56,7 @@ const displayMembers = (members) => {
 
         // Append the section(card) with the created elements
         card.appendChild(busName);
-        // card.appendChild(icon);
+        card.appendChild(icon);
         card.appendChild(street);
         card.appendChild(phoneNum);
         card.appendChild(website);
