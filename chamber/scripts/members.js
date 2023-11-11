@@ -23,11 +23,14 @@ const displayMembers = (members) => {
 
         // create image element
         let busIcon = document.createElement('img');
-        busIcon.setAttribute('src', member.icon);
-        busIcon.setAttribute('alt', ``);
         busIcon.setAttribute('loading', 'lazy');
-        busIcon.setAttribute('width', '100');
-        busIcon.setAttribute('height', '100');
+        member.icon.forEach((item) => {
+            busIcon.setAttribute('src', item.source);
+            busIcon.setAttribute('alt', item.altName);
+            busIcon.setAttribute('width', item.width);
+            busIcon.setAttribute('height', item.height);
+        });
+
 
         // loop through to address to make address line
         let street = document.createElement('p');
