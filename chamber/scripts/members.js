@@ -16,11 +16,15 @@ const displayMembers = (members) => {
         let card = document.createElement('section');
         card.setAttribute('class', 'dircard');
         let busName = document.createElement('h3');
+        busName.setAttribute('class', 'direct');
 
         // let icon = document.createElement('img');
         let phoneNum = document.createElement('p');
+        phoneNum.setAttribute('class', 'direct');
         let memLevel = document.createElement('p');
+        memLevel.setAttribute('class', 'direct');
         let website = document.createElement('a');
+        website.setAttribute('class', 'direct');
         website.setAttribute('href', member.url);
         website.setAttribute('target', "_blank");
 
@@ -30,8 +34,7 @@ const displayMembers = (members) => {
 
         // loop through to address to make address line
         let street = document.createElement('p');
-        let suite = document.createElement('p');
-        let city = document.createElement('p');
+        street.setAttribute('class', 'direct');
         member.address.forEach((part) => {
             street.innerHTML = `${part.street}, ${part.suite} ${part.city}, ${part.state} ${part.zipcode}`;
         });

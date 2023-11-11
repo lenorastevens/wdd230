@@ -631,11 +631,11 @@ form label.contact input:required:valid {
     background-color: #50d8d7;
 }
 
-section h3 {
+.direct h3 {
     font-size: .8rem;
 }
 
-section p {
+.direct {
     font-weight: 600;
     font-size: x-small;
 }
