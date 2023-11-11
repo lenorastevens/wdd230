@@ -14,7 +14,7 @@
             "phoneNumber": "(512) 852-7000",
             "url": "www.shoplc.com",
             "memLevel": "Non Profit",
-            "icon": ""
+            "icon": "https://lenorastevens.github.io/wdd230/chamber/images.shop-lc-logo.webp"
         },
         {
             "name": "Invoice Home",
@@ -30,7 +30,7 @@
             "phoneNumber": "(512) 333-2264",
             "url": "www.invoicehome.com",
             "memLevel": "Gold",
-            "icon": ""
+            "icon": "https://lenorastevens.github.io/wdd230/chamber/images/invoice-hom-logo.webp"
         },
         {
             "name": "ICode",

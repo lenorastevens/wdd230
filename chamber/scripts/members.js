@@ -22,11 +22,10 @@ const displayMembers = (members) => {
         busName.textContent = `${member.name}`;
 
         // create image element
-        // let icon = document.createElement('img');
-        // Build the image portrait by setting all the relevant attributes
-        // icon.setAttribute('src', );
-        // icon.setAttribute('alt', ``); 
-        // icon.setAttribute('loading', 'lazy');
+        let icon = document.createElement('img');
+        icon.setAttribute('src', icon.icon);
+        icon.setAttribute('alt', ``);
+        icon.setAttribute('loading', 'lazy');
         // icon.setAttribute('width', '340');
         // icon.setAttribute('height', '440');
 
