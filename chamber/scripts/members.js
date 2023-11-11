@@ -15,22 +15,20 @@ const displayMembers = (members) => {
         // Create elements to add to the div.cards element
         let card = document.createElement('section');
         card.setAttribute('class', 'dircard');
+
+        // creat business name header
         let busName = document.createElement('h3');
         busName.setAttribute('class', 'direct');
-
-        // let icon = document.createElement('img');
-        let phoneNum = document.createElement('p');
-        phoneNum.setAttribute('class', 'direct');
-        let memLevel = document.createElement('p');
-        memLevel.setAttribute('class', 'direct');
-        let website = document.createElement('a');
-        website.setAttribute('class', 'direct');
-        website.setAttribute('href', member.url);
-        website.setAttribute('target', "_blank");
-
-        // Build the h3 content out to show the business name
         busName.textContent = `${member.name}`;
 
+        // create image element
+        // let icon = document.createElement('img');
+        // Build the image portrait by setting all the relevant attributes
+        // icon.setAttribute('src', );
+        // icon.setAttribute('alt', ``); 
+        // icon.setAttribute('loading', 'lazy');
+        // icon.setAttribute('width', '340');
+        // icon.setAttribute('height', '440');
 
         // loop through to address to make address line
         let street = document.createElement('p');
@@ -39,26 +37,32 @@ const displayMembers = (members) => {
             street.innerHTML = `${part.street}, ${part.suite} ${part.city}, ${part.state} ${part.zipcode}`;
         });
 
-        // building p elements
+        // create phone number
+        let phoneNum = document.createElement('p');
+        phoneNum.setAttribute('class', 'direct');
         phoneNum.textContent = `${member.phoneNumber}`;
-        memLevel.textContent = `Member Level: ${member.memLevel}`;
+
+        // create website element
+        let website = document.createElement('a');
+        website.setAttribute('class', 'direct');
+        website.setAttribute('href', member.url);
+        website.setAttribute('target', "_blank");
         website.textContent = `${member.url}`;
 
-        // Build the image portrait by setting all the relevant attributes
-        // icon.setAttribute('src', );
-        // icon.setAttribute('alt', ``); 
-        // icon.setAttribute('loading', 'lazy');
-        // icon.setAttribute('width', '340');
-        // icon.setAttribute('height', '440');
+
+        // create member level
+        let memLevel = document.createElement('p');
+        memLevel.setAttribute('class', 'direct');
+        memLevel.textContent = `Member Level: ${member.memLevel}`;
 
         // Append the section(card) with the created elements
         card.appendChild(busName);
+        // card.appendChild(icon);
         card.appendChild(street);
         card.appendChild(phoneNum);
         card.appendChild(website);
         card.appendChild(memLevel);
 
-        // card.appendChild(icon);
 
         cards.appendChild(card);
     });
