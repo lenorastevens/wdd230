@@ -14,7 +14,14 @@
             "phoneNumber": "(512) 852-7000",
             "url": "www.shoplc.com",
             "memLevel": "Non Profit",
-            "icon": "images/shop-lc-logo.webp"
+            "icon": [
+                {
+                    "source": "images/shop-lc-logo.webp",
+                    "altName": "Shop LC Icon",
+                    "width": 100,
+                    "height": 100
+                }
+            ]
         },
         {
             "name": "Invoice Home",
@@ -30,7 +37,14 @@
             "phoneNumber": "(512) 333-2264",
             "url": "www.invoicehome.com",
             "memLevel": "Gold",
-            "icon": "images/invoice-home-logo.webp"
+            "icon": [
+                {
+                    "source": "images/invoice-home-logo.webp",
+                    "altName": "Invoice Home Logo",
+                    "width": 120,
+                    "height": 26
+                }
+            ]
         },
         {
             "name": "ICode",
@@ -46,7 +60,14 @@
             "phoneNumber": "(512) 301-3721",
             "url": "www.icodeschool.com",
             "memLevel": "Bronze",
-            "icon": ""
+            "icon": [
+                {
+                    "source": "images/icode-logo.webp",
+                    "altName": "ICode Logo",
+                    "width": 120,
+                    "height": 33
+                }
+            ]
         },
         {
             "name": "Ascension Seton",
@@ -62,7 +83,14 @@
             "phoneNumber": "(512) 324-1902",
             "url": "www.healthcare.ascension.org",
             "memLevel": "Silver",
-            "icon": ""
+            "icon": [
+                {
+                    "source": "images/seton-logo.webp",
+                    "altName": "Ascension Seton Logo",
+                    "width": 100,
+                    "height": 86
+                }
+            ]
         },
         {
             "name": "Origis Services",
@@ -78,7 +106,14 @@
             "phoneNumber": "(512) 287-7424",
             "url": "www.origisservices.com",
             "memLevel": "Gold",
-            "icon": ""
+            "icon": [
+                {
+                    "source": "images/origis-services-logo.webp",
+                    "altName": "Origis Services Logo",
+                    "width": 120,
+                    "height": 61
+                }
+            ]
         },
         {
             "name": "Vrbo",
@@ -94,7 +129,14 @@
             "phoneNumber": "(512) 684-1100",
             "url": "www.vrbo.com",
             "memLevel": "Silver",
-            "icon": ""
+            "icon": [
+                {
+                    "source": "images/vrbo-logo.webp",
+                    "altName": "Vrbo Logo",
+                    "width": 120,
+                    "height": 38
+                }
+            ]
         },
         {
             "name": "Bluebonnet Electric Cooperative",
@@ -110,7 +152,14 @@
             "phoneNumber": "(888) 622-2583",
             "url": "www.bluebonnet.coop",
             "memLevel": "Non Profit",
-            "icon": ""
+            "icon": [
+                {
+                    "source": "images/blubonnet-logo.webp",
+                    "altName": "Bluebonnet Electric Coop Logo",
+                    "width": 120,
+                    "height": 32
+                }
+            ]
         },
         {
             "name": "Spurs Sports & Entertainment",
@@ -126,7 +175,14 @@
             "phoneNumber": "(210) 422-5002",
             "url": "www.nba.com/spurs",
             "memLevel": "Bronze",
-            "icon": ""
+            "icon": [
+                {
+                    "source": "images/spurs-logo.webp",
+                    "altName": "Austin Spurs Logo",
+                    "width": 100,
+                    "height": 90
+                }
+            ]
         }
     ]
 }

@@ -22,12 +22,12 @@ const displayMembers = (members) => {
         busName.textContent = `${member.name}`;
 
         // create image element
-        let icon = document.createElement('img');
-        icon.setAttribute('src', icon.icon);
-        icon.setAttribute('alt', ``);
-        icon.setAttribute('loading', 'lazy');
-        // icon.setAttribute('width', '340');
-        // icon.setAttribute('height', '440');
+        let busIcon = document.createElement('img');
+        busIcon.setAttribute('src', member.icon);
+        busIcon.setAttribute('alt', ``);
+        busIcon.setAttribute('loading', 'lazy');
+        busIcon.setAttribute('width', '100');
+        busIcon.setAttribute('height', '100');
 
         // loop through to address to make address line
         let street = document.createElement('p');
@@ -56,7 +56,7 @@ const displayMembers = (members) => {
 
         // Append the section(card) with the created elements
         card.appendChild(busName);
-        card.appendChild(icon);
+        card.appendChild(busIcon);
         card.appendChild(street);
         card.appendChild(phoneNum);
         card.appendChild(website);
