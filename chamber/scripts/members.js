@@ -33,9 +33,7 @@ const displayMembers = (members) => {
         let suite = document.createElement('p');
         let city = document.createElement('p');
         member.address.forEach((part) => {
-            street.innerHTML = `${part.street}`;
-            suite.innerHTML = `${part.suite}`;
-            city.innerHTML = `${part.city} ${part.state} ${part.zipcode}`;
+            street.innerHTML = `${part.street}, ${part.suite} ${part.city}, ${part.state} ${part.zipcode}`;
         });
 
         // building p elements
@@ -53,8 +51,6 @@ const displayMembers = (members) => {
         // Append the section(card) with the created elements
         card.appendChild(busName);
         card.appendChild(street);
-        card.appendChild(suite);
-        card.appendChild(city);
         card.appendChild(phoneNum);
         card.appendChild(website);
         card.appendChild(memLevel);
@@ -70,17 +66,12 @@ getMembers();
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 
+cards.classList.add("grid");
+
 listbutton.addEventListener("click", () => {
     cards.classList.toggle("list");
-
 });
 
 gridbutton.addEventListener("click", () => {
     cards.classList.remove("list");
 });
-
-
-// listbutton.addEventListener("click", () => {
-//     cards.classList.add("list");
-//     cards.classList.remove("grid");
-// });

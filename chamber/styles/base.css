@@ -590,13 +590,15 @@ form label.contact input:required:valid {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1%;
     align-items: center;
 }
 
 .grid section {
     text-align: center;
+    min-height: 120px;
+    align-self: center;
 }
 
 .grid section>* {
@@ -609,10 +611,12 @@ form label.contact input:required:valid {
 }
 
 .list section {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     margin: 0;
     padding: .25rem;
+    width: 80%;
 }
 
 .list section h3 {

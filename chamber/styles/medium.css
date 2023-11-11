@@ -86,6 +86,13 @@
         align-self: stretch;
     }
 
+    /*--------Directory Styles --------*/
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        width: 95%;
+    }
+
 
     /* footer styles */
     footer {
