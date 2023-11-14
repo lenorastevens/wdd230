@@ -85,9 +85,16 @@
             <!-- info section -->
             <section id="card2" class="card">
                 <h3>Information</h3>
-                <h4>City: <span id="city">Austin, Texas</span></h4>
+                <h4>City:</h4>
+                <p>Austin, Texas</p>
 
-                <h4>Weather: <span id="weather"></span></h4>
+                <h4>Current Weather:</h4>
+                <!-- <p><span id="weather"></span></p> -->
+                <figure>
+                    <p>Temp: <span id="current-temp"></span></p>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="condition"></figcaption>
+                </figure>
 
                 <h4><span class="label">Visits to Page: </span><br><span class="visits"></span></h4>
             </section>
@@ -115,6 +122,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/pageCounter.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>

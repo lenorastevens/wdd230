@@ -221,6 +221,10 @@ ul a:hover {
     padding: 1%;
 }
 
+#condition {
+    text-transform: capitalize;
+}
+
 /*-------- map styles --------*/
 #map {
     display: block;
