@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-32x32.png">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>Austin Chamber Home</title>
+    <!-- <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> -->
+    <title>Austin Chamber of Commerce Home</title>
     <meta name="author" content="Lenora Stevens">
     <meta name="description"
         content="This is the Chamber project created and maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
@@ -43,7 +43,7 @@
     </header>
 
     <nav>
-        <!-- hamber button -->
+        <!-- hamberger button -->
         <button id="menu" title="Hamburger Menu"></button>
 
         <!-- nav labels -->
@@ -56,7 +56,7 @@
     </nav>
 
     <main>
-        <div class="optImage">
+        <!-- <div class="optImage">
             <picture>
                 <source srcset="images/wdd230-large.webp" media="(min-width: 960px)">
                 <source srcset="images/wdd230-medium.webp" media="(min-width: 560px)">
@@ -65,7 +65,8 @@
             <div class="sizelabel">
                 <p>Size: </p>
             </div>
-        </div>
+        </div> -->
+        <div id="event-banner"></div>
         <div class="container">
             <!-- biggest section of main container -->
             <section id="downtown" class="card">
@@ -167,6 +168,9 @@
             <!-- temp and info section of the main container -->
             <section id="weather" class="card">
                 <h3>Local Weather</h3>
+                <p>City: <span id="current-city"></span></p>
+                <p>Current Temp: <span id="current-temp"></span></p>
+                <p>Conditions: <span id="current-cond"></span></p>
                 <label>Temperature (°F): <input type="number" id="temp"></label><br>
                 <br>
                 <label>Wind Speed (mph): <input type="number" id="speed"></label><br>
@@ -201,6 +205,8 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/event.js"></script>
 
 </body>
 

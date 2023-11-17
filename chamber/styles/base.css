@@ -189,8 +189,20 @@ main {
     padding-bottom: 3%;
 }
 
+/* -------- Banner Message -------- */
+#event-banner {
+    display: none;
+    background-color: #4F5165;
+    color: #50d8d7;
+    border: 3px ridge #293132;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
 /*---------- temp image ----------*/
-.optImage {
+/* .optImage {
     position: relative;
     width: 100%;
 }
@@ -218,7 +230,7 @@ div .meeting {
 
 .sizelabel p::after {
     content: "Small";
-}
+} */
 
 /*---------- container grid main page ----------*/
 main {
@@ -342,6 +354,9 @@ input {
     border: 2px ridge #547AA5;
 }
 
+#current-cond {
+    text-transform: capitalize;
+}
 
 
 /*---------- main index page map styles ----------*/
