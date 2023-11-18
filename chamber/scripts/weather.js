@@ -1,8 +1,8 @@
 const currentTemp = document.querySelector('#current-temp');
 const captionDesc = document.querySelector('#current-cond');
-const city = document.querySelector('#current-city');
+const weatherIcon = document.querySelector('#weather-icon');
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=30.26&lon=-97.74&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
-const urlForecaset = `https://api.openweathermap.org/data/2.5/forecast?lat=30.26&lon=-97.74&cnt=24&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`
+const urlForecaset = `https://api.openweathermap.org/data/2.5/forecast?lat=30.26&lon=-97.74&cnt=28&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`
 
 async function apiFetch() {
     try {
@@ -23,8 +23,16 @@ apiFetch();
 
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
-    captionDesc.innerHTML = `${data.weather[0].description}`;
-    city.innerHTML = `${data.name}`
+
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+    let desc = data.weather[0].description;
+
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+
+    captionDesc.textContent = `${desc}`;
+
 }
 
 async function apiFetchForecast() {
@@ -46,6 +54,10 @@ apiFetchForecast();
 
 function displayForecastResults(dataForecast) {
     const forecastList = dataForecast.list;
+    const forecastContainer = document.getElementById('forecast-container');
+
+    const temperaturesByDay = {};
+    let isFirstDay = true;
 
     // Iterate through the list array
     forecastList.forEach((forecastItem) => {
@@ -53,17 +65,44 @@ function displayForecastResults(dataForecast) {
         const timestamp = forecastItem.dt;
         const date = new Date(timestamp * 1000); // Convert timestamp to Date object
         const day = date.toLocaleDateString('en-US', { weekday: 'long' }); // Get the day of the week
-        const minTemp = forecastItem.main.temp_min;
-        const maxTemp = forecastItem.main.temp_max;
-        const condition = forecastItem.weather[0].description;
 
-        // Display the information
-        console.log(`Day: ${day}`);
-        console.log(`Min Temp: ${minTemp}°C`);
-        console.log(`Max Temp: ${maxTemp}°C`);
-        console.log(`Condition: ${condition}`);
-        console.log('------------------');
+        if (isFirstDay) {
+            isFirstDay = false;
+            return; //skip first day
+        }
+
+        if (!temperaturesByDay[day]) {
+            temperaturesByDay[day] = {
+                minTemp: forecastItem.main.temp_min,
+                maxTemp: forecastItem.main.temp_max,
+                // icon: forecastItem.weather[0].icon,
+                // description: forecastItem.weather[0].description,
+            };
+        } else {
+            temperaturesByDay[day].minTemp = Math.min(temperaturesByDay[day].minTemp, forecastItem.main.temp_min);
+            temperaturesByDay[day].maxTemp = Math.min(temperaturesByDay[day].maxTemp, forecastItem.main.temp_max);
+        }
     });
+
+    let dayCount = 0;
+    for (const day in temperaturesByDay) {
+        if (dayCount >= 3) {
+            break;
+        }
+
+        const temperatures = temperaturesByDay[day];
+        const forecastDayElement = document.createElement('div');
+        forecastDayElement.classList.add('forcast-day');
+        forecastDayElement.innerHTML = `
+        <h4>${day}</h4>
+        <p>Min/Max:</p>
+        <p>${temperatures.minTemp}°F/${temperatures.maxTemp}°F</p>`
+
+
+        forecastContainer.appendChild(forecastDayElement);
+
+        dayCount++;
+    }
 }
 
 let joinBtn = document.getElementById('join');

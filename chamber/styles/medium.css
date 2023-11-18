@@ -43,6 +43,10 @@
         row-gap: 10px;
     }
 
+    #weather-divs {
+        display: grid;
+    }
+
 
     /* discovery page styles */
     #discovery {
