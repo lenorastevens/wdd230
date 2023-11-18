@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let currentDay = new Date().getDay();
-    let displayDays = [1, 2, 3, 6];
+    let displayDays = [1, 2, 3];
 
     if (displayDays.includes(currentDay)) {
         displayEventBanner();
