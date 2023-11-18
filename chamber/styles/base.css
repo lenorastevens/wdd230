@@ -389,6 +389,11 @@ input {
     text-transform: capitalize;
 }
 
+#weather-icon,
+#forecast-icon {
+    background-color: #547AA5;
+}
+
 /*---------- main index page map styles ----------*/
 #maps a {
     text-decoration: none;

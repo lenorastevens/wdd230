@@ -77,20 +77,23 @@ function displayForecastResults(dataForecast) {
 
     // dictionary for forecast days
     const temperaturesByDay = {}
-    // boolean to check if the forecast day is today
-    let isFirstDay = true;
+
+    // Get the current day index
+    const currentDayIndex = new Date().getDay();
 
     // Iterate through the list array
     forecastList.forEach((forecastItem) => {
         // Extract relevant information
         const timestamp = forecastItem.dt;
         const date = new Date(timestamp * 1000); // Convert timestamp to Date object
+        const dayIndex = date.getDay();
+
+        if (dayIndex === currentDayIndex) {
+            return; //if today, skip first day
+        }
+
         const day = date.toLocaleDateString('en-US', { weekday: 'long' }); // Get the day of the week
 
-        if (isFirstDay) {
-            isFirstDay = false;
-            return; //skip first day
-        }
 
         // parse the day data into the dictionary with day as the key
         if (!temperaturesByDay[day]) {
@@ -102,7 +105,7 @@ function displayForecastResults(dataForecast) {
             };
         } else { //the else checks the other min and max values for the day to make sure the lowest and highest are in the dictionary
             temperaturesByDay[day].minTemp = Math.min(temperaturesByDay[day].minTemp, forecastItem.main.temp_min);
-            temperaturesByDay[day].maxTemp = Math.min(temperaturesByDay[day].maxTemp, forecastItem.main.temp_max);
+            temperaturesByDay[day].maxTemp = Math.max(temperaturesByDay[day].maxTemp, forecastItem.main.temp_max);
         }
     });
 
@@ -124,7 +127,7 @@ function displayForecastResults(dataForecast) {
 
         // create day element
         let forecastName = document.createElement('h4');
-        forecastName.textContent = day;
+        forecastName.textContent = `${day}:`;
 
         // Min/max p element
         let minMax = document.createElement('p');
@@ -132,7 +135,7 @@ function displayForecastResults(dataForecast) {
 
         // create p element and value for min/max
         let temps = document.createElement('p');
-        temps.textContent = `${temperatures.minTemp}°F/${temperatures.maxTemp}°F`
+        temps.textContent = `${temperatures.minTemp.toFixed(0)}°F/${temperatures.maxTemp.toFixed(0)}°F`
 
         // create image element
         let forecastIcon = document.createElement('img');
