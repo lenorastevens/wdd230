@@ -1,6 +1,5 @@
 const currentTemp = document.querySelector('#current-temp');
-const captionDesc = document.querySelector('#current-cond');
-const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('.current-cond');
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=30.26&lon=-97.74&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
 const urlForecaset = `https://api.openweathermap.org/data/2.5/forecast?lat=30.26&lon=-97.74&cnt=28&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`
 
@@ -24,15 +23,18 @@ apiFetch();
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
 
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 
     let desc = data.weather[0].description;
 
+    let todayDiv = document.querySelector('#today');
+    let weatherIcon = document.createElement('img');
+    weatherIcon.setAttribute('id', 'weather-icon');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    todayDiv.insertBefore(weatherIcon, todayDiv.childNodes[todayDiv.childNodes.length - 2]);
 
     captionDesc.textContent = `${desc}`;
-
 }
 
 async function apiFetchForecast() {
@@ -75,8 +77,8 @@ function displayForecastResults(dataForecast) {
             temperaturesByDay[day] = {
                 minTemp: forecastItem.main.temp_min,
                 maxTemp: forecastItem.main.temp_max,
-                // icon: forecastItem.weather[0].icon,
-                // description: forecastItem.weather[0].description,
+                icon: forecastItem.weather[0].icon,
+                description: forecastItem.weather[0].description,
             };
         } else {
             temperaturesByDay[day].minTemp = Math.min(temperaturesByDay[day].minTemp, forecastItem.main.temp_min);
@@ -90,13 +92,18 @@ function displayForecastResults(dataForecast) {
             break;
         }
 
+
         const temperatures = temperaturesByDay[day];
         const forecastDayElement = document.createElement('div');
         forecastDayElement.classList.add('forcast-day');
+
+        const iconsrc = `https://openweathermap.org/img/wn/${temperatures.icon}.png`;
         forecastDayElement.innerHTML = `
-        <h4>${day}</h4>
+        <h4>${day}:</h4>
         <p>Min/Max:</p>
-        <p>${temperatures.minTemp}°F/${temperatures.maxTemp}°F</p>`
+        <p>${temperatures.minTemp}°F/${temperatures.maxTemp}°F</p>
+        <img id="forecast-icon" src="${iconsrc}" alt="Weather Icon">
+        <p class="current-cond">${temperatures.description}</p>`
 
 
         forecastContainer.appendChild(forecastDayElement);

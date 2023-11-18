@@ -374,7 +374,7 @@ input {
     border: 2px ridge #547AA5;
 }
 
-#current-cond {
+.current-cond {
     text-transform: capitalize;
 }
 
