@@ -259,6 +259,17 @@ main {
     margin-right: .5%;
 }
 
+#event-banner {
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -377,7 +388,6 @@ input {
 .current-cond {
     text-transform: capitalize;
 }
-
 
 /*---------- main index page map styles ----------*/
 #maps a {

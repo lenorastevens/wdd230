@@ -3,6 +3,7 @@ const captionDesc = document.querySelector('.current-cond');
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=30.26&lon=-97.74&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
 const urlForecaset = `https://api.openweathermap.org/data/2.5/forecast?lat=30.26&lon=-97.74&cnt=28&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`
 
+// fetch current weather API
 async function apiFetch() {
     try {
         const response = await fetch(url);
@@ -18,25 +19,37 @@ async function apiFetch() {
     }
 }
 
+// call fetch function
 apiFetch();
 
+// function to display result from current weather api
 function displayResults(data) {
+    // display current temp
     currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
 
+    // create url to get weather icon
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 
+    // variable for weather description
     let desc = data.weather[0].description;
 
+    // getting container for image icon
     let todayDiv = document.querySelector('#today');
+
+    // creating img element and setting attributes
     let weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('id', 'weather-icon');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+
+    // inserting image element before the last child element
     todayDiv.insertBefore(weatherIcon, todayDiv.childNodes[todayDiv.childNodes.length - 2]);
 
+    // creating content for conditions element
     captionDesc.textContent = `${desc}`;
 }
 
+// fetch for forecast API
 async function apiFetchForecast() {
     try {
         const response = await fetch(urlForecaset);
@@ -52,13 +65,19 @@ async function apiFetchForecast() {
     }
 }
 
+// calling forecast API
 apiFetchForecast();
 
+// function to process forecast API data
 function displayForecastResults(dataForecast) {
     const forecastList = dataForecast.list;
+
+    // container variable for data elements
     const forecastContainer = document.getElementById('forecast-container');
 
-    const temperaturesByDay = {};
+    // dictionary for forecast days
+    const temperaturesByDay = {}
+    // boolean to check if the forecast day is today
     let isFirstDay = true;
 
     // Iterate through the list array
@@ -73,6 +92,7 @@ function displayForecastResults(dataForecast) {
             return; //skip first day
         }
 
+        // parse the day data into the dictionary with day as the key
         if (!temperaturesByDay[day]) {
             temperaturesByDay[day] = {
                 minTemp: forecastItem.main.temp_min,
@@ -80,38 +100,68 @@ function displayForecastResults(dataForecast) {
                 icon: forecastItem.weather[0].icon,
                 description: forecastItem.weather[0].description,
             };
-        } else {
+        } else { //the else checks the other min and max values for the day to make sure the lowest and highest are in the dictionary
             temperaturesByDay[day].minTemp = Math.min(temperaturesByDay[day].minTemp, forecastItem.main.temp_min);
             temperaturesByDay[day].maxTemp = Math.min(temperaturesByDay[day].maxTemp, forecastItem.main.temp_max);
         }
     });
 
+    // I only want to display 3 forecast days, so this is the start of a day count
     let dayCount = 0;
     for (const day in temperaturesByDay) {
         if (dayCount >= 3) {
             break;
         }
 
-
-        const temperatures = temperaturesByDay[day];
+        //Iterate through the dictionary days to display data
+        const temperatures = temperaturesByDay[day];  //day variable
+        // create the div for the forecast data
         const forecastDayElement = document.createElement('div');
         forecastDayElement.classList.add('forcast-day');
 
+        // create icon url
         const iconsrc = `https://openweathermap.org/img/wn/${temperatures.icon}.png`;
-        forecastDayElement.innerHTML = `
-        <h4>${day}:</h4>
-        <p>Min/Max:</p>
-        <p>${temperatures.minTemp}°F/${temperatures.maxTemp}°F</p>
-        <img id="forecast-icon" src="${iconsrc}" alt="Weather Icon">
-        <p class="current-cond">${temperatures.description}</p>`
+
+        // create day element
+        let forecastName = document.createElement('h4');
+        forecastName.textContent = day;
+
+        // Min/max p element
+        let minMax = document.createElement('p');
+        minMax.textContent = 'Min/Max:';
+
+        // create p element and value for min/max
+        let temps = document.createElement('p');
+        temps.textContent = `${temperatures.minTemp}°F/${temperatures.maxTemp}°F`
+
+        // create image element
+        let forecastIcon = document.createElement('img');
+        forecastIcon.setAttribute('src', iconsrc);
+        forecastIcon.setAttribute('id', 'forecast-icon');
+        forecastIcon.setAttribute('alt', 'Weather-Icon');
+
+        // create conditions element
+        let forecastDesc = document.createElement('p');
+        forecastDesc.setAttribute('class', "current-cond");
+        forecastDesc.textContent = temperatures.description;
+
+        // append day elements to div container
+        forecastDayElement.append(forecastName);
+        forecastDayElement.append(minMax);
+        forecastDayElement.append(temps);
+        forecastDayElement.append(forecastIcon);
+        forecastDayElement.append(forecastDesc);
 
 
+        // append forecast day to container
         forecastContainer.appendChild(forecastDayElement);
 
+        // add a day to count
         dayCount++;
     }
 }
 
+// add link to join button
 let joinBtn = document.getElementById('join');
 joinBtn.addEventListener('click', function () {
     window.location.href = 'join.html';
