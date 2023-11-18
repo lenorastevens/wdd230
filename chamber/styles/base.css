@@ -391,7 +391,8 @@ input {
 
 #weather-icon,
 #forecast-icon {
-    background-color: #547AA5;
+    background-color: #50d8d7;
+    border: 2px ridge #547AA5;
 }
 
 /*---------- main index page map styles ----------*/
