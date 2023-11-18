@@ -200,6 +200,26 @@ main {
     margin-bottom: 1%;
 }
 
+.moving-words-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.moving-word {
+    display: inline-block;
+    margin-right: 30px;
+    animation: moveWords 5s linear infinite;
+}
+
+@keyframes moveWords {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 /*---------- temp image ----------*/
 /* .optImage {

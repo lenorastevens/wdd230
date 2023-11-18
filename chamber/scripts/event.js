@@ -10,6 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
 function displayEventBanner() {
     let eventBanner = document.getElementById('event-banner');
 
-    eventBanner.innerHTML = '<p>Chamber Meeting on Wednesday at 7:00 PM';
+    let bannerWords = ['Chamber Meeting', 'on Wednesday', 'at 7:00 PM'];
+
+    bannerWords.forEach(function (word) {
+        let pElement = document.createElement('p');
+        pElement.classList.add('moving-word');
+        pElement.textContent = word;
+        eventBanner.appendChild(pElement);
+    })
+
     eventBanner.style.display = 'block';
 }
