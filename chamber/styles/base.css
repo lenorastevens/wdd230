@@ -315,6 +315,10 @@ div #downtown #city {
     opacity: .85;
 }
 
+#join:hover {
+    transform: scale(1.2);
+}
+
 #duties div {
     background-color: #4F5165;
     border: 2px ridge #547AA5;
@@ -570,6 +574,10 @@ textarea {
 
 #joinForm input.submitBtn:hover::after {
     content: "👏";
+}
+
+#submitJoin:hover {
+    transform: scale(1.02, 1.02);
 }
 
 #formmessage {
