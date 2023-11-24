@@ -136,7 +136,7 @@ function displayForecastResults(dataForecast) {
         // minMax.textContent = 'Min/Max:';
 
         // create p element and value for min/max
-        let temps = document.createElement('p');
+        let temps = document.createElement('h5');
         temps.textContent = `${temperatures.minTemp.toFixed(0)}°F/${temperatures.maxTemp.toFixed(0)}°F`
 
         // create conditions element
