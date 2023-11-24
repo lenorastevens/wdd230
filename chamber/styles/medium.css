@@ -1,9 +1,9 @@
 @media only screen and (min-width: 35em) {
 
     /* body styles */
-    /* body {
-        font-size: 2.1vw;
-    } */
+    body {
+        font-size: 16px;
+    }
 
 
     /* header styles */

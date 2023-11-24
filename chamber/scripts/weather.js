@@ -40,7 +40,7 @@ function displayResults(data) {
     let weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('id', 'weather-icon');
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('alt', `Toaday Conditions ${desc}`);
     weatherIcon.setAttribute('width', "50");
     weatherIcon.setAttribute('height', "50");
 
@@ -132,29 +132,29 @@ function displayForecastResults(dataForecast) {
         forecastName.textContent = `${day}:`;
 
         // Min/max p element
-        let minMax = document.createElement('p');
-        minMax.textContent = 'Min/Max:';
+        // let minMax = document.createElement('p');
+        // minMax.textContent = 'Min/Max:';
 
         // create p element and value for min/max
         let temps = document.createElement('p');
         temps.textContent = `${temperatures.minTemp.toFixed(0)}°F/${temperatures.maxTemp.toFixed(0)}°F`
-
-        // create image element
-        let forecastIcon = document.createElement('img');
-        forecastIcon.setAttribute('src', iconsrc);
-        forecastIcon.setAttribute('id', 'forecast-icon');
-        forecastIcon.setAttribute('alt', 'Weather-Icon');
-        forecastIcon.setAttribute('width', "50");
-        forecastIcon.setAttribute('height', "50");
 
         // create conditions element
         let forecastDesc = document.createElement('p');
         forecastDesc.setAttribute('class', "current-cond");
         forecastDesc.textContent = temperatures.description;
 
+        // create image element
+        let forecastIcon = document.createElement('img');
+        forecastIcon.setAttribute('src', iconsrc);
+        forecastIcon.setAttribute('id', 'forecast-icon');
+        forecastIcon.setAttribute('alt', `${day} condition ${forecastDesc}`);
+        forecastIcon.setAttribute('width', "50");
+        forecastIcon.setAttribute('height', "50");
+
         // append day elements to div container
         forecastDayElement.append(forecastName);
-        forecastDayElement.append(minMax);
+        // forecastDayElement.append(minMax);
         forecastDayElement.append(temps);
         forecastDayElement.append(forecastIcon);
         forecastDayElement.append(forecastDesc);

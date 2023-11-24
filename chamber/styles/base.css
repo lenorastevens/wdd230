@@ -10,9 +10,10 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: "Arima", sans-serif;
-    text-decoration-color: #293132;
-    font-size: 15px;
+    /* text-shadow: .25px 0 0 #000, 0 -.25px 0 #000, 0 .25px 0 #000, -.25px 0 0 #000; */
+    font-size: 12px;
     background-color: #f5f5f5;
+    -webkit-text-stroke: 1px solid black;
 }
 
 #modeImg {
@@ -46,13 +47,14 @@ body {
 #darkMode {
     display: inline-block;
     align-self: center;
-    width: 50%;
+    text-align: center;
+    max-width: 40%;
     border: 2px ridge #293132;
     background-color: #50d8d7;
 }
 
 #modeImg {
-    max-width: 100%;
+    max-width: 40px;
     height: auto;
     padding: 0;
     margin: 0;
