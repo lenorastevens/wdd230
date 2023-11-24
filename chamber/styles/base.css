@@ -10,7 +10,8 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: "Arima", sans-serif;
-    font-size: 3.0vw;
+    text-decoration-color: #293132;
+    font-size: 15px;
     background-color: #f5f5f5;
 }
 

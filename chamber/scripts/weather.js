@@ -41,6 +41,8 @@ function displayResults(data) {
     weatherIcon.setAttribute('id', 'weather-icon');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('width', "50");
+    weatherIcon.setAttribute('height', "50");
 
     // inserting image element before the last child element
     todayDiv.insertBefore(weatherIcon, todayDiv.childNodes[todayDiv.childNodes.length - 2]);
@@ -142,6 +144,8 @@ function displayForecastResults(dataForecast) {
         forecastIcon.setAttribute('src', iconsrc);
         forecastIcon.setAttribute('id', 'forecast-icon');
         forecastIcon.setAttribute('alt', 'Weather-Icon');
+        forecastIcon.setAttribute('width', "50");
+        forecastIcon.setAttribute('height', "50");
 
         // create conditions element
         let forecastDesc = document.createElement('p');
