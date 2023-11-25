@@ -140,7 +140,7 @@ function displayForecastResults(dataForecast) {
         temps.textContent = `${temperatures.minTemp.toFixed(0)}°F/${temperatures.maxTemp.toFixed(0)}°F`
 
         // create conditions element
-        let forecastDesc = document.createElement('p');
+        let forecastDesc = document.createElement('h5');
         forecastDesc.setAttribute('class', "current-cond");
         forecastDesc.textContent = temperatures.description;
 

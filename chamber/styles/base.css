@@ -432,7 +432,8 @@ figure {
 .attractions h3,
 .attractions h4,
 .news h3,
-.news h4 {
+.news h4,
+.visitor {
     color: #50d8d7;
 }
 

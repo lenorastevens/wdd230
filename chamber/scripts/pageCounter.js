@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             daysElement.textContent = `You last visited ${daysDifference} days ago.`;
         }
+        console.log(daysElement);
     }
 
     localStorage.setItem("lastVisitDate", currentDate.toString());
