@@ -9,7 +9,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -57,7 +57,7 @@ async function apiFetchForecast() {
         const response = await fetch(urlForecaset);
         if (response.ok) {
             const dataForecast = await response.json();
-            console.log(dataForecast);
+            // console.log(dataForecast);
             displayForecastResults(dataForecast);
         } else {
             throw Error(await response.text());

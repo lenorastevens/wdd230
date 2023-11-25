@@ -9,7 +9,7 @@ async function apiFetchWind() {
         const response = await fetch(urlWind);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             calculateWindChill(data);
         } else {
             throw Error(await response.text());
