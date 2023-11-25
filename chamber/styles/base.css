@@ -29,7 +29,7 @@ body {
 }
 
 .darkHF {
-    background-color: #4F5165;
+    background-color: #2e2f47;
     color: #50d8d7;
 }
 
@@ -80,7 +80,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: #474044;
+    color: #383336;
     font-family: "Young Serif";
 }
 
@@ -104,12 +104,12 @@ ul {
 }
 
 nav {
-    background-color: #474044;
+    background-color: #383336;
 }
 
 #menu {
     border: 2px ridge #547AA5;
-    background-color: #4F5165;
+    background-color: #2e2f47;
     color: #50d8d7;
     font-size: .7rem;
     position: absolute;
@@ -194,7 +194,7 @@ main {
 /* -------- Banner Message -------- */
 #event-banner {
     display: none;
-    background-color: #4F5165;
+    background-color: #2e2f47;
     color: #50d8d7;
     border: 3px ridge #293132;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
@@ -292,7 +292,7 @@ div #downtown #city {
 }
 
 #duties div {
-    background-color: #4F5165;
+    background-color: #2E2F47;
     border: 2px ridge #547AA5;
     margin: 2%;
     color: #50d8d7;
@@ -346,7 +346,7 @@ div #downtown #city {
 
 /*-------- temperature section -------*/
 #weather {
-    background-color: #474044;
+    background-color: #383336;
     color: #50d8d7;
 }
 
@@ -357,7 +357,7 @@ div #downtown #city {
 
 input {
     background-color: #50d8d7;
-    color: #474044;
+    color: #383336;
     border: 2px ridge #547AA5;
 }
 
@@ -374,7 +374,7 @@ input {
 /*---------- main index page map styles ----------*/
 #maps a {
     text-decoration: none;
-    color: #474044;
+    color: #383336;
 }
 
 #maps::before {
@@ -414,7 +414,7 @@ figure {
 
 .attractions,
 .tracking {
-    background-color: #474044;
+    background-color: #383336;
 }
 
 .news {
@@ -461,7 +461,7 @@ th {
 table {
     border: 2px ridge #547AA5;
     border-collapse: collapse;
-    background-color: #4F5165;
+    background-color: #2e2f47;
     color: #50d8d7;
     padding: 1%;
 }
@@ -501,7 +501,7 @@ form fieldset {
 .legend {
     color: #50d8d7;
     border: 2px ridge #547AA5;
-    background-color: #474044;
+    background-color: #383336;
     font-weight: bolder;
     margin: 0 1rem;
     padding: 1%;
@@ -588,7 +588,7 @@ form label.contact input:required:valid {
 #list {
     margin: 1rem auto;
     border: 3px ridge #293132;
-    background-color: #4F5165;
+    background-color: #2e2f47;
     color: #50d8d7;
     text-align: center;
     padding: .3%;
@@ -602,13 +602,13 @@ form label.contact input:required:valid {
     font-size: 14px;
     border: 3px ridge #293132;
     padding: 2%;
-    color: #474044;
+    color: #383336;
     background-color: white;
     box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.5), 0 3px 12px 0 rgba(80, 216, 215, .5);
 }
 
 .dircard a {
-    color: #474044;
+    color: #383336;
 }
 
 .dircard a:hover {
@@ -705,7 +705,7 @@ footer {
     font-weight: bold;
     margin-top: 6%;
     background-color: #50d8d7;
-    color: #474044;
+    color: #383336;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -715,7 +715,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #474044;
+    color: #383336;
 }
 
 footer #classHome:before {
