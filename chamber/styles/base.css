@@ -583,8 +583,12 @@ form label.contact input:required:valid {
     margin-bottom: 0;
 }
 
+#phoneNum {
+    padding-top: 3%;
+}
+
 .dircard {
-    /* font-size: 14px; */
+    font-size: 14px;
     border: 3px ridge #293132;
     padding: 2%;
     color: #383336;

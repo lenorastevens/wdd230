@@ -36,12 +36,13 @@ const displayMembers = (members) => {
         let street = document.createElement('p');
         street.setAttribute('class', 'direct');
         member.address.forEach((part) => {
-            street.innerHTML = `${part.street}, ${part.suite} ${part.city}, ${part.state} ${part.zipcode}`;
+            street.innerHTML = `${part.street}, ${part.suite} <br>${part.city}, ${part.state} ${part.zipcode}`;
         });
 
         // create phone number
         let phoneNum = document.createElement('p');
         phoneNum.setAttribute('class', 'direct');
+        phoneNum.setAttribute('id', 'phoneNum')
         phoneNum.textContent = `${member.phoneNumber}`;
 
         // create website element
