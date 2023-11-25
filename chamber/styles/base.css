@@ -717,6 +717,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-top: 3px ridge #547AA5;
+    padding-bottom: 2%;
 }
 
 footer li {
