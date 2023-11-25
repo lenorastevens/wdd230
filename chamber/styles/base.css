@@ -9,8 +9,8 @@
 body {
     margin: 0 auto;
     text-align: center;
-    font-family: "Arima", sans-serif;
-    /* text-shadow: rgb(77, 69, 85) 1px 0 10px; */
+    /* font-family: "Arima", sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     background-color: #e3e1e1;
 }
@@ -82,7 +82,7 @@ h2,
 h3,
 h4 {
     color: #383336;
-    font-family: "Young Serif";
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -112,7 +112,7 @@ nav {
     border: 2px ridge #547AA5;
     background-color: #2e2f47;
     color: #50d8d7;
-    font-size: .7rem;
+    /* font-size: .7rem; */
     position: absolute;
     top: .5rem;
     right: .5rem;
@@ -323,7 +323,7 @@ div #downtown #city {
 /*------ events section ------*/
 #events {
     color: #50d8d7;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     padding: 1%;
 }
 
@@ -392,7 +392,7 @@ input {
 }
 
 figure {
-    font-weight: bolder;
+    /* font-weight: bolder; */
     margin: 0;
 }
 
@@ -487,7 +487,7 @@ form fieldset {
     color: #50d8d7;
     border: 2px ridge #547AA5;
     background-color: #383336;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     margin: 0 1rem;
     padding: 1%;
 }
@@ -497,7 +497,7 @@ form fieldset {
     text-align: left;
     padding-top: 1rem;
     color: #50d8d7;
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
 
 #joinForm textarea {
@@ -584,7 +584,7 @@ form label.contact input:required:valid {
 }
 
 .dircard {
-    font-size: 14px;
+    /* font-size: 14px; */
     border: 3px ridge #293132;
     padding: 2%;
     color: #383336;
@@ -648,7 +648,7 @@ form label.contact input:required:valid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    font-size: 12px;
+    /* font-size: 12px; */
     text-align: left;
     justify-items: left;
     min-height: 40px;
@@ -657,7 +657,7 @@ form label.contact input:required:valid {
 
 .list section h3 {
     display: block;
-    font-size: .8rem;
+    /* font-size: .8rem; */
 }
 
 .list section>* {
@@ -695,9 +695,8 @@ form label.contact input:required:valid {
     content: "👉  ";
 }
 
-#classHome a:hover,
 #maps a:hover {
-    color: #293132;
+    color: whitesmoke;
     background-color: #547AA5;
 }
 
@@ -708,7 +707,7 @@ form label.contact input:required:valid {
 
 /*--------- footer section styles --------*/
 footer {
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-top: 6%;
     background-color: #50d8d7;
     color: #383336;
