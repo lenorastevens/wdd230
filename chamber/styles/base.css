@@ -285,7 +285,7 @@ div #downtown #city {
     border: 2px ridge #547AA5;
     padding: .3rem;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
-    opacity: .80;
+    opacity: .75;
 }
 
 #join:hover {
