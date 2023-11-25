@@ -1,7 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap'); */
-
-
-/* ------ body styles ------------*/
+/* ---------- body styles ---------- */
 * {
     box-sizing: border-box;
 }
@@ -9,20 +6,13 @@
 body {
     margin: 0 auto;
     text-align: center;
-    /* font-family: "Arima", sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     background-color: #e3e1e1;
 }
 
-#modeImg {
-    width: 100%;
-    height: auto;
-}
 
-
-
-/*----------- dark mode styles -------------*/
+/* ---------- dark JS switch mode styles ---------- */
 .dark-mode {
     background-color: black;
     color: #50d8d7;
@@ -43,7 +33,8 @@ body {
     background-color: #50d8d7;
 }
 
-/*----------------- dark mode button styles ----------------*/
+
+/* ---------- dark mode button styles ---------- */
 #darkMode {
     display: inline-block;
     align-self: center;
@@ -58,14 +49,13 @@ body {
 }
 
 #modeImg {
+    width: 100%;
     max-width: 40px;
     height: auto;
-    padding: 0;
-    margin: 0;
 }
 
 
-/*------------------ header styles ------------------*/
+/* ---------- header styles ---------- */
 header div {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -90,8 +80,7 @@ h4 {
 }
 
 
-
-/*-------------- logo styles ----------------*/
+/* ---------- logo styles ---------- */
 #logo {
     max-width: 100%;
     height: auto;
@@ -100,8 +89,7 @@ h4 {
 }
 
 
-
-/*-------------- navigation menu styles -----------*/
+/* ---------- navigation menu styles ---------- */
 ul {
     list-style-type: none;
     padding: 0;
@@ -151,7 +139,7 @@ nav ul li {
 }
 
 
-/*------------ nav open styles -----------*/
+/* ---------- nav open styles ---------- */
 .open li {
     display: block;
     width: 100%;
@@ -168,7 +156,8 @@ ul a {
     font-size: larger;
 }
 
-/*--------------- nav hover --------------*/
+
+/* ---------- nav hover styles ---------- */
 ul a:hover {
     color: whitesmoke;
     background-color: #547AA5;
@@ -184,20 +173,9 @@ ul a:hover {
 
 
 
-/* -----------***main section styles***------------*/
+/* --------------- ***index section main styles*** ---------------*/
 
-
-/* -----city section styles----- */
-main {
-    display: block;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 3%;
-}
-
-/* -------- Banner Message -------- */
+/* -------- banner message on index -------- */
 #event-banner {
     display: none;
     background-color: #2e2f47;
@@ -206,6 +184,14 @@ main {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
     text-align: center;
     margin-bottom: 1%;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
 }
 
 .moving-words-container {
@@ -229,23 +215,20 @@ main {
     }
 }
 
-/*---------- container grid main page ----------*/
+
+/* ------- main styles ------- */
 main {
-    padding-bottom: 2%;
+    display: block;
+    align-items: center;
+    margin: auto;
     margin-left: .5%;
     margin-right: .5%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 3%;
 }
 
-#event-banner {
-    position: relative;
-}
-
-.close-button {
-    position: absolute;
-    top: 1%;
-    right: 1%;
-    cursor: pointer;
-}
+/* ------- container grid index page ------- */
 
 .container {
     display: grid;
@@ -264,7 +247,10 @@ main {
 }
 
 .card h4,
-#duties h3 {
+#duties h3,
+#events h4,
+#weather h3,
+.tracking h3 {
     color: #50d8d7;
 }
 
@@ -280,6 +266,15 @@ div #downtown #city {
     width: 100%;
 }
 
+#duties div {
+    background-color: #2E2F47;
+    border: 2px ridge #547AA5;
+    margin: 2%;
+    color: #50d8d7;
+}
+
+
+/* ------- join button ------- */
 #join {
     position: absolute;
     top: 5%;
@@ -297,45 +292,15 @@ div #downtown #city {
     transform: scale(1.2);
 }
 
-#duties div {
-    background-color: #2E2F47;
-    border: 2px ridge #547AA5;
-    margin: 2%;
-    color: #50d8d7;
-}
 
-
-/*------ highlights section ------*/
-#highlights {
-    color: #50d8d7;
-    padding: 1%;
-}
-
-#highlights #businesses {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-}
-
-#businesses div {
-    border: 2px ridge #547AA5;
-    background-color: #293132;
-    margin: 2%;
-}
-
-
-/*------ events section ------*/
+/* ------- highlights and events section -------*/
+#highlights,
 #events {
     color: #50d8d7;
-    /* font-weight: bolder; */
     padding: 1%;
 }
 
-#events h4 {
-    color: #50d8d7;
-}
-
+#highlights #businesses,
 #events #eventCard {
     display: grid;
     grid-template-columns: 1fr;
@@ -343,6 +308,7 @@ div #downtown #city {
     column-gap: 10px;
 }
 
+#businesses div,
 #eventCard div {
     border: 2px ridge #547AA5;
     background-color: #293132;
@@ -350,21 +316,10 @@ div #downtown #city {
 }
 
 
-/*-------- temperature section -------*/
+/* ------- weather section -------*/
 #weather {
     background-color: #383336;
     color: #50d8d7;
-}
-
-#weather h3,
-.tracking h3 {
-    color: #50d8d7;
-}
-
-input {
-    background-color: #50d8d7;
-    color: #383336;
-    border: 2px ridge #547AA5;
 }
 
 .current-cond {
@@ -378,7 +333,7 @@ input {
 }
 
 
-/*-----------*** discover page main container styles for ***---------*/
+/* --------------- *** discover page main container styles *** ---------------*/
 #discovery {
     display: grid;
     column-gap: 1%;
@@ -397,7 +352,7 @@ input {
 }
 
 figure {
-    /* font-weight: bolder; */
+    font-weight: bold;
     margin: 0;
 }
 
@@ -431,7 +386,7 @@ figure {
     display: grid;
 }
 
-/* ---------table styles ----------*/
+/* ------- table styles -------*/
 .population table {
     margin: 1%;
     width: 98%;
@@ -457,12 +412,135 @@ table {
 }
 
 
-/* -------- Join page sytles ------------ */
+/* --------------- *** Directory Page styles *** -------------- */
+
+#grid,
+#list {
+    margin: 1rem auto;
+    border: 3px ridge #293132;
+    background-color: #50d8d7;
+    text-align: center;
+    padding: .3%;
+}
+
+.switch img {
+    max-width: 45px;
+    height: auto;
+}
+
+#grid:hover,
+#list:hover {
+    box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.5), 0 3px 12px 0 rgba(80, 216, 215, .5);
+}
+
+#directory h2 {
+    margin-bottom: 0;
+}
+
+#addressLine {
+    padding-bottom: 4%;
+}
+
+#phoneNum {
+    padding: 4%;
+}
+
+.dircard {
+    font-size: 14px;
+    border: 3px ridge #293132;
+    padding: 2%;
+    color: #383336;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.5), 0 3px 12px 0 rgba(80, 216, 215, .5);
+}
+
+.dircard a {
+    color: #383336;
+}
+
+.dircard a:hover {
+    color: whitesmoke;
+    background-color: #547AA5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: .2%;
+    align-items: center;
+}
+
+.grid .dircard {
+    display: grid;
+    grid-template-rows: 1fr 20px 20px 30px 15px;
+    min-height: 220px;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid img {
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.3), 0 3px 12px 0 rgba(80, 216, 215, .3);
+    max-height: 60px;
+    width: auto;
+}
+
+.grid section a {
+    letter-spacing: 1.1pt;
+}
+
+.grid section h3 {
+    display: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list .dircard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: left;
+    justify-items: left;
+    min-height: 40px;
+    width: 80%;
+}
+
+.list section h3 {
+    display: block;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section a {
+    letter-spacing: .1pt;
+}
+
+.list section:nth-child(even) {
+    background-color: #50d8d7;
+}
+
+
+/* --------------- *** Join page sytles *** --------------- */
 main.joinBack {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
     gap: 1%;
+}
+
+input {
+    background-color: #50d8d7;
+    color: #383336;
+    border: 2px ridge #547AA5;
 }
 
 #levels div {
@@ -492,7 +570,6 @@ form fieldset {
     color: #50d8d7;
     border: 2px ridge #547AA5;
     background-color: #383336;
-    /* font-weight: bolder; */
     margin: 0 1rem;
     padding: 1%;
 }
@@ -502,7 +579,6 @@ form fieldset {
     text-align: left;
     padding-top: 1rem;
     color: #50d8d7;
-    /* font-weight: bolder; */
 }
 
 #joinForm textarea {
@@ -572,131 +648,8 @@ form label.contact input:required:valid {
     border-left: rgb(0, 100, 0) solid 6px;
 }
 
-/*-------  Directory Page styles  -------*/
 
-#grid,
-#list {
-    margin: 1rem auto;
-    border: 3px ridge #293132;
-    background-color: #50d8d7;
-    /* color: #50d8d7; */
-    text-align: center;
-    padding: .3%;
-}
-
-.switch img {
-    max-width: 45px;
-    height: auto;
-}
-
-#grid:hover,
-#list:hover {
-    box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.5), 0 3px 12px 0 rgba(80, 216, 215, .5);
-}
-
-#directory h2 {
-    margin-bottom: 0;
-}
-
-#phoneNum {
-    padding-top: 3%;
-}
-
-.dircard {
-    font-size: 14px;
-    border: 3px ridge #293132;
-    padding: 2%;
-    color: #383336;
-    background-color: white;
-    box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.5), 0 3px 12px 0 rgba(80, 216, 215, .5);
-}
-
-.dircard a {
-    color: #383336;
-}
-
-.dircard a:hover {
-    color: whitesmoke;
-    background-color: #547AA5;
-}
-
-/* .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-} */
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: .2%;
-    align-items: center;
-}
-
-.grid .dircard {
-    display: grid;
-    grid-template-rows: 1fr 20px 20px 30px 15px;
-    min-height: 220px;
-    align-items: center;
-    justify-items: center;
-}
-
-.grid img {
-    background-color: white;
-    box-shadow: 0 3px 6px 0 rgba(79, 81, 101, 0.3), 0 3px 12px 0 rgba(80, 216, 215, .3);
-    max-height: 60px;
-    width: auto;
-}
-
-.grid section a {
-    letter-spacing: 1.1pt;
-}
-
-.grid section h3 {
-    display: none;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
-}
-
-.list .dircard {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    /* font-size: 12px; */
-    text-align: left;
-    justify-items: left;
-    min-height: 40px;
-    width: 80%;
-}
-
-.list section h3 {
-    display: block;
-    /* font-size: .8rem; */
-}
-
-.list section>* {
-    margin: 0 1rem;
-}
-
-.list section img {
-    display: none;
-}
-
-.list section a {
-    letter-spacing: .1pt;
-}
-
-.list section:nth-child(even) {
-    background-color: #50d8d7;
-}
-
-
-/* ------- thankyou page styles  ------- */
+/* --------------- *** thankyou page styles *** -------------- */
 
 #thankyou {
     width: 70%;
@@ -704,29 +657,8 @@ form label.contact input:required:valid {
 }
 
 
-/*---------- main index page map styles ----------*/
-#maps a {
-    text-decoration: none;
-    color: #383336;
-}
-
-#mapLink::before {
-    content: "👉  ";
-}
-
-#maps a:hover {
-    color: whitesmoke;
-    background-color: #547AA5;
-}
-
-#classHome::before {
-    content: "🏠 ";
-}
-
-
-/*--------- footer section styles --------*/
+/* ---------- footer section styles ---------- */
 footer {
-    /* font-weight: bold; */
     margin-top: 6%;
     background-color: #50d8d7;
     color: #383336;
@@ -745,4 +677,8 @@ footer li {
 footer a {
     text-decoration: none;
     color: #383336;
+}
+
+#classHome::before {
+    content: "🏠 ";
 }

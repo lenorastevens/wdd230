@@ -1,6 +1,6 @@
 @media only screen and (min-width: 60em) {
 
-    /* body styles */
+    /* ------- body styles ------- */
     content {
         max-width: 1600px;
     }
@@ -10,12 +10,12 @@
     }
 
 
-    /* header styles */
+    /* ------- header styles ------- */
     header div {
         grid-template-columns: 1fr 5fr 1fr;
     }
 
-    /* main section styles */
+    /* ------- main section styles ------- */
 
     .sizelabel p::after {
         content: "Large";
@@ -59,7 +59,7 @@
         font-size: 1.7vw;
     }
 
-    /*  */
+    /* ------- Member Directory page ------- */
     .list .dircard {
         display: grid;
         grid-template-columns: 2fr 2fr 1fr 2fr 1fr;
@@ -70,7 +70,7 @@
         font-size: 15px;
     }
 
-    /* footer styles */
+    /* -------  footer styles ------- */
     footer {
         margin-top: 1%;
     }

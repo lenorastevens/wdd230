@@ -35,6 +35,7 @@ const displayMembers = (members) => {
         // loop through to address to make address line
         let street = document.createElement('p');
         street.setAttribute('class', 'direct');
+        street.setAttribute('id', 'addressLine');
         member.address.forEach((part) => {
             street.innerHTML = `${part.street}, ${part.suite} <br>${part.city}, ${part.state} ${part.zipcode}`;
         });
@@ -49,8 +50,9 @@ const displayMembers = (members) => {
         let website = document.createElement('a');
         website.setAttribute('class', 'direct');
         website.setAttribute('href', member.url);
+        website.setAttribute('id', 'website');
         website.setAttribute('target', "_blank");
-        website.textContent = `${member.url}`;
+        website.textContent = member.url;
 
 
         // create member level

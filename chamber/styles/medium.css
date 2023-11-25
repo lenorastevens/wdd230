@@ -1,18 +1,18 @@
 @media only screen and (min-width: 35em) {
 
-    /* body styles */
+    /* ---------- body styles ---------- */
     body {
         font-size: 16px;
     }
 
 
-    /* header styles */
+    /* ------- header styles ------- */
     header div {
         grid-template-columns: 1fr 4fr 1fr;
     }
 
 
-    /* navigation styles */
+    /* ------- navigation styles ------- */
     #menu {
         display: none;
     }
@@ -31,11 +31,7 @@
     }
 
 
-    /* main section styles */
-    .sizelabel p::after {
-        content: "Medium";
-    }
-
+    /* ------- main section styles ------- */
     .container {
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -48,7 +44,7 @@
     }
 
 
-    /* discovery page styles */
+    /* ------- discovery page styles ------- */
     #discovery {
         grid-template-columns: repeat(12, 1fr);
     }
@@ -76,21 +72,8 @@
         align-self: self-end;
     }
 
-    /*--------Join page styles --------*/
-    main.joinBack {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
-        justify-content: center;
-        width: 98%;
-    }
 
-    .form,
-    .benefits {
-        align-self: stretch;
-    }
-
-    /*--------Directory Styles --------*/
+    /* ------- Directory Styles ------- */
     .list .dircard {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -104,17 +87,26 @@
     }
 
 
-    /* footer styles */
+    /* ------- Join page styles ------- */
+    main.joinBack {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        justify-content: center;
+        width: 98%;
+    }
+
+    .form,
+    .benefits {
+        align-self: stretch;
+    }
+
+
+    /* ------- footer styles ------- */
     footer ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 1%;
-    }
-
-    #map {
-        max-width: 100px;
-        max-height: 60px;
-        justify-self: center;
     }
 
 }
