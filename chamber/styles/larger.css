@@ -12,7 +12,7 @@
 
     /* header styles */
     header div {
-        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
     }
 
     /* main section styles */
