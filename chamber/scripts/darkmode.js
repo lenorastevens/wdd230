@@ -32,7 +32,7 @@ function darkMode() {
     const darkF = document.querySelector("footer");
     darkF.classList.toggle("darkHF");
 
-    const darkP = document.querySelectorAll("footer p");
+    const darkP = document.querySelectorAll("footer li");
     darkP.forEach(element => {
         element.classList.toggle("darkHF");
 

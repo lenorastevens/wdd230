@@ -33,6 +33,7 @@ body {
     color: #50d8d7;
 }
 
+.darkHF li a,
 .darkHF #maps a,
 .darkHF #classHome a {
     color: #50d8d7;
@@ -371,23 +372,6 @@ input {
     border: 2px ridge #547AA5;
 }
 
-/*---------- main index page map styles ----------*/
-#maps a {
-    text-decoration: none;
-    color: #383336;
-}
-
-#maps::before {
-    content: "👉  ";
-}
-
-#classHome:hover,
-#maps a:hover {
-    color: #293132;
-    background-color: #547AA5;
-}
-
-
 
 /*-----------*** discover page main container styles for ***---------*/
 #discovery {
@@ -701,6 +685,27 @@ form label.contact input:required:valid {
 }
 
 
+/*---------- main index page map styles ----------*/
+#maps a {
+    text-decoration: none;
+    color: #383336;
+}
+
+#mapLink::before {
+    content: "👉  ";
+}
+
+#classHome a:hover,
+#maps a:hover {
+    color: #293132;
+    background-color: #547AA5;
+}
+
+#classHome::before {
+    content: "🏠 ";
+}
+
+
 /*--------- footer section styles --------*/
 footer {
     font-weight: bold;
@@ -714,11 +719,11 @@ footer {
     border-top: 3px ridge #547AA5;
 }
 
+footer li {
+    padding: 2%;
+}
+
 footer a {
     text-decoration: none;
     color: #383336;
-}
-
-footer #classHome:before {
-    content: "🏠";
 }

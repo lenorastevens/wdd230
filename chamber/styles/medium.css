@@ -100,7 +100,7 @@
 
 
     /* footer styles */
-    footer {
+    footer ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 1%;
