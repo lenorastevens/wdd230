@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap'); */
 
 body {
     margin: 0 auto;
@@ -6,6 +6,7 @@ body {
     text-align: center;
     font-size: 2.3vw;
     background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
@@ -18,7 +19,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Young Serif";
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2 {
@@ -44,7 +45,7 @@ header>h2 {
 }
 
 p {
-    font-family: "Arima";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 1em;
 }
 
@@ -78,22 +79,22 @@ main h4 {
 
 .primary {
     background-color: #50d8d7;
-    color: #474044;
+    color: #383336;
 }
 
 .secondary {
-    background-color: #474044;
-    color: whitesmoke;
+    background-color: #383336;
+    color: #50d8d7;
 }
 
 .accent1 {
     background-color: #293132;
-    color: whitesmoke;
+    color: #50d8d7;
 }
 
 .accent2 {
-    background-color: #4F5165;
-    color: whitesmoke;
+    background-color: #2e2f47;
+    color: #50d8d7;
 }
 
 .accent3 {
@@ -102,12 +103,12 @@ main h4 {
 }
 
 p.colored {
-    background-color: #4F5165;
+    background-color: #2e2f47;
     color: #50d8d7;
 }
 
 nav {
-    background-color: #474044;
+    background-color: #383336;
     line-height: 3em;
     text-align: center;
     font-size: 1.4em;
