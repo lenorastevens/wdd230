@@ -2,7 +2,7 @@ const baseURL = "https://lenorastevens.github.io/wdd230/chamber/directory.html";
 const membersURL = "https://lenorastevens.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector("#cards");
 
-
+// fecth members data
 async function getMembers() {
     const response = await fetch(membersURL);
     const data = await response.json();
@@ -73,8 +73,11 @@ const displayMembers = (members) => {
     });
 }
 
+// activate the fetch to get member data
 getMembers();
 
+
+// program buttons to be toggled between list and grid.  Grid is default.
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 
