@@ -2,26 +2,23 @@
 <html lang="en">
 
 <head>
-    <!-- Meta setting for Chamber index page -->
+    <!-------- Meta setting for Chamber Join page --------->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-    <!-- <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff"> -->
-    <title>Join Austin Chamber</title>
+    <title>Join Austin Chamber - Join The Team for Better Success</title>
     <meta name="author" content="Lenora Stevens">
     <meta name="description"
-        content="Join page for Austin Chamber maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
+        content="Join page for Austin Chamber project maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <meta property="og:title" content="Lenora Stevens - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://lenorastevens.github.io/wdd230/chamber/images/downtownAustin.jpg">
+    <meta property="og:image" content="https://lenorastevens.github.io/wdd230/chamber/images/downtown-medium.webp">
     <meta property="og:url" content="https://lenorastevens.github.io/wdd230/chamber">
 </head>
 
@@ -32,7 +29,7 @@
             <img id="logo" src="images/chamber-logo.webp" alt="Austin Chamber Logo" loading="lazy" width="150"
                 height="150">
 
-            <!-- index title -->
+            <!-- title -->
             <h1 id="title">Austin Chamber of Commerce</h1>
 
             <!-- dark mode button -->
@@ -56,9 +53,12 @@
     </nav>
 
     <main class="joinBack">
+        <!------- Fillable Join Form for Chamber  ------->
         <div class="form">
             <h2 class="head2D">Join the Chamber</h2>
+            <!-- loads thankyou html when submitted -->
             <form id="joinForm" method="get" action="thankyou.html">
+                <!-- first field set -->
                 <fieldset id="contact">
                     <legend class="legend">Contact Information</legend>
                     <label class="contact">*First Name: <input type="text" id="fname" name="fname" required
@@ -75,6 +75,7 @@
                             title="10 digits only" required></label>
                 </fieldset>
 
+                <!-- second fieldset -->
                 <fieldset id="business">
                     <legend class="legend">Business Information</legend>
                     <label class="business">*Business/Organization Name: <input type="text" id="bname" name="bname"
@@ -83,6 +84,7 @@
                             rows="2"></textarea></label>
                 </fieldset>
 
+                <!-- third fieldset -->
                 <fieldset id="memLevel">
                     <legend class="legend">Membership Level</legend>
                     <label class="memLevel"><input type="radio" id="np" name="level" value="np"> NP Membership</label>
@@ -94,13 +96,13 @@
                         Membership</label>
                 </fieldset>
 
+                <!-- submit button and hidden timestamp -->
                 <input type="submit" value="Ready to Join" id="submitJoin" class="submitBtn">
                 <input type="hidden" id="timestamp" name="timestamp">
-
             </form>
-
         </div>
 
+        <!------- Membership Levels Display Info  ------->
         <div class="benefits">
             <h2 class="head2D">Membership Benefits</h2>
             <div id="levels">
@@ -148,7 +150,7 @@
 
     </main>
 
-    <!-- footer section -->
+    <!------- footer section ------->
     <footer>
         <ul>
             <li id="address" class="bottom">Austin Chamber<br>1234 Professional Street<br>Austin, TX 78739</li>
@@ -161,7 +163,7 @@
     </footer>
 
 
-    <!-- script sources for dom manipulation -->
+    <!------- script sources for dom manipulation ------->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>

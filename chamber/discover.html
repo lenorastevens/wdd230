@@ -2,26 +2,23 @@
 <html lang="en">
 
 <head>
-    <!-- Meta setting for Chamber index page -->
+    <!-------- Meta setting for Chamber Discover page --------->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>Discover Austin Chamber</title>
+    <title>Discover Austin Chamber - Beautiful Central Texas</title>
     <meta name="author" content="Lenora Stevens">
     <meta name="description"
         content="Discover Austin Chamber maintained by Lenora Stevens for the WDD 230 - Web Frontend Development Course at BYUI.">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <meta property="og:title" content="Lenora Stevens - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://lenorastevens.github.io/wdd230/chamber/images/downtownAustin.jpg">
+    <meta property="og:image" content="https://lenorastevens.github.io/wdd230/chamber/images/downtown-medium.webp">
     <meta property="og:url" content="https://lenorastevens.github.io/wdd230/chamber">
 </head>
 
@@ -32,7 +29,7 @@
             <img id="logo" src="images/chamber-logo.webp" alt="Austin Chamber Logo" loading="lazy" width="150"
                 height="150">
 
-            <!-- index title -->
+            <!-- title -->
             <h1 id="title">Austin Chamber of Commerce</h1>
 
             <!-- dark mode button -->
@@ -58,6 +55,7 @@
 
     <main>
         <div id="discovery">
+            <!------- Gallery Pictures With Captions  ------->
             <div id="pics" class="gallery">
                 <h2 class="head2D">Gallery</h2>
                 <figure>
@@ -129,6 +127,7 @@
                 </figure>
             </div>
 
+            <!------- Attractions and Things To Do Section ------->
             <div id="to-do">
                 <h2 class="head2D">Attractions</h2>
                 <div id="goSee">
@@ -191,6 +190,8 @@
                             Austin.</p>
                     </section>
                 </div>
+
+                <!-------Chamber News Section  ------->
                 <h2 class="head2D">News for Austin</h2>
                 <div id="newsA">
                     <section class="news">
@@ -229,14 +230,15 @@
                     </section>
                 </div>
 
+                <!-------Visits Tracker and Message  ------->
                 <h2 class="head2D">Visits</h2>
                 <section class="tracking">
                     <h3>Visits to Page: <br><span class="visits"></span></h3>
                     <h4 class="visitor"><span></span></h4>
                 </section>
-
             </div>
 
+            <!-------Population Table and Stats  ------->
             <div id="popTable" class="population">
                 <h2 class="head2D">Population Growth</h2>
                 <table>
@@ -304,7 +306,7 @@
 
     </main>
 
-    <!-- footer section -->
+    <!------- footer section ------->
     <footer>
         <ul>
             <li id="address">Austin Chamber<br>1234 Professional Street<br>Austin, TX 78739</li>
@@ -317,7 +319,7 @@
     </footer>
 
 
-    <!-- script sources for dom manipulation -->
+    <!------- script sources for dom manipulation ------->
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/pageCounter.js"></script>

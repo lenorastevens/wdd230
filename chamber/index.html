@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- Meta setting for Chamber index page -->
+    <!-------- Meta setting for Chamber index page --------->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff"> -->
     <title>Austin Chamber of Commerce Home - Keeping Austin Weird</title>
     <meta name="author" content="Lenora Stevens">
     <meta name="description"
@@ -15,7 +13,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arima&family=Young+Serif&display=swap"> -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -31,7 +28,7 @@
             <!-- header logo -->
             <img id="logo" src="images/chamber-logo.webp" alt="Austin Chamber Logo" width="150" height="150">
 
-            <!-- index title -->
+            <!-- title -->
             <h1 id="title">Austin Chamber of Commerce</h1>
 
             <!-- dark mode button -->
@@ -61,10 +58,11 @@
         <div class="container">
             <!-- biggest section of main container -->
             <section id="downtown" class="card">
-                <!-- picture and join button div -->
+                <!------- picture and join button div ------->
                 <div class="hero">
-
+                    <!-- join button -->
                     <button id="join" title="Join">Join the Chamber</button>
+                    <!-- city image -->
                     <picture>
                         <source srcset="images/downtown-large.webp" media="(min-width: 960px)">
                         <source srcset="images/downtown-medium.webp" media="(min-width: 560px)">
@@ -73,7 +71,7 @@
                     </picture>
                     <h2 class="head2D">Helping people live, work & thrive in Austin</h2>
                 </div>
-                <!-- duties div -->
+                <!------- duties div ------->
                 <div id="duties">
                     <div>
                         <h3><strong><em>We Are Your Advocates</em></strong></h3>
@@ -98,7 +96,7 @@
                 </div>
             </section>
 
-            <!-- events section of the main container -->
+            <!------- events section ------->
             <section id="events" class="card">
                 <h3 class="head3D">Chamber Events</h3>
                 <div id="eventCard">
@@ -127,7 +125,7 @@
                 </div>
             </section>
 
-            <!-- business highlight section of the main container -->
+            <!------- business highlight section ------->
             <section id="highlights" class="card">
                 <h3 class="head3D">Business Highlights</h3>
                 <div id="businesses">
@@ -135,18 +133,21 @@
                 </div>
             </section>
 
-            <!-- temp and info section of the main container -->
+            <!------- weather section------->
             <section id="weather" class="card">
                 <h3>Local Weather</h3>
                 <div id="weather-divs">
+                    <!-- current weather -->
                     <div id="today">
                         <h4>Today:</h4>
                         <h5>Current Temp: <span id="current-temp"></span></h5>
                         <h5>Conditions: <span class="current-cond"></span></h5>
                     </div>
+                    <!-- forecast weather -->
                     <div id="forecast-container">
                         <!-- contents inserted by weather.js file -->
                     </div>
+                    <!-- wind chill display info -->
                     <div>
                         <h4>Wind Chill:</h4>
                         <h5>Temp(°F): <span id="temp"></span></h5>
@@ -159,7 +160,7 @@
 
     </main>
 
-    <!-- footer section -->
+    <!------- footer section ------->
     <footer>
         <ul>
             <li id="address" class="bottom">Austin Chamber<br>1234 Professional Street<br>Austin, TX 78739</li>
@@ -172,8 +173,7 @@
     </footer>
 
 
-    <!-- script sources for dom manipulation -->
-    <!-- <script src="scripts/getdates.js"></script> -->
+    <!------- script sources for dom manipulation ------->
     <script src="scripts/visitsCount.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
