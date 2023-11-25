@@ -29,6 +29,7 @@ const displayMembers = (members) => {
             busIcon.setAttribute('alt', item.altName);
             busIcon.setAttribute('width', item.width);
             busIcon.setAttribute('height', item.height);
+            busIcon.setAttribute('loading', "lazy");
         });
 
 
@@ -50,7 +51,6 @@ const displayMembers = (members) => {
         let website = document.createElement('a');
         website.setAttribute('class', 'direct');
         website.setAttribute('href', member.url);
-        website.setAttribute('id', 'website');
         website.setAttribute('target', "_blank");
         website.textContent = member.url;
 
