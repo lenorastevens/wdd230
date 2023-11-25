@@ -48,7 +48,7 @@ body {
     display: inline-block;
     align-self: center;
     text-align: center;
-    max-width: 40%;
+    max-width: 50%;
     border: 2px ridge #293132;
     background-color: #50d8d7;
 }
@@ -112,7 +112,7 @@ nav {
     border: 2px ridge #547AA5;
     background-color: #2e2f47;
     color: #50d8d7;
-    /* font-size: 2rem; */
+    font-size: 2rem;
     position: absolute;
     top: .5rem;
     right: .5rem;
