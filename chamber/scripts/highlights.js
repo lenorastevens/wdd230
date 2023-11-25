@@ -4,7 +4,7 @@ const memberHighlightsURL = "https://lenorastevens.github.io/wdd230/chamber/data
 async function getMembersToHighlight() {
     const response = await fetch(memberHighlightsURL);
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     displayMemberHighlights(data.members);
 }
 

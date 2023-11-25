@@ -112,7 +112,7 @@ nav {
     border: 2px ridge #547AA5;
     background-color: #2e2f47;
     color: #50d8d7;
-    /* font-size: .7rem; */
+    /* font-size: 2rem; */
     position: absolute;
     top: .5rem;
     right: .5rem;
@@ -161,6 +161,7 @@ ul a {
     color: #50d8d7;
     padding-right: 1%;
     padding-left: 1%;
+    font-size: larger;
 }
 
 /*--------------- nav hover --------------*/
