@@ -279,13 +279,13 @@ div #downtown #city {
     position: absolute;
     top: 5%;
     left: 5%;
-    background-color: #50d8d7;
+    background-color: #65FAFA;
     font-weight: bolder;
-    color: #293132;
+    color: #383336;
     border: 2px ridge #547AA5;
     padding: .3rem;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
-    opacity: .85;
+    opacity: .80;
 }
 
 #join:hover {
