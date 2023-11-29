@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+content {
+    margin: 0 auto;
+}
+
+header {
+    background-color: #B6FF00;
+    padding: 2%;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #6A01FE;
+    text-decoration: none;
+}
+
+/* ----- Hover Styles ----- */
+nav a:hover {
+    color: #B6FF00;
+    background-color: #6A01FE;
+}
+
+.active::before {
+    content: "*";
+}
+
+.active::after {
+    content: "*";
+}
+
+#hero,
+.info-grid {
+    display: block;
+    height: auto;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+footer {
+    background-color: #B6FF00;
+    padding: 2%;
+}
+
+footer img {
+    width: 20%;
+    height: auto;
+}
