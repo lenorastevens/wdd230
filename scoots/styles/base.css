@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-size: 15px;
     text-align: center;
+    background-color: rgb(183, 255, 0, .1);
 }
 
 content {
@@ -132,12 +133,14 @@ header {
     grid-template-columns: 1fr;
     margin: 10% auto;
     width: 90%;
-    gap: 2%;
+    gap: 5%;
 }
 
 .info-grid section {
-    border: 3px ridge #6A01FE;
-    border-radius: 15px;
+    border: 10px ridge #6A01FE;
+    background-color: #B6FF00;
+    color: #6A01FE;
+    border-radius: 25px;
     box-shadow: 0 3px 3px 0 #B6FF00, 0 3px 3px 0 #B6FF00;
 
 }
@@ -159,7 +162,7 @@ header {
 footer {
     background-color: #B6FF00;
     padding: 2%;
-    margin-top: 20%;
+    margin-top: 60%;
 }
 
 .social-media {

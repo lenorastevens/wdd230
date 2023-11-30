@@ -9,9 +9,9 @@
     <meta name="author" content="Lenora Stevens">
     <meta name="description"
         content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
     <meta property="og:title" content="Lenora Stevens - Scoots - WDD 230">
     <meta property="og:type" content="website">
     <meta property="description"
@@ -46,7 +46,7 @@
             <h1 class="home-motto">Time To Explore</h1>
             <p>No matter what you come to see, we'll get you there!</p>
             <div class="button-box">
-                <a class="reservations" href="reservations.html">Make a Reservation</a>
+                <a class="reservations" href="reservations.html">Reserve Now</a>
             </div>
         </section>
     </div>
@@ -54,21 +54,29 @@
     <main class="info-grid">
         <section class="scooter-card">
             <img class="card-img" src="images/scooter-beachside.jpg" alt="Scooter with a Beach view">
-            <img class="icon" src="images/scooter-icon.png" alt="Scooter Icon">
+            <a href="rentals.html">
+                <img class="icon" src="images/scooter-icon.png" alt="Scooter Icon"></a>
             <h2>Scooters</h2>
-            <p>scooter summary</p>
+            <p>This mode of transportation is small and easy to manuver. You can zip around town and check out the
+                shopping scene, or find a long road and cruise with the wind in your hair. Bring your imagination!</p>
         </section>
         <section class="atv-card">
             <img class="card-img" src="images/atv-cliffside.jpeg" alt="ATV on beach">
-            <img class="icon" src="images/atv-icon.png" alt="ATV Icon">
+            <a href="rentals.html">
+                <img class="icon" src="images/atv-icon.png" alt="ATV Icon"></a>
             <h2>ATVs</h2>
-            <p>ATV summary</p>
+            <p>A more rugged type of transportation, ATVs will take you down any trail and will give you access to more
+                remote parts of Cozumel. Pack a picnic and get down the trail with exploration as your only to-do list
+                item.</p>
         </section>
         <section class="jeep-card">
             <img class="card-img" src="images/jeep-collection.jpeg" alt="Jeep Vehicle Lineup">
-            <img class="icon" src="images/jeep-icon.png" alt="Jeep Icon">
+            <a href="rentals.html">
+                <img class="icon" src="images/jeep-icon.png" alt="Jeep Icon"></a>
             <h2>Jeeps</h2>
-            <p>Jeep Summary</p>
+            <p>With an expanded capacity for passengers and gear, Jeep rental expands your exploring options. A jeep can
+                be used in any weather and still provide the rugged off-road capabilities.
+            </p>
         </section>
         <section class="weather-card">
             <img class="card-img" src="" alt="">
@@ -80,7 +88,8 @@
     </main>
 
     <footer>
-        <a id="resources" href="Resources.md">Resources Page</a>
+        <a id="resources" href="Resources.md">Attributions Page</a>
+        <h3 id="name" class="bottom">&copy; <span id="year"></span> *|* Lenora Stevens *|* WDD 230 Project</h3>
         <a href="https://facebook.com" target="_blank">
             <img class="social-media" src="images/facebook.webp" alt="Facebook Icon" width="200" height="200">
         </a>
