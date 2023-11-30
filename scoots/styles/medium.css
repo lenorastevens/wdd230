@@ -26,6 +26,10 @@
         display: none;
     }
 
+    #hero-msg p {
+        display: block;
+    }
+
     .info-grid {
         grid-template-columns: 1fr 1fr;
     }
