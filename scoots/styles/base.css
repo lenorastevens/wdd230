@@ -4,7 +4,8 @@
 
 body {
     margin: 0;
-
+    font-size: 14px;
+    text-align: center;
 }
 
 content {
@@ -12,32 +13,63 @@ content {
 }
 
 header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #B6FF00;
     padding: 2%;
+    position: relative;
 }
 
-nav a {
+/* ----- Hamburger Button ----- */
+#menu {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: #6A01FE;
+    color: #B6FF00;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '✖';
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation a {
     display: block;
-    padding: 15px;
     text-align: center;
-    color: #6A01FE;
     text-decoration: none;
+    color: #6A01FE;
+    padding: 2%;
+    font-size: larger;
+}
+
+.open {
+    display: block;
 }
 
 /* ----- Hover Styles ----- */
-nav a:hover {
+.navigation a:hover {
     color: #B6FF00;
     background-color: #6A01FE;
 }
 
 .active::before {
-    content: "*";
+    content: "* ";
 }
 
 .active::after {
-    content: "*";
+    content: " *";
 }
 
+/* ----- Home Image Styles ----- */
 #hero,
 .info-grid {
     display: block;
@@ -45,13 +77,27 @@ nav a:hover {
 }
 
 #hero-img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-#hero-img {
-    width: 100%;
+#hero-msg {
+    color: #B6FF00;
+    padding: 2%;
+    text-align: center;
+    text-shadow: 5px 5px 10px #6A01FE;
 }
 
+.home-motto {
+    color: #B6FF00;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+/* ----- Main Styles ----- */
+
+
+/* -----Footer Styles ----- */
 footer {
     background-color: #B6FF00;
     padding: 2%;

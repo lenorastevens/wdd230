@@ -22,17 +22,20 @@
 </head>
 
 <body>
-    <header>
-        <a id="logo_link" href="index.html">
-            <img src="images/scoots-high-resolution-logo-transparent.webp" alt="Scoots Company Logo" width="500"
-                height="169">
+    <header class="top-nav">
+        <a id="logo-link" href="index.html">
+            <img src="images/scoots-high-resolution-logo-transparent.webp" alt="Scoots Company Logo" width="300"
+                height="101">
         </a>
-        <nav>
+
+        <nav class="navigation">
             <a href="index.html" class="active">Home</a>
             <a href="rentals.html">Rental Pricing</a>
             <a href="reservations.html">Make a Reservation</a>
             <a href="contactUs.html">Contact Us</a>
         </nav>
+        <!-- hamberger button -->
+        <button id="menu" title="Hamburger Menu"></button>
     </header>
 
     <div id="hero">
@@ -41,7 +44,7 @@
         </div>
         <section id="hero-msg">
             <h1 class="home-motto">Time To Explore</h1>
-            <h4>No matter what you come to see, we'll get you there!</h4>
+            <p>No matter what you come to see, we'll get you there!</p>
             <div class="button-box">
                 <a class="reservations" href="reservations.html">Make a Reservation</a>
             </div>
@@ -87,6 +90,7 @@
         </a>
     </footer>
 
+    <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>
