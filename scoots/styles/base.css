@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Underdog&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,9 +7,10 @@
 body {
     margin: 0;
     font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Underdog', sans-serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     background-color: rgb(183, 255, 0, .1);
 }
 
@@ -21,8 +24,13 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #B6FF00;
-    padding: 2%;
+    padding: 1%;
     position: relative;
+}
+
+#logo-link:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* ----- Hamburger Button ----- */
@@ -73,11 +81,11 @@ header {
 }
 
 .active::before {
-    content: "* ";
+    content: "*";
 }
 
 .active::after {
-    content: " *";
+    content: "*";
 }
 
 /* ----- Home Image Styles ----- */
@@ -155,7 +163,6 @@ header {
     color: #6A01FE;
     border-radius: 25px;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
-
 }
 
 .card-img {
@@ -174,9 +181,8 @@ header {
 .icon:hover {
     transform: scale(1.3);
     box-shadow: 2px 3px 3px 1px #6A01FE;
+    border-radius: 15px;
 }
-
-
 
 /* -----Footer Styles ----- */
 footer {
@@ -189,7 +195,6 @@ footer {
 footer a {
     text-decoration: none;
     color: #6A01FE;
-
 }
 
 #resources::before {
@@ -199,6 +204,10 @@ footer a {
 .social-media {
     width: auto;
     height: 50px;
+}
+
+.social-media:hover {
+    transform: scale(1.1);
 }
 
 footer img {
