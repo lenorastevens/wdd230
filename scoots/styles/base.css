@@ -32,6 +32,8 @@ header {
     right: 2%;
     background-color: #6A01FE;
     color: #B6FF00;
+    border: 3px ridge #B6FF00;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 #menu:hover {
@@ -104,7 +106,13 @@ header {
     padding: 2%;
     text-align: center;
     font-size: 2em;
-    text-shadow: 0px 0px 18px #6A01FE;
+    /* text-shadow: 0px 0px 18px #6A01FE; */
+}
+
+#hero-msg h1,
+#hero-msg p {
+    background-color: rgb(106, 0, 255, .4);
+    border-radius: 50px;
 }
 
 #hero-msg p {
@@ -121,12 +129,16 @@ header {
     background-color: #6A01FE;
     color: #B6FF00;
     padding: 3%;
+    border: 3px ridge #B6FF00;
     border-radius: 15px;
 }
 
 .button-box a:hover {
     box-shadow: 1px 3px 3px 1px #B6FF00;
-    /* transform: scale(1.2); */
+}
+
+.button-box:hover {
+    transform: scale(1.1);
 }
 
 /* ----- Main Styles ----- */
@@ -151,6 +163,7 @@ header {
     width: 100%;
     height: auto;
     border-radius: 12px 12px 0px 0px;
+    border-bottom: 10px ridge #6A01FE;
 }
 
 .icon {
