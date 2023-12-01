@@ -89,24 +89,23 @@ header {
 
 #hero {
     display: grid;
-    grid-template-columns: 1 fr 5fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 #hero-box {
-    grid-column: 1/8;
+    grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
 }
 
 #hero-msg {
-    grid-column: 2/7;
+    grid-column: 2/3;
     grid-row: 2/3;
     margin-bottom: 5%;
     color: #B6FF00;
     padding: 2%;
     text-align: center;
     font-size: 2em;
-    /* text-shadow: 0px 0px 18px #6A01FE; */
 }
 
 #hero-msg h1,
@@ -128,7 +127,7 @@ header {
     text-decoration: none;
     background-color: #6A01FE;
     color: #B6FF00;
-    padding: 3%;
+    padding: 2%;
     border: 3px ridge #B6FF00;
     border-radius: 15px;
 }
