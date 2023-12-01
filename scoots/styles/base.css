@@ -78,6 +78,7 @@ header {
 .navigation a:hover {
     color: #B6FF00;
     background-color: #6A01FE;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 .active::before {
