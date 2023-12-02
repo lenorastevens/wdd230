@@ -24,7 +24,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #b4b8db;
+    background-color: #CBCFF3;
     padding: 1%;
     position: relative;
 }
@@ -39,9 +39,9 @@ header {
     position: absolute;
     top: 2%;
     right: 2%;
-    background-color: #b4b8db;
-    color: #355d17;
-    border: 3px ridge #355d17;
+    background-color: #CBCFF3;
+    color: #25450D;
+    border: 3px ridge #25450D;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -66,7 +66,7 @@ header {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #355d17;
+    color: #25450D;
     padding: 2%;
     font-size: larger;
 }
@@ -77,8 +77,8 @@ header {
 
 /* ----- Hover Styles ----- */
 .navigation a:hover {
-    color: #b4b8db;
-    background-color: #355d17;
+    color: #CBCFF3;
+    background-color: #25450D;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -112,10 +112,10 @@ header {
     grid-column: 2/3;
     grid-row: 2/3;
     margin-bottom: 5%;
-    color: #355d17;
-    padding: 2%;
+    color: #25450D;
+    padding: 1%;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 #hero-msg h1,
@@ -136,15 +136,15 @@ header {
 
 .button-box a {
     text-decoration: none;
-    background-color: #b4b8db;
-    color: #355d17;
-    padding: 2%;
-    border: 3px ridge #355d17;
+    background-color: #CBCFF3;
+    color: #25450D;
+    padding: 1%;
+    border: 3px ridge #25450D;
     border-radius: 15px;
 }
 
 .button-box a:hover {
-    box-shadow: 1px 3px 3px 1px #B6FF00;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 .button-box:hover {
@@ -161,9 +161,9 @@ header {
 }
 
 .info-grid section {
-    border: 10px ridge #355d17;
-    background-color: #b4b8db;
-    color: #355d17;
+    border: 10px ridge #25450D;
+    background-color: #CBCFF3;
+    color: #25450D;
     border-radius: 25px;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
@@ -172,7 +172,7 @@ header {
     width: 100%;
     height: auto;
     border-radius: 12px 12px 0px 0px;
-    border-bottom: 10px ridge #355d17;
+    border-bottom: 10px ridge #25450D;
 }
 
 .icon {
@@ -183,21 +183,21 @@ header {
 
 .icon:hover {
     transform: scale(1.3);
-    box-shadow: 2px 3px 3px 1px #355d17;
+    box-shadow: 2px 3px 3px 1px #25450D;
     border-radius: 15px;
 }
 
 /* -----Footer Styles ----- */
 footer {
-    background-color: #b4b8db;
+    background-color: #CBCFF3;
     padding: 2%;
     margin-top: 60%;
-    color: #355d17;
+    color: #25450D;
 }
 
 footer a {
     text-decoration: none;
-    color: #355d17;
+    color: #25450D;
 }
 
 #resources::before {
