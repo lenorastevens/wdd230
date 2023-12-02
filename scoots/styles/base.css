@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Underdog&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Underdog&display=swap'); */
 
 * {
     box-sizing: border-box;
@@ -29,6 +29,12 @@ header {
     position: relative;
 }
 
+#logo-link {
+    width: 200px;
+    height: auto;
+    margin: 2%;
+}
+
 #logo-link:hover {
     transform: scale(1.1);
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
@@ -37,12 +43,13 @@ header {
 /* ----- Hamburger Button ----- */
 #menu {
     position: absolute;
-    top: 2%;
-    right: 2%;
+    top: 8%;
+    right: 3%;
     background-color: #CBCFF3;
     color: #25450D;
     border: 3px ridge #25450D;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
 }
 
 #menu:hover {
