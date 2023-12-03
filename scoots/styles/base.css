@@ -6,13 +6,12 @@
 
 body {
     margin: 0;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Underdog', sans-serif;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     text-align: center;
     font-weight: bolder;
-    /* background-color: rgb(183, 255, 0, .1); */
-    /* background-color: #6A01FE; */
+    background-color: #f5f5f5;
 }
 
 content {
@@ -27,12 +26,13 @@ header {
     background-color: #CBCFF3;
     padding: 1%;
     position: relative;
+    text-align: center;
 }
 
 #logo-link {
-    width: 200px;
+    width: 230px;
     height: auto;
-    margin: 2%;
+    margin: 3%;
 }
 
 #logo-link:hover {
@@ -49,7 +49,7 @@ header {
     color: #25450D;
     border: 3px ridge #25450D;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
-    font-size: 1.5em;
+    font-size: 2.4em;
 }
 
 #menu:hover {
@@ -122,13 +122,14 @@ header {
     color: #25450D;
     padding: 1%;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #hero-msg h1,
 #hero-msg p {
     background-color: rgb(179, 183, 219, .7);
-    border-radius: 50px;
+    border-radius: 20px;
+    border: 1px groove rgba(0, 0, 0, 0.5);
     padding: 2%;
 }
 
@@ -145,7 +146,7 @@ header {
     text-decoration: none;
     background-color: #CBCFF3;
     color: #25450D;
-    padding: 1%;
+    padding: 2%;
     border: 3px ridge #25450D;
     border-radius: 15px;
 }
@@ -179,7 +180,7 @@ header {
     width: 100%;
     height: auto;
     border-radius: 12px 12px 0px 0px;
-    border-bottom: 10px ridge #25450D;
+    border-bottom: 10px groove #25450D;
 }
 
 .icon {
