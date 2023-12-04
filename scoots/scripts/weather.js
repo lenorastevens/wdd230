@@ -42,6 +42,7 @@ function displayCarmenCurrent(data) {
     let carmenDesc = document.createElement('h5');
     carmenDesc.textContent = data.weather[0].description;
     carmenDesc.setAttribute('id', 'carmen-desc');
+    carmenDesc.setAttribute('class', 'description');
 
     delCarmenCurr.append(currCarmenTemp);
     delCarmenCurr.append(carmenIcon);
@@ -85,6 +86,8 @@ function displayPuertaCurrent(data) {
     let puertaDesc = document.createElement('h5');
     puertaDesc.textContent = data.weather[0].description;
     puertaDesc.setAttribute('id', 'puerta-desc');
+    puertaDesc.setAttribute('class', 'description');
+
 
     puertaCurr.append(currPuertaTemp);
     puertaCurr.append(puertaIcon);
@@ -169,6 +172,8 @@ function displayCarmenForecast(carmenData) {
 
         let carmenForecastDesc = document.createElement('h5');
         carmenForecastDesc.setAttribute('id', 'carmen-forecast-desc');
+        carmenForecastDesc.setAttribute('class', 'description');
+
         carmenForecastDesc.textContent = forecastInfo.description;
 
         delCarmenForecast.append(temps);
@@ -256,6 +261,8 @@ function displayPuertaForecast(puertaData) {
 
         let puertaForecastDesc = document.createElement('h5');
         puertaForecastDesc.setAttribute('id', 'puerta-forecast-desc');
+        puertaForecastDesc.setAttribute('class', 'description');
+
         puertaForecastDesc.textContent = forecastInfo.description;
 
         puertaForecast.append(temps);
