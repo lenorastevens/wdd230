@@ -2,8 +2,8 @@ const condContainer = document.querySelector('.location-info');
 // const forecastContainer = document.querySelector('.location-forecast');
 const urlCarmen = `https://api.openweathermap.org/data/2.5/weather?lat=20.6274&lon=-87.0799&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
 const urlPuerta = `https://api.openweathermap.org/data/2.5/weather?lat=20.5083&lon=-86.9458&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
-const urlForecasetC = `https://api.openweathermap.org/data/2.5/forecast?lat=20.6274&lon=-87.0799&cnt=28&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
-const urlForecasetP = `https://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&cnt=28&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
+const urlForecastC = `https://api.openweathermap.org/data/2.5/forecast?lat=20.6274&lon=-87.0799&cnt=13&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
+const urlForecastP = `https://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&cnt=13&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
 
 // fetch current weather API for Playa Del Carmen
 async function apiCarmenFetch() {
@@ -11,7 +11,6 @@ async function apiCarmenFetch() {
         const response = await fetch(urlCarmen);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayCarmenCurrent(data);
         } else {
             throw Error(await response.text());
@@ -21,7 +20,7 @@ async function apiCarmenFetch() {
     }
 }
 
-// call fetch function for Playa Del Carmen
+// call fetch function for current Playa Del Carmen
 apiCarmenFetch();
 
 function displayCarmenCurrent(data) {
@@ -47,9 +46,6 @@ function displayCarmenCurrent(data) {
     delCarmenCurr.append(currCarmenTemp);
     delCarmenCurr.append(carmenIcon);
     delCarmenCurr.append(carmenDesc);
-
-    console.log(currCarmenTemp);
-
 }
 
 // fetch current weather API for Terminal Puerta Maya
@@ -58,7 +54,6 @@ async function apiPuertaFetch() {
         const response = await fetch(urlPuerta);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayPuertaCurrent(data);
         } else {
             throw Error(await response.text());
@@ -68,7 +63,7 @@ async function apiPuertaFetch() {
     }
 }
 
-// call fetch function for Terminal Puerta Maya
+// call fetch function for current Terminal Puerta Maya
 apiPuertaFetch();
 
 function displayPuertaCurrent(data) {
@@ -94,18 +89,17 @@ function displayPuertaCurrent(data) {
     puertaCurr.append(currPuertaTemp);
     puertaCurr.append(puertaIcon);
     puertaCurr.append(puertaDesc);
-    console.log(puertaCurr);
 }
 
 
 // fetch forecast weather API for Playa Del Carmen
 async function apiCarmenForecastFetch() {
     try {
-        const response = await fetch(urlForecasetC);
+        const response = await fetch(urlForecastC);
         if (response.ok) {
-            const data = await response.json();
-            console.log(data);
-            displayCarmenForecast(data);
+            const carmenData = await response.json();
+            console.log(carmenData);
+            displayCarmenForecast(carmenData);
         } else {
             throw Error(await response.text());
         }
@@ -114,21 +108,86 @@ async function apiCarmenForecastFetch() {
     }
 }
 
+
 // call fetch function for Playa Del Carmen
 apiCarmenForecastFetch();
 
-function displayCarmenForecast(data) {
+function displayCarmenForecast(carmenData) {
+    const forcastCarmenList = carmenData.list;
+
+    const delCarmenForecast = document.getElementById('del-carmen-forecast');
+
+    const carmenTempsByDay = {};
+
+    const currentCarmenDayIndex = new Date().getDay();
+
+    forcastCarmenList.forEach((forecastItem) => {
+        // Time and date info for Forecast data
+        const timestamp = forecastItem.dt;
+        const date = new Date(timestamp * 1000); // Convert timestamp to Date object
+        const dayIndex = date.getDay();
+        if (dayIndex === currentCarmenDayIndex) {
+            return; // if today, skip first day
+        }
+
+        const day = date.toLocaleDateString('en-Us', { weekday: 'long' }); //Get the day of the week
+
+        if (!carmenTempsByDay[day]) {
+            carmenTempsByDay[day] = {
+                minTemp: forecastItem.main.temp_min,
+                maxTemp: forecastItem.main.temp_max,
+                icon: forecastItem.weather[0].icon,
+                description: forecastItem.weather[0].description,
+            };
+        } else {
+            carmenTempsByDay[day].minTemp = Math.min(carmenTempsByDay[day].minTemp, forecastItem.main.temp_min);
+            carmenTempsByDay[day].maxTemp = Math.max(carmenTempsByDay[day].maxTemp, forecastItem.main.temp_max);
+        }
+
+    });
+
+    let dayCount = 0;
+    for (const day in carmenTempsByDay) {
+        if (dayCount >= 1) {
+            break;
+        }
+
+        let forecastInfo = carmenTempsByDay[day];
+
+        const iconsrc = `https://openweathermap.org/img/wn/${forecastInfo.icon}.png`;
+
+        let temps = document.createElement('h5');
+        temps.setAttribute('id', 'carmen-forecast-temp')
+        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F / ${forecastInfo.minTemp.toFixed(0)}°F`;
+
+        let carmenForecastIcon = document.createElement('img');
+        carmenForecastIcon.setAttribute('src', iconsrc);
+        carmenForecastIcon.setAttribute('id', 'tomorrow-forecast');
+        carmenForecastIcon.setAttribute('alt', `${day} forecast info`);
+        carmenForecastIcon.setAttribute('width', "50");
+        carmenForecastIcon.setAttribute('height', "50");
+
+        let carmenForecastDesc = document.createElement('h5');
+        carmenForecastDesc.setAttribute('id', 'carmen-forecast-desc');
+        carmenForecastDesc.textContent = forecastInfo.description;
+
+        delCarmenForecast.append(temps);
+        delCarmenForecast.append(carmenForecastIcon);
+        delCarmenForecast.append(carmenForecastDesc);
+
+        dayCount++;
+    }
 
 }
 
 // fetch current weather API for Terminal Puerta Maya
 async function apiPuertaForecast() {
     try {
-        const response = await fetch(urlForecasetP);
+        const response = await fetch(urlForecastP);
         if (response.ok) {
-            const data = await response.json();
-            console.log(data);
-            displayPuertaForecast(data);
+            const puertaData = await response.json();
+            console.log(puertaData);
+            displayPuertaForecast(puertaData);
         } else {
             throw Error(await response.text());
         }
@@ -140,6 +199,70 @@ async function apiPuertaForecast() {
 // call fetch function for Terminal Puerta Maya
 apiPuertaForecast();
 
-function displayPuertaForecast(data) {
+function displayPuertaForecast(puertaData) {
+    const puertaForecast = document.getElementById('puerta-maya-forecast');
+
+    const forcastPuertaList = puertaData.list;
+
+    const puertaTempsByDay = {};
+
+    const currentPuertaDayIndex = new Date().getDay();
+
+    forcastPuertaList.forEach((forecastItem) => {
+        // Time and date info for Forecast data
+        const timestamp = forecastItem.dt;
+        const date = new Date(timestamp * 1000); // Convert timestamp to Date object
+        const dayIndex = date.getDay();
+        if (dayIndex === currentPuertaDayIndex) {
+            return; // if today, skip first day
+        }
+
+        const day = date.toLocaleDateString('en-Us', { weekday: 'long' }); //Get the day of the week
+
+        if (!puertaTempsByDay[day]) {
+            puertaTempsByDay[day] = {
+                minTemp: forecastItem.main.temp_min,
+                maxTemp: forecastItem.main.temp_max,
+                icon: forecastItem.weather[0].icon,
+                description: forecastItem.weather[0].description,
+            };
+        } else {
+            puertaTempsByDay[day].minTemp = Math.min(puertaTempsByDay[day].minTemp, forecastItem.main.temp_min);
+            puertaTempsByDay[day].maxTemp = Math.max(puertaTempsByDay[day].maxTemp, forecastItem.main.temp_max);
+        }
+
+    });
+
+    let dayCount = 0;
+    for (const day in puertaTempsByDay) {
+        if (dayCount >= 1) {
+            break;
+        }
+
+        let forecastInfo = puertaTempsByDay[day];
+
+        const iconsrc = `https://openweathermap.org/img/wn/${forecastInfo.icon}.png`;
+
+        let temps = document.createElement('h5');
+        temps.setAttribute('id', 'puerta-forecast-temp')
+        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F / ${forecastInfo.minTemp.toFixed(0)}°F`;
+
+        let puertaForecastIcon = document.createElement('img');
+        puertaForecastIcon.setAttribute('src', iconsrc);
+        puertaForecastIcon.setAttribute('id', 'tomorrow-forecast');
+        puertaForecastIcon.setAttribute('alt', `${day} forecast info`);
+        puertaForecastIcon.setAttribute('width', "50");
+        puertaForecastIcon.setAttribute('height', "50");
+
+        let puertaForecastDesc = document.createElement('h5');
+        puertaForecastDesc.setAttribute('id', 'puerta-forecast-desc');
+        puertaForecastDesc.textContent = forecastInfo.description;
+
+        puertaForecast.append(temps);
+        puertaForecast.append(puertaForecastIcon);
+        puertaForecast.append(puertaForecastDesc);
+
+        dayCount++;
+    }
 
 }
