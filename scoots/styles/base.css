@@ -33,6 +33,7 @@ header {
     width: 230px;
     height: auto;
     margin: 3%;
+    padding: 2%;
 }
 
 #logo-link:hover {
@@ -129,7 +130,7 @@ header {
 #hero-msg p {
     background-color: rgb(179, 183, 219, .7);
     border-radius: 20px;
-    border: 1px groove rgba(0, 0, 0, 0.5);
+    border: 1px groove #25450D;
     padding: 2%;
 }
 
@@ -165,7 +166,7 @@ header {
     grid-template-columns: 1fr;
     margin: 10% auto;
     width: 90%;
-    gap: 5%;
+    gap: 4%;
 }
 
 .info-grid section {

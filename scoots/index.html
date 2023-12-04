@@ -103,10 +103,17 @@
 
         <!-- weather card -->
         <section id="weather" class="weather-card">
-            <!-- <img class="card-img" src="" alt="">
-            <img class="icon" src="" alt=""> -->
             <h2>Weather</h2>
-            <p>Current info, alerts, 1 day forecast</p>
+            <div id="current-weather">
+                <h3>Current Weather</h3>
+                <div id="del-carmen" class="location-info"></div>
+                <div id="puerta-maya" class="location-info"></div>
+            </div>
+            <div id="forecast-container">
+                <h3>Tomorrow's Weather</h3>
+                <div id="del-carmen-forecast" class="location-forecast"></div>
+                <div id="puerta-maya-forecast" class="location-forecast"></div>
+            </div>
         </section>
 
     </main>
@@ -133,7 +140,7 @@
     <!-- scripts -->
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/date.js"></script>
-    <!-- <script src="scripts/weather.js"></script> -->
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
