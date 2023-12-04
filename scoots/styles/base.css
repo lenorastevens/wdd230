@@ -222,7 +222,8 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 
-#del-carmen {
+#del-carmen,
+#del-carmen-forecast {
     border-right: 5px groove #25450D;
 }
 
@@ -244,7 +245,7 @@ header {
 #puerta-forecast-temp {
     align-self: center;
     justify-self: right;
-    padding-right: 5px;
+    padding-right: 10px;
     margin: 0;
 }
 
@@ -252,6 +253,15 @@ header {
 #puerta-icon {
     align-self: center;
     justify-self: left;
+    padding-left: 5px;
+    margin: 0;
+}
+
+
+#tomorrow-carmen-forecast,
+#tomorrow-puerta-forecast {
+    align-self: center;
+    justify-self: center;
     padding-left: 5px;
     margin: 0;
 }

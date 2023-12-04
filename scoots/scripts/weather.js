@@ -162,7 +162,7 @@ function displayCarmenForecast(carmenData) {
 
         let carmenForecastIcon = document.createElement('img');
         carmenForecastIcon.setAttribute('src', iconsrc);
-        carmenForecastIcon.setAttribute('id', 'tomorrow-forecast');
+        carmenForecastIcon.setAttribute('id', 'tomorrow-carmen-forecast');
         carmenForecastIcon.setAttribute('alt', `${day} forecast info`);
         carmenForecastIcon.setAttribute('width', "50");
         carmenForecastIcon.setAttribute('height', "50");
@@ -249,7 +249,7 @@ function displayPuertaForecast(puertaData) {
 
         let puertaForecastIcon = document.createElement('img');
         puertaForecastIcon.setAttribute('src', iconsrc);
-        puertaForecastIcon.setAttribute('id', 'tomorrow-forecast');
+        puertaForecastIcon.setAttribute('id', 'tomorrow-puerta-forecast');
         puertaForecastIcon.setAttribute('alt', `${day} forecast info`);
         puertaForecastIcon.setAttribute('width', "50");
         puertaForecastIcon.setAttribute('height', "50");
