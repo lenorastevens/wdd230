@@ -1,4 +1,4 @@
-// const condContainer = document.querySelector('.location-info');
+const condContainer = document.querySelector('.location-info');
 // const forecastContainer = document.querySelector('.location-forecast');
 const urlCarmen = `https://api.openweathermap.org/data/2.5/weather?lat=20.6274&lon=-87.0799&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
 const urlPuerta = `https://api.openweathermap.org/data/2.5/weather?lat=20.5083&lon=-86.9458&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
@@ -25,6 +25,30 @@ async function apiCarmenFetch() {
 apiCarmenFetch();
 
 function displayCarmenCurrent(data) {
+    const delCarmenCurr = document.getElementById('del-carmen');
+
+    const currCarmenTemp = document.createElement('h5');
+    currCarmenTemp.setAttribute('id', 'carmen-temp');
+    currCarmenTemp.textContent = `${data.main.temp.toFixed(0)}°F`;
+
+    const carmenIconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+
+    let carmenIcon = document.createElement('img');
+    carmenIcon.setAttribute('src', carmenIconsrc);
+    carmenIcon.setAttribute('id', 'carmen-icon');
+    carmenIcon.setAttribute('alt', 'Playa Del Carmen Weather Icon');
+    carmenIcon.setAttribute('width', "50");
+    carmenIcon.setAttribute('height', "50");
+
+    let carmenDesc = document.createElement('h5');
+    carmenDesc.textContent = data.weather[0].description;
+    carmenDesc.setAttribute('id', 'carmen-desc');
+
+    delCarmenCurr.append(currCarmenTemp);
+    delCarmenCurr.append(carmenIcon);
+    delCarmenCurr.append(carmenDesc);
+
+    console.log(currCarmenTemp);
 
 }
 
@@ -48,7 +72,29 @@ async function apiPuertaFetch() {
 apiPuertaFetch();
 
 function displayPuertaCurrent(data) {
+    const puertaCurr = document.getElementById('puerta-maya');
 
+    const currPuertaTemp = document.createElement('h5');
+    currPuertaTemp.setAttribute('id', 'puerta-temp');
+    currPuertaTemp.textContent = `${data.main.temp.toFixed(0)}°F`;
+
+    const puertaIconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+
+    let puertaIcon = document.createElement('img');
+    puertaIcon.setAttribute('src', puertaIconsrc);
+    puertaIcon.setAttribute('id', 'puerta-icon');
+    puertaIcon.setAttribute('alt', 'Terminal Puerta Maya Weather Icon');
+    puertaIcon.setAttribute('width', "50");
+    puertaIcon.setAttribute('height', "50");
+
+    let puertaDesc = document.createElement('h5');
+    puertaDesc.textContent = data.weather[0].description;
+    puertaDesc.setAttribute('id', 'puerta-desc');
+
+    puertaCurr.append(currPuertaTemp);
+    puertaCurr.append(puertaIcon);
+    puertaCurr.append(puertaDesc);
+    console.log(puertaCurr);
 }
 
 
