@@ -1,9 +1,9 @@
 const condContainer = document.querySelector('.location-info');
 // const forecastContainer = document.querySelector('.location-forecast');
-const urlCarmen = `https://api.openweathermap.org/data/2.5/weather?lat=20.6274&lon=-87.0799&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
-const urlPuerta = `https://api.openweathermap.org/data/2.5/weather?lat=20.5083&lon=-86.9458&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
-const urlForecastC = `https://api.openweathermap.org/data/2.5/forecast?lat=20.6274&lon=-87.0799&cnt=13&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
-const urlForecastP = `https://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&cnt=13&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
+const urlCarmen = `https://api.openweathermap.org/data/2.5/weather?lat=20.62196&lon=-87.07643&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
+const urlPuerta = `https://api.openweathermap.org/data/2.5/weather?lat=20.47641&lon=-86.97412&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
+const urlForecastC = `https://api.openweathermap.org/data/2.5/forecast?lat=20.62196&lon=-87.07643&cnt=13&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
+const urlForecastP = `https://api.openweathermap.org/data/2.5/forecast?lat=20.47641&lon=-86.97412&cnt=13&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
 
 // fetch current weather API for Playa Del Carmen
 async function apiCarmenFetch() {
@@ -11,6 +11,7 @@ async function apiCarmenFetch() {
         const response = await fetch(urlCarmen);
         if (response.ok) {
             const data = await response.json();
+            console.log(data);
             displayCarmenCurrent(data);
         } else {
             throw Error(await response.text());
@@ -25,6 +26,10 @@ apiCarmenFetch();
 
 function displayCarmenCurrent(data) {
     const delCarmenCurr = document.getElementById('del-carmen');
+
+    const carmenHumidity = document.createElement('h5');
+    carmenHumidity.setAttribute('id', 'carmen-humid');
+    carmenHumidity.textContent = `Humidity: ${data.main.humidity.toFixed()}%`;
 
     const currCarmenTemp = document.createElement('h5');
     currCarmenTemp.setAttribute('id', 'carmen-temp');
@@ -44,6 +49,7 @@ function displayCarmenCurrent(data) {
     carmenDesc.setAttribute('id', 'carmen-desc');
     carmenDesc.setAttribute('class', 'description');
 
+    delCarmenCurr.append(carmenHumidity);
     delCarmenCurr.append(currCarmenTemp);
     delCarmenCurr.append(carmenIcon);
     delCarmenCurr.append(carmenDesc);
@@ -55,6 +61,7 @@ async function apiPuertaFetch() {
         const response = await fetch(urlPuerta);
         if (response.ok) {
             const data = await response.json();
+            console.log(data);
             displayPuertaCurrent(data);
         } else {
             throw Error(await response.text());
@@ -69,6 +76,10 @@ apiPuertaFetch();
 
 function displayPuertaCurrent(data) {
     const puertaCurr = document.getElementById('puerta-maya');
+
+    const puertaHumidity = document.createElement('h5');
+    puertaHumidity.setAttribute('id', 'puerta-humid');
+    puertaHumidity.textContent = `Humidity: ${data.main.humidity.toFixed()}%`;
 
     const currPuertaTemp = document.createElement('h5');
     currPuertaTemp.setAttribute('id', 'puerta-temp');
@@ -88,7 +99,7 @@ function displayPuertaCurrent(data) {
     puertaDesc.setAttribute('id', 'puerta-desc');
     puertaDesc.setAttribute('class', 'description');
 
-
+    puertaCurr.append(puertaHumidity);
     puertaCurr.append(currPuertaTemp);
     puertaCurr.append(puertaIcon);
     puertaCurr.append(puertaDesc);

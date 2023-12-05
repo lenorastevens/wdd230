@@ -1,0 +1,124 @@
+{
+    "prices": [
+        {
+            "scooter": [
+                {
+                    "Honda Metro Scooter": [
+                        {
+                            "max persons": 1,
+                            "reservation": [
+                                {
+                                    "half": "$",
+                                    "full": "$"
+                                }
+                            ],
+                            "walk-in": [
+                                {
+                                    "half": "$",
+                                    "full": "$"
+                                }
+                            ]
+                        }
+                    ],
+                    "Honda Dio Scooter": [
+                        {
+                            "max persons": 1,
+                            "reservation": [
+                                {
+                                    "half": "$",
+                                    "full": "$"
+                                }
+                            ],
+                            "walk-in": [
+                                {
+                                    "half": "$",
+                                    "full": "$"
+                                }
+                            ]
+                        }
+                    ],
+                    "Honda PCX150 Scooter": [
+                        {
+                            "max persons": 1,
+                            "reservation": [
+                                {
+                                    "half": "$",
+                                    "full": "$"
+                                }
+                            ],
+                            "walk-in": [
+                                {
+                                    "half": "$",
+                                    "full": "$"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "atv": [
+                {
+                    "Honda Pioneer ATV": [
+                        {
+                            "max persons": 1,
+                            "reservation": [
+                                {
+                                    "half": "$",
+                                    "full": "$"
+                                }
+                            ],
+                            "walk-in": [
+                                {
+                                    "half": "$",
+                                    "full": "$"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "jeep": [
+                {
+                    "Jeep Wrangler": [
+                        {
+                            "4 door with A/C": [
+                                {
+                                    "max persons": 1,
+                                    "reservation": [
+                                        {
+                                            "half": "$",
+                                            "full": "$"
+                                        }
+                                    ],
+                                    "walk-in": [
+                                        {
+                                            "half": "$",
+                                            "full": "$"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "2 door": [
+                                {
+                                    "max persons": 1,
+                                    "reservation": [
+                                        {
+                                            "half": "$",
+                                            "full": "$"
+                                        }
+                                    ],
+                                    "walk-in": [
+                                        {
+                                            "half": "$",
+                                            "full": "$"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
