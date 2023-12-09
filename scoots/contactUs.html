@@ -69,14 +69,24 @@
     <main>
         <div class="info-grid">
             <section>
+                <img id="rental-lot" class="card-img" src="images/scooter-rental-lot.webp" alt="Scooter Rental Lot">
                 <h2>Contact Information</h2>
+                <p>Scoots Head Quarters<br>77400 Playa del Carmen<br>Q.R., Mexico</p>
                 <p>123-555-2121</p>
-                <p>77400 Playa del Carmen<br>Q.R., Mexico</p>
 
             </section>
             <section>
-                <form>
-
+                <h2>Contact Form</h2>
+                <form id="contact-form" method="get" action="thankyou.html">
+                    <label class="contact">*First Name: <input type="text" id="fname" name="fname" required
+                            pattern="[A-Za-z]*" title="letters only" autofocus></label>
+                    <label class="contact">*Last Name: <input type="text" id="lname" name="lname" required
+                            pattern="[A-Za-z]*" title="letters only"></label>
+                    <label class="contact">*Email: <input type="email" id="email" name="email" autocomplete="email"
+                            pattern="^[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="abc12345@byui.edu" required></label>
+                    <label class="business">Comments: <textarea id="description" name="description"
+                            rows="4"></textarea></label>
+                    <input type="submit" value="Contact Us" id="contact-info" class="submitBtn">
                 </form>
             </section>
             <section class="locations">
