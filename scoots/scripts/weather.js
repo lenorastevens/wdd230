@@ -172,7 +172,7 @@ function displayCarmenForecast(carmenData) {
 
         let temps = document.createElement('h5');
         temps.setAttribute('id', 'carmen-forecast-temp')
-        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F / ${forecastInfo.minTemp.toFixed(0)}°F`;
+        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F | ${forecastInfo.minTemp.toFixed(0)}°F`;
 
         let carmenForecastIcon = document.createElement('img');
         carmenForecastIcon.setAttribute('src', iconsrc);
@@ -261,7 +261,7 @@ function displayPuertaForecast(puertaData) {
 
         let temps = document.createElement('h5');
         temps.setAttribute('id', 'puerta-forecast-temp')
-        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F / ${forecastInfo.minTemp.toFixed(0)}°F`;
+        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F | ${forecastInfo.minTemp.toFixed(0)}°F`;
 
         let puertaForecastIcon = document.createElement('img');
         puertaForecastIcon.setAttribute('src', iconsrc);
