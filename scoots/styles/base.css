@@ -120,7 +120,7 @@ header {
 
 #hero-msg {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/2;
     margin-bottom: 5%;
     padding: 1%;
     text-align: center;
