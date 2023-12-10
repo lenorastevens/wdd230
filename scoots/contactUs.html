@@ -51,7 +51,12 @@
     <div id="hero">
         <!-- hero scooter image -->
         <div id="hero-box">
-            <img id="hero-img" src="images/rock-stack.webp" alt="Beach Direction Signs">
+            <picture>
+                <source srcset="images/rock-stack-large.webp" media="(min-width: 960px)">
+                <source srcset="images/rock-stack-medium.webp" media="(min-width: 560px)">
+                <img id="hero-img" src="images/rock-stack-small.webp" alt="Beach Direction Signs" width="560"
+                    height="315">
+            </picture>
         </div>
 
         <!-- Hero Message -->
@@ -63,7 +68,8 @@
     <main>
         <div class="info-grid">
             <section>
-                <img id="rental-lot" class="card-img" src="images/scooter-rental-lot.webp" alt="Scooter Rental Lot">
+                <img id="rental-lot" class="card-img" src="images/rental-lot.webp" alt="Scooter Rental Lot" width="600"
+                    height="450">
                 <h2>Contact Information</h2>
                 <p>Scoots Head Quarters<br>77400 Playa del Carmen<br>Q.R., Mexico</p>
                 <p>123-555-2121</p>
@@ -88,14 +94,16 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1787.9423992371333!2d-87.07576743551859!3d20.62061013342512!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1701749533451!5m2!1sen!2sus"
                     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" title="Playa del Carmen Location Map"
+                    class="maps"></iframe>
             </section>
             <section class="locations">
                 <h2>Terminal Puerta Maya</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1664.9622470767122!2d-86.97714862739753!3d20.476958979600006!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1701744815562!5m2!1sen!2sus"
                     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" title="Terminal Puerta Maya Location Map"
+                    class="maps"></iframe>
             </section>
         </div>
 

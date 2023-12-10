@@ -51,7 +51,11 @@
     <div id="hero">
         <!-- hero scooter image -->
         <div id="hero-box">
-            <img id="hero-img" src="images/relax-reserve.webp" alt="Relaxing Resort Scene">
+            <picture>
+                <source srcset="images/reserve-large.webp" media="(min-width: 960px)">
+                <source srcset="images/reserve-medium.webp" media="(min-width: 560px)">
+                <img id="hero-img" src="images/reserve-small.webp" alt="Relaxing Resort Scene" width="560" height="315">
+            </picture>
         </div>
 
         <!-- Hero Message -->
@@ -80,8 +84,8 @@
         <section id="reserve-form">
             <h2>Reservation Form</h2>
             <form id="contact-form" method="get" action="thankyou.html">
-                <label class="contact">*Full Name: <input type="text" id="name" name="name" required pattern="[A-Za-z]*"
-                        title="letters only" autofocus></label>
+                <label class="contact">*Full Name: <input type="text" id="fullname" name="fullname" required
+                        pattern="[A-Za-z]*" title="letters only" autofocus></label>
                 <label class="contact">*Email: <input type="email" id="email" name="email" autocomplete="email"
                         pattern="^[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="abc12345@byui.edu" required></label>
                 <label class="contact">*Vehicle Type: <input type="text" id="lname" name="lname" required
