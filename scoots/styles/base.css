@@ -27,6 +27,7 @@ header {
     background-color: #CBCFF3;
     position: relative;
     text-align: center;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 #logo-link {
@@ -110,6 +111,7 @@ header {
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    padding-bottom: 0;
 }
 
 #hero-box {
@@ -127,6 +129,7 @@ header {
     font-size: 1.2em;
 }
 
+#last-motto,
 #hero-msg h1,
 #hero-msg p {
     background-color: rgb(179, 183, 219, .7);
@@ -277,6 +280,21 @@ header {
     padding: 2%;
 }
 
+/* table styles */
+table {
+    border: 5px ridge #25450D;
+    width: 96%;
+    margin: 2%;
+    padding: 3%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px ridge #25450D;
+    padding: 1%;
+}
+
 /* contact form */
 
 #contact-form label {
@@ -327,8 +345,13 @@ input[type=submit]:hover {
 /* ----- Footer Styles ----- */
 footer {
     background-color: #CBCFF3;
+    box-shadow: -6px -3px -1px -1px rgba(0, 0, 0, 0.5);
     padding: 2%;
     margin-top: 60%;
+}
+
+#last {
+    margin-top: -30px;
 }
 
 footer a {
