@@ -57,19 +57,13 @@
         <!-- Hero Message -->
         <section id="hero-msg">
             <h1 class="home-motto">Fill Out a Reservation Request Below</h1>
-            <!-- <p>No matter what you come to see, we'll get you there!</p> -->
-
-            <!-- reservation link -->
-            <!-- <div class="button-box">
-                <a class="reservations" href="reservations.html">Reserve Now</a>
-            </div> -->
         </section>
     </div>
 
     <main class="info-grid">
-        <section>
+        <section id="agreement">
             <h2>Rental Agreement</h2>
-            <ul id="agreement">
+            <ul id="contract">
                 <li>A $50 security deposit is required to confirm reservations.</li>
                 <li>A valid drivers license is required in hand at the time of rental.</li>
                 <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
@@ -83,8 +77,22 @@
             </ul>
         </section>
 
-        <section>
+        <section id="reserve-form">
             <h2>Reservation Form</h2>
+            <form id="contact-form" method="get" action="thankyou.html">
+                <label class="contact">*Full Name: <input type="text" id="name" name="name" required pattern="[A-Za-z]*"
+                        title="letters only" autofocus></label>
+                <label class="contact">*Email: <input type="email" id="email" name="email" autocomplete="email"
+                        pattern="^[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="abc12345@byui.edu" required></label>
+                <label class="contact">*Vehicle Type: <input type="text" id="lname" name="lname" required
+                        pattern="[A-Za-z]*" title="letters only"></label>
+                <legend class="type">Vehicle Type</legend>
+                <label class="rentalType"><input type="radio" id="scooter" name="vehicle" value="scooter">
+                    Scooter</label>
+                <label class="rentalType"><input type="radio" id="atv" name="vehicle" value="atv"> ATV</label>
+                <label class="rentalType"><input type="radio" id="jeep" name="vehicle" value="jeep"> Jeep</label>
+                <input type="submit" value="Reserve Now" id="reserve-now" class="submitBtn">
+            </form>
         </section>
 
     </main>

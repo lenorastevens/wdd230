@@ -260,7 +260,6 @@ header {
     margin: 0;
 }
 
-
 #tomorrow-carmen-forecast,
 #tomorrow-puerta-forecast {
     align-self: center;
@@ -273,11 +272,13 @@ header {
     text-transform: capitalize;
 }
 
-#agreement li {
+#contract li {
     text-align: left;
+    padding: 2%;
 }
 
 /* contact form */
+
 #contact-form label {
     display: block;
     text-align: left;

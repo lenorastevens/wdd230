@@ -51,24 +51,24 @@
     <div id="hero">
         <!-- hero scooter image -->
         <div id="hero-box">
-            <img id="hero-img" src="images/outdoor-jeep-lineup.webp" alt="Outdoor Rental Lot">
+            <picture>
+                <source srcset="images/outdoor-lineup-large.webp" media="(min-width: 960px)">
+                <source srcset="images/outdoor-lineup-medium.webp" media="(min-width: 560px)">
+                <img id="hero-img" src="images/outdoor-lineup-small.webp" alt="Outdoor Rental Lot" width="500"
+                    height="333">
+            </picture>
         </div>
 
         <!-- Hero Message -->
         <section id="hero-msg">
             <h1 class="home-motto">Browse Rental Prices Below</h1>
-            <!-- <p>No matter what you come to see, we'll get you there!</p> -->
-
-            <!-- reservation link -->
-            <!-- <div class="button-box">
-                <a class="reservations" href="reservations.html">Reserve Now</a>
-            </div> -->
         </section>
     </div>
 
     <main class="info-grid">
         <section>
-            <img id="scooter-line" class="card-img" src="images/scooter-lineup.webp" alt="Scooter Rental Lineup">
+            <img id="scooter-line" class="card-img" src="images/scooter-lineup.webp" alt="Scooter Rental Lineup"
+                width="600" height="400" loading="lazy">
             <h2>Scooter Rentals</h2>
         </section>
         <section id="scooter-price" class="table" name="scooter-price">
@@ -108,7 +108,7 @@
 
         <section>
             <img id="atv-line" class="card-img" src="images/atv-lineup.webp" alt="ATV Rental Lineup" width="600"
-                height="400">
+                height="400" loading="lazy">
             <h2>ATV Rentals</h2>
         </section>
         <section id="atv-price" class="table" name="atv-price">
@@ -118,7 +118,7 @@
 
         <section>
             <img id="jeep-line" class="card-img" src="images/jeep-lineup.webp" alt="Jeep Rental Lineup" width="600"
-                height="400">
+                height="400" loading="lazy">
             <h2>Jeep Rentals</h2>
         </section>
         <section id="jeep-price" class="table" name="jeep-price">
