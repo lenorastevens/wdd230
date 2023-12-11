@@ -170,7 +170,7 @@ header {
     grid-template-columns: 1fr;
     margin: 10% auto;
     width: 90%;
-    gap: 2%;
+    gap: 1.5%;
 }
 
 .info-grid section {
@@ -284,10 +284,10 @@ header {
 table {
     border: 5px ridge #25450D;
     border-radius: 15px;
+    border-collapse: collapse;
     width: 96%;
     margin: 2%;
     padding: 3%;
-    border-collapse: collapse;
 }
 
 th,
