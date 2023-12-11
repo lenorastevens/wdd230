@@ -4,7 +4,7 @@
             "scooter": [
                 {
                     "model": "Honda Metro Scooter",
-                    "max persons": 1,
+                    "max persons": "1",
                     "reservation": {
                         "half": "20",
                         "full": "30"
@@ -16,7 +16,7 @@
                 },
                 {
                     "model": "Honda Dio Scooter",
-                    "max persons": 2,
+                    "max persons": "2",
                     "reservation": {
                         "half": "20",
                         "full": "30"
@@ -28,7 +28,7 @@
                 },
                 {
                     "model": "Honda PCX150 Scooter",
-                    "max persons": 2,
+                    "max persons": "2",
                     "reservation": {
                         "half": "40",
                         "full": "50"
@@ -42,7 +42,7 @@
             "atv": [
                 {
                     "model": "Honda Pioneer ATV",
-                    "max persons": 1,
+                    "max persons": "1",
                     "reservation": {
                         "half": "50",
                         "full": "70"
@@ -56,7 +56,7 @@
             "jeep": [
                 {
                     "model": "Jeep Wrangler - 4 door with A/C",
-                    "max persons": 1,
+                    "max persons": "1",
                     "reservation": {
                         "half": "$",
                         "full": "$"
@@ -68,7 +68,7 @@
                 },
                 {
                     "model": "Jeep Wrangler - 2 door",
-                    "max persons": 1,
+                    "max persons": "1",
                     "reservation": {
                         "half": "$",
                         "full": "$"
