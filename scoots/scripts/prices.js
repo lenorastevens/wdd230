@@ -75,7 +75,7 @@ function createTable(type, models, vehicleType, reservationType) {
     models.forEach(function (model) {
         let bodyRow = table.insertRow();
         bodyRow.insertCell(0).textContent = model.model;
-        bodyRow.insertCell(1).textContent = model.maxPersons;
+        bodyRow.insertCell(1).textContent = model['maxPersons'];
         bodyRow.insertCell(2).textContent = model[reservationType].half;
         bodyRow.insertCell(3).textContent = model[reservationType].full;
     })
