@@ -283,6 +283,7 @@ header {
 /* table styles */
 table {
     border: 5px ridge #25450D;
+    border-radius: 15px;
     width: 96%;
     margin: 2%;
     padding: 3%;

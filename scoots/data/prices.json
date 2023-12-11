@@ -3,120 +3,80 @@
         {
             "scooter": [
                 {
-                    "Honda Metro Scooter": [
-                        {
-                            "max persons": 1,
-                            "reservation": [
-                                {
-                                    "half": "$",
-                                    "full": "$"
-                                }
-                            ],
-                            "walk-in": [
-                                {
-                                    "half": "$",
-                                    "full": "$"
-                                }
-                            ]
-                        }
-                    ],
-                    "Honda Dio Scooter": [
-                        {
-                            "max persons": 1,
-                            "reservation": [
-                                {
-                                    "half": "$",
-                                    "full": "$"
-                                }
-                            ],
-                            "walk-in": [
-                                {
-                                    "half": "$",
-                                    "full": "$"
-                                }
-                            ]
-                        }
-                    ],
-                    "Honda PCX150 Scooter": [
-                        {
-                            "max persons": 1,
-                            "reservation": [
-                                {
-                                    "half": "$",
-                                    "full": "$"
-                                }
-                            ],
-                            "walk-in": [
-                                {
-                                    "half": "$",
-                                    "full": "$"
-                                }
-                            ]
-                        }
-                    ]
+                    "model": "Honda Metro Scooter",
+                    "max persons": 1,
+                    "reservation": {
+                        "half": "20",
+                        "full": "30"
+                    },
+                    "walk-in": {
+                        "half": "25",
+                        "full": "35"
+                    }
+                },
+                {
+                    "model": "Honda Dio Scooter",
+                    "max persons": 2,
+                    "reservation": {
+                        "half": "20",
+                        "full": "30"
+                    },
+                    "walk-in": {
+                        "half": "35",
+                        "full": "45"
+                    }
+                },
+                {
+                    "model": "Honda PCX150 Scooter",
+                    "max persons": 2,
+                    "reservation": {
+                        "half": "40",
+                        "full": "50"
+                    },
+                    "walk-in": {
+                        "half": "45",
+                        "full": "55"
+                    }
                 }
             ],
             "atv": [
                 {
-                    "Honda Pioneer ATV": [
-                        {
-                            "max persons": 1,
-                            "reservation": [
-                                {
-                                    "half": "$",
-                                    "full": "$"
-                                }
-                            ],
-                            "walk-in": [
-                                {
-                                    "half": "$",
-                                    "full": "$"
-                                }
-                            ]
-                        }
-                    ]
+                    "model": "Honda Pioneer ATV",
+                    "max persons": 1,
+                    "reservation": {
+                        "half": "50",
+                        "full": "70"
+                    },
+                    "walk-in": {
+                        "half": "60",
+                        "full": "80"
+                    }
                 }
             ],
             "jeep": [
                 {
-                    "Jeep Wrangler": [
-                        {
-                            "4 door with A/C": [
-                                {
-                                    "max persons": 1,
-                                    "reservation": [
-                                        {
-                                            "half": "$",
-                                            "full": "$"
-                                        }
-                                    ],
-                                    "walk-in": [
-                                        {
-                                            "half": "$",
-                                            "full": "$"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "2 door": [
-                                {
-                                    "max persons": 1,
-                                    "reservation": [
-                                        {
-                                            "half": "$",
-                                            "full": "$"
-                                        }
-                                    ],
-                                    "walk-in": [
-                                        {
-                                            "half": "$",
-                                            "full": "$"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
+                    "model": "Jeep Wrangler - 4 door with A/C",
+                    "max persons": 1,
+                    "reservation": {
+                        "half": "$",
+                        "full": "$"
+                    },
+                    "walk-in": {
+                        "half": "$",
+                        "full": "$"
+                    }
+                },
+                {
+                    "model": "Jeep Wrangler - 2 door",
+                    "max persons": 1,
+                    "reservation": {
+                        "half": "$",
+                        "full": "$"
+                    },
+                    "walk-in": {
+                        "half": "$",
+                        "full": "$"
+                    }
                 }
             ]
         }
