@@ -170,7 +170,7 @@ header {
     grid-template-columns: 1fr;
     margin: 10% auto;
     width: 90%;
-    gap: 3%;
+    gap: 2%;
 }
 
 .info-grid section {
