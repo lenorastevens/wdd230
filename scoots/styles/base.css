@@ -123,23 +123,17 @@ header {
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-bottom: 5%;
     padding: 1%;
     text-align: center;
     font-size: 1.2em;
 }
 
 #last-motto,
-#hero-msg h1,
-#hero-msg p {
+#hero-msg h1 {
     background-color: rgb(179, 183, 219, .7);
     border-radius: 20px;
     border: 1px groove #25450D;
     padding: 2%;
-}
-
-#hero-msg p {
-    display: none;
 }
 
 #hero-img {
@@ -168,8 +162,8 @@ header {
 .info-grid {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 10% auto;
-    width: 90%;
+    margin: 5% auto;
+    width: 95%;
     gap: 1.5%;
 }
 
@@ -217,10 +211,8 @@ header {
     grid-column: 1/3;
 }
 
-#del-carmen,
-#puerta-maya,
-#del-carmen-forecast,
-#puerta-maya-forecast {
+.location-info,
+.location-forecast {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
@@ -231,24 +223,13 @@ header {
     border-right: 5px groove #25450D;
 }
 
-#playa-curr,
-#carmen-humid,
-#carmen-desc,
-#puerta-curr,
-#puerta-humid,
-#puerta-desc,
-#playa-forecast,
-#puerta-forecast,
-#carmen-forecast-desc,
-#puerta-forecast-desc {
+.weather-grid,
+.description {
     grid-column: 1/3;
     margin: 0;
 }
 
-#carmen-temp,
-#puerta-temp,
-#carmen-forecast-temp,
-#puerta-forecast-temp {
+.temp-display {
     align-self: center;
     justify-self: right;
     margin-right: 10px;
@@ -266,7 +247,6 @@ header {
 #tomorrow-carmen-forecast,
 #tomorrow-puerta-forecast {
     align-self: center;
-    /* justify-self: center; */
     margin-left: 5px;
     margin: 0;
 }

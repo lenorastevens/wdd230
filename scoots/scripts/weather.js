@@ -27,10 +27,12 @@ function displayCarmenCurrent(data) {
 
     const carmenHumidity = document.createElement('h5');
     carmenHumidity.setAttribute('id', 'carmen-humid');
+    carmenHumidity.setAttribute('class', 'description');
     carmenHumidity.textContent = `Humidity: ${data.main.humidity.toFixed()}%`;
 
     const currCarmenTemp = document.createElement('h5');
     currCarmenTemp.setAttribute('id', 'carmen-temp');
+    currCarmenTemp.setAttribute('class', 'temp-display');
     currCarmenTemp.textContent = `${data.main.temp.toFixed(0)}°F`;
 
     const carmenIconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
@@ -77,10 +79,12 @@ function displayPuertaCurrent(data) {
 
     const puertaHumidity = document.createElement('h5');
     puertaHumidity.setAttribute('id', 'puerta-humid');
+    puertaHumidity.setAttribute('class', 'description');
     puertaHumidity.textContent = `Humidity: ${data.main.humidity.toFixed()}%`;
 
     const currPuertaTemp = document.createElement('h5');
     currPuertaTemp.setAttribute('id', 'puerta-temp');
+    currPuertaTemp.setAttribute('class', 'temp-display');
     currPuertaTemp.textContent = `${data.main.temp.toFixed(0)}°F`;
 
     const puertaIconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
@@ -169,7 +173,8 @@ function displayCarmenForecast(carmenData) {
         const iconsrc = `https://openweathermap.org/img/wn/${forecastInfo.icon}.png`;
 
         let temps = document.createElement('h5');
-        temps.setAttribute('id', 'carmen-forecast-temp')
+        temps.setAttribute('id', 'carmen-forecast-temp');
+        temps.setAttribute('class', 'temp-display');
         temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F | ${forecastInfo.minTemp.toFixed(0)}°F`;
 
         let carmenForecastIcon = document.createElement('img');
@@ -258,7 +263,8 @@ function displayPuertaForecast(puertaData) {
         const iconsrc = `https://openweathermap.org/img/wn/${forecastInfo.icon}.png`;
 
         let temps = document.createElement('h5');
-        temps.setAttribute('id', 'puerta-forecast-temp')
+        temps.setAttribute('id', 'puerta-forecast-temp');
+        temps.setAttribute('class', 'temp-display');
         temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F | ${forecastInfo.minTemp.toFixed(0)}°F`;
 
         let puertaForecastIcon = document.createElement('img');
