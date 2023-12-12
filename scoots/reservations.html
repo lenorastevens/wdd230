@@ -96,7 +96,8 @@
                             title="10 digits only" required></label>
                     <label class="renter">*Email: <input type="email" id="email" autocomplete="email"
                             pattern="^[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="abc12345@byui.edu" required></label>
-
+                    <label class="renter">State: <select id="state" name="state"></select></label>
+                    <label class="renter">Country: <select id="country" name="country"></select></label>
                 </fieldset>
 
                 <fieldset id="rental-details">
@@ -118,14 +119,27 @@
                             <option value="jeep2dr">Jeep Wrangler - 2 door</option>
                         </select>
                     </label>
-                    <label class="quantity">Qty: <input type="number" id="metroQty" name="metroQty" min="0"
-                            max="5"></label>
+                    <label class="quantity">
+                        <select name="quantity">
+                            <option>Qty </option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>8</option>
+                            <option>10</option>
+                        </select>
+                    </label>
                 </fieldset>
 
                 <fieldset id="extra-info">
                     <legend class="legend">Special Arrangments</legend>
                     <label class="special">Cruise Line: <input type="text" id="cruiseline" name="cruiseline"></label>
-                    <label class="business">Accomodation Requests: <textarea id="description" name="description"
+                    <label class="special">Accomodation Requests: <textarea id="description" name="description"
                             rows="4"></textarea></label>
                 </fieldset>
                 <input type="submit" value="Complete Reservation" name="submit" class="submitBtn">
@@ -159,6 +173,8 @@
     <!-- scripts -->
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/date.js"></script>
+    <script src="scripts/states.js"></script>
+    <script src="scripts/country.js"></script>
 </body>
 
 </html>

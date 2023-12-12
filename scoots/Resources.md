@@ -5,7 +5,29 @@
 * https://pixabay.com/images/search
 * https://www.pexels.com/search
 * searches used: cozumel, atv, jeep, scooter, rental, beach, tourist, explore
-* agreement pic:  https://pixabay.com/photos/agree-english-consent-contract-1728448/
+
+Index Page:
+purple scooters: https://www.pexels.com/photo/row-of-violet-electric-scooters-with-black-baskets-18354693/
+scooter: https://pixabay.com/photos/moto-landscape-costa-beach-mexico-3875699/
+atv: https://www.pexels.com/photo/a-helmet-on-a-parked-atv-6564436/
+jeep: https://pixabay.com/photos/jeep-beach-4wd-sand-car-adventure-4493767/
+
+Prices Pages:
+big white jeep: https://www.pexels.com/photo/road-traffic-beach-car-12934533/
+white scooters: https://pixabay.com/photos/motorcycle-scooter-rental-new-1936464/
+atv line: https://www.pexels.com/photo/row-of-modern-atv-near-hillside-in-daylight-1325707/
+jeep line: https://www.pexels.com/photo/a-row-of-off-road-cars-parked-on-the-street-17197811/
+
+Reservation Page:
+* lounge chairs:
+* agreement pic: https://pixabay.com/photos/agree-english-consent-contract-1728448/
+
+Contact Page:
+rocks: https://www.pexels.com/photo/stacked-of-stones-outdoors-289586/
+scooter rentals:
+
+Thank You Page:
+colorful jeep: https://www.pexels.com/photo/a-low-angle-shot-of-a-jeep-parked-near-the-wall-with-graffiti-art-8265582/
 
 ## Social Media Icons
 * https://www.vecteezy.com
