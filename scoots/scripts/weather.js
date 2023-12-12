@@ -1,5 +1,3 @@
-const condContainer = document.querySelector('.location-info');
-// const forecastContainer = document.querySelector('.location-forecast');
 const urlCarmen = `https://api.openweathermap.org/data/2.5/weather?lat=20.62196&lon=-87.07643&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
 const urlPuerta = `https://api.openweathermap.org/data/2.5/weather?lat=20.47641&lon=-86.97412&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;
 const urlForecastC = `https://api.openweathermap.org/data/2.5/forecast?lat=20.62196&lon=-87.07643&cnt=13&appid=2e0af6a26f96c6c75cc96bb0b60984e6&units=imperial`;

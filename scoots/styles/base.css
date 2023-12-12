@@ -302,13 +302,13 @@ td {
 #rental-form label {
     display: block;
     text-align: left;
-    margin: 3%;
-    padding: .5rem 1rem .5rem 1rem;
+    margin: 1%;
+    padding: 1%;
 }
 
 fieldset {
     border: 5px ridge #25450D;
-    margin: 3%;
+    margin: 2%;
 }
 
 input[type=date],
@@ -322,7 +322,7 @@ select {
     border: 2px ridge #25450D;
     border-radius: 6px;
     box-sizing: border-box;
-    margin-top: .5rem;
+    margin-top: .2rem;
 }
 
 input[type=submit] {
@@ -355,7 +355,6 @@ input[type=submit]:hover {
 /* ----- Footer Styles ----- */
 footer {
     background-color: #CBCFF3;
-    box-shadow: -6px -3px -1px -1px rgba(0, 0, 0, 0.5);
     padding: 2%;
     margin-top: 60%;
 }
