@@ -6,7 +6,6 @@ async function getPrices() {
         const response = await fetch(priceURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             createTables(data);
         } else {
             throw Error(await response.text());
@@ -17,36 +16,15 @@ async function getPrices() {
 }
 
 function createTables(data) {
-    // Check if 'prices' property exists in data
-    if (!data || !data.prices) {
-        console.error('Invalid JSON structure: "prices" property not found.');
-    }
 
     data.prices.forEach(function (category) {
-        // Check if 'category' is an object
-        if (typeof category !== 'object') {
-            console.error('Invalid JSON structure: Expected "category" to be an object.');
-            return;
-        }
 
         Object.keys(category).forEach(function (vehicleType) {
-            // Check if 'vehicleType' is a string
-            if (typeof vehicleType !== 'string') {
-                console.error('Invalid JSON structure: Expected "vehicleType" to be a string.');
-                return;
-            }
 
             let models = category[vehicleType];
 
-            // Check if 'reservationData' is an array
-            if (!Array.isArray(models)) {
-                console.error('Invalid JSON structure: Expected "reservationData" to be an array.');
-                return;
-            }
-
             // Create a table for reservations
             createTable('Reservations', models, vehicleType, 'reservation');
-
             // Create a table for walk-ins
             createTable('Walk-In', models, vehicleType, 'walk-in');
         });
@@ -80,7 +58,7 @@ function createTable(type, models, vehicleType, reservationType) {
         bodyRow.insertCell(3).textContent = model[reservationType].full;
     })
 
-    let sectionID = vehicleType.toLowerCase() + '-price';
+    let sectionID = `${vehicleType.toLowerCase()}-price`;
     document.getElementById(sectionID).appendChild(table);
 }
 
