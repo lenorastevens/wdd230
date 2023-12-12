@@ -66,6 +66,8 @@
 
     <main class="info-grid">
         <section id="agreement">
+            <img id="signed" class="card-img" src="images/agree.webp" alt="Contract Agreement Checkbox" width="600"
+                height="400" loading="lazy">
             <h2>Rental Agreement</h2>
             <ul id="contract">
                 <li>A $50 security deposit is required to confirm reservations.</li>
@@ -79,23 +81,54 @@
                 <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
                 <li>Rentals may be returned to either physical location.</li>
             </ul>
+            <label><input type="checkbox" id="confirmed" name="confirmed" required> *I agree to the rental
+                terms.</label>
         </section>
 
         <section id="reserve-form">
             <h2>Reservation Form</h2>
-            <form id="contact-form" method="get" action="thankyou.html">
-                <label class="contact">*Full Name: <input type="text" id="fullname" name="fullname" required
-                        pattern="[A-Za-z]*" title="letters only" autofocus></label>
-                <label class="contact">*Email: <input type="email" id="email" name="email" autocomplete="email"
-                        pattern="^[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="abc12345@byui.edu" required></label>
-                <label class="contact">*Vehicle Type: <input type="text" id="lname" name="lname" required
-                        pattern="[A-Za-z]*" title="letters only"></label>
-                <legend class="type">Vehicle Type</legend>
-                <label class="rentalType"><input type="radio" id="scooter" name="vehicle" value="scooter">
-                    Scooter</label>
-                <label class="rentalType"><input type="radio" id="atv" name="vehicle" value="atv"> ATV</label>
-                <label class="rentalType"><input type="radio" id="jeep" name="vehicle" value="jeep"> Jeep</label>
-                <input type="submit" value="Reserve Now" id="reserve-now" class="submitBtn">
+            <form id="rental-form" method="get" action="thankyou.html">
+                <fieldset id="personal-info">
+                    <legend class="legend">Renter Details</legend>
+                    <label class="renter">*Full Name: <input type="text" id="fullname" name="fullname" required
+                            pattern="[A-Za-z]*" title="letters only" autofocus></label>
+                    <label class="renter">*Mobile Number: <input type="tel" id="mobile" name="mobile" pattern="^\d{10}"
+                            title="10 digits only" required></label>
+                    <label class="renter">*Email: <input type="email" id="email" autocomplete="email"
+                            pattern="^[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="abc12345@byui.edu" required></label>
+
+                </fieldset>
+
+                <fieldset id="rental-details">
+                    <legend class="legend">Equipment</legend>
+                    <label class="details">Rental Date: <input type="date" id="rent-date" name="rent-date"
+                            value="2023-12-11" min="2023-012-01" max="2024-12-31"></label>
+                    <label class="details"><input type="radio" id="half-day" name="half-day" value="half-day">
+                        Half-day</label>
+                    <label class="details"><input type="radio" id="full-day" name="full-day" value="full-day"> Full
+                        Day</label>
+                    <label class="vehicle">
+                        <select name="vehicle">
+                            <option>Select Model </option>
+                            <option value="metro">Honda Metro Scooter</option>
+                            <option value="dio">Honda Dio Scooter</option>
+                            <option value="pcx150">Honda PCS150 Scooter</option>
+                            <option value="pioneer">Honda Pioneer ATV</option>
+                            <option value="jeep4dr">Jeep Wrangler - 4 door</option>
+                            <option value="jeep2dr">Jeep Wrangler - 2 door</option>
+                        </select>
+                    </label>
+                    <label class="quantity">Qty: <input type="number" id="metroQty" name="metroQty" min="0"
+                            max="5"></label>
+                </fieldset>
+
+                <fieldset id="extra-info">
+                    <legend class="legend">Special Arrangments</legend>
+                    <label class="special">Cruise Line: <input type="text" id="cruiseline" name="cruiseline"></label>
+                    <label class="business">Accomodation Requests: <textarea id="description" name="description"
+                            rows="4"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Complete Reservation" name="submit" class="submitBtn">
             </form>
         </section>
 

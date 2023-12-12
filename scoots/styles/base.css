@@ -277,7 +277,7 @@ header {
 
 #contract li {
     text-align: left;
-    padding: 2%;
+    padding: 3%;
 }
 
 /* table styles */
@@ -298,15 +298,22 @@ td {
 
 /* contact form */
 
-#contact-form label {
+#contact-form label,
+#rental-form label {
     display: block;
     text-align: left;
     margin: 3%;
     padding: .5rem 1rem .5rem 1rem;
 }
 
+fieldset {
+    border: 5px ridge #25450D;
+    margin: 3%;
+}
+
 input[type=text],
 input[type=email],
+input[type=tel],
 textarea {
     width: 100%;
     padding: 12px;
