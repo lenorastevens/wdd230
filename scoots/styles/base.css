@@ -165,7 +165,6 @@ header {
     justify-content: space-around;
     background-color: rgb(179, 183, 219, .7);
     border: 5px groove #25450D;
-    border-radius: 15px;
     padding: .5%;
     margin: 0;
     grid-column: 1/4;
