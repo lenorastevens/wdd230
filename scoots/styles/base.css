@@ -312,6 +312,7 @@ legend {
     font-size: 1.4rem;
 }
 
+input[type=number],
 input[type=date],
 input[type=text],
 input[type=email],
