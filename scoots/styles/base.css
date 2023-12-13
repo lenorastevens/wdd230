@@ -163,7 +163,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgb(179, 183, 219, .7);
+    background-color: #CBCFF3;
     border: 5px groove #25450D;
     padding: .5%;
     margin: 0;
