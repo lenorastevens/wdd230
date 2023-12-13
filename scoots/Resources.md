@@ -24,7 +24,7 @@ Reservation Page:
 
 Contact Page:
 rocks: https://www.pexels.com/photo/stacked-of-stones-outdoors-289586/
-scooter rentals:
+scooter rentals: https://www.tripadvisor.com/Attraction_Review-g34345-d6160489-Reviews-Key_West_Moped-Key_West_Florida_Keys_Florida.html
 
 Thank You Page:
 colorful jeep: https://www.pexels.com/photo/a-low-angle-shot-of-a-jeep-parked-near-the-wall-with-graffiti-art-8265582/
