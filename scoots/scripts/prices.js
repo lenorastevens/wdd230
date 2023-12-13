@@ -15,6 +15,7 @@ async function getPrices() {
     }
 }
 
+// create tables for data to display in
 function createTables(data) {
 
     data.prices.forEach(function (category) {
@@ -31,6 +32,8 @@ function createTables(data) {
     });
 }
 
+
+// process the data to display in the pricing tables
 function createTable(type, models, vehicleType, reservationType) {
     let table = document.createElement('table');
     let tableClass = type.toLowerCase().replace('-', '');
@@ -41,7 +44,7 @@ function createTable(type, models, vehicleType, reservationType) {
     caption.textContent = type;
     table.appendChild(caption);
 
-    // header
+    // header and header cells
     let thead = table.createTHead();
     let headerRow = thead.insertRow();
 
@@ -62,7 +65,7 @@ function createTable(type, models, vehicleType, reservationType) {
     headerRow.appendChild(headerCell4)
 
 
-    // table rows
+    // table rows 
     let tbody = table.createTBody();
     models.forEach(function (model) {
         let bodyRow = tbody.insertRow();
@@ -72,6 +75,7 @@ function createTable(type, models, vehicleType, reservationType) {
         bodyRow.insertCell(3).textContent = model[reservationType].full;
     })
 
+    // create id from data type and append to the correct section
     let sectionID = `${vehicleType.toLowerCase()}-price`;
     document.getElementById(sectionID).appendChild(table);
 }

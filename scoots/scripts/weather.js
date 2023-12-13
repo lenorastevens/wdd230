@@ -19,24 +19,29 @@ async function apiCarmenFetch() {
     }
 }
 
-// call fetch function for current Playa Del Carmen
+// call fetch function for current Playa del Carmen
 apiCarmenFetch();
 
+// process current Playa del Carmen data
 function displayCarmenCurrent(data) {
     const delCarmenCurr = document.getElementById('del-carmen');
 
+    // humidity
     const carmenHumidity = document.createElement('h5');
     carmenHumidity.setAttribute('id', 'carmen-humid');
     carmenHumidity.setAttribute('class', 'description');
     carmenHumidity.textContent = `Humidity: ${data.main.humidity.toFixed()}%`;
 
+    // current temp
     const currCarmenTemp = document.createElement('h5');
     currCarmenTemp.setAttribute('id', 'carmen-temp');
     currCarmenTemp.setAttribute('class', 'temp-display');
     currCarmenTemp.textContent = `${data.main.temp.toFixed(0)}°F`;
 
+    // icon url
     const carmenIconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 
+    // icon
     let carmenIcon = document.createElement('img');
     carmenIcon.setAttribute('src', carmenIconsrc);
     carmenIcon.setAttribute('id', 'carmen-icon');
@@ -44,11 +49,13 @@ function displayCarmenCurrent(data) {
     carmenIcon.setAttribute('width', "50");
     carmenIcon.setAttribute('height', "50");
 
+    // icon description
     let carmenDesc = document.createElement('h5');
     carmenDesc.textContent = data.weather[0].description;
     carmenDesc.setAttribute('id', 'carmen-desc');
     carmenDesc.setAttribute('class', 'description');
 
+    // add everything to container
     delCarmenCurr.append(carmenHumidity);
     delCarmenCurr.append(currCarmenTemp);
     delCarmenCurr.append(carmenIcon);
@@ -74,21 +81,26 @@ async function apiPuertaFetch() {
 // call fetch function for current Terminal Puerta Maya
 apiPuertaFetch();
 
+// process current data for Puerta Maya
 function displayPuertaCurrent(data) {
     const puertaCurr = document.getElementById('puerta-maya');
 
+    // humidity
     const puertaHumidity = document.createElement('h5');
     puertaHumidity.setAttribute('id', 'puerta-humid');
     puertaHumidity.setAttribute('class', 'description');
     puertaHumidity.textContent = `Humidity: ${data.main.humidity.toFixed()}%`;
 
+    // current temp
     const currPuertaTemp = document.createElement('h5');
     currPuertaTemp.setAttribute('id', 'puerta-temp');
     currPuertaTemp.setAttribute('class', 'temp-display');
     currPuertaTemp.textContent = `${data.main.temp.toFixed(0)}°F`;
 
+    // icon source
     const puertaIconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 
+    // icon
     let puertaIcon = document.createElement('img');
     puertaIcon.setAttribute('src', puertaIconsrc);
     puertaIcon.setAttribute('id', 'puerta-icon');
@@ -96,11 +108,13 @@ function displayPuertaCurrent(data) {
     puertaIcon.setAttribute('width', "50");
     puertaIcon.setAttribute('height', "50");
 
+    // icon description
     let puertaDesc = document.createElement('h5');
     puertaDesc.textContent = data.weather[0].description;
     puertaDesc.setAttribute('id', 'puerta-desc');
     puertaDesc.setAttribute('class', 'description');
 
+    // add all everything to container
     puertaCurr.append(puertaHumidity);
     puertaCurr.append(currPuertaTemp);
     puertaCurr.append(puertaIcon);
@@ -128,6 +142,7 @@ async function apiCarmenForecastFetch() {
 // call fetch function for Playa Del Carmen
 apiCarmenForecastFetch();
 
+// process forecast data for Playa del Carmen
 function displayCarmenForecast(carmenData) {
     const forcastCarmenList = carmenData.list;
 
@@ -218,6 +233,7 @@ async function apiPuertaForecast() {
 // call fetch function for Terminal Puerta Maya
 apiPuertaForecast();
 
+// process forecast data for Puerta Maya
 function displayPuertaForecast(puertaData) {
     const puertaForecast = document.getElementById('puerta-maya-forecast');
 
