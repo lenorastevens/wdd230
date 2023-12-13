@@ -65,6 +65,7 @@
     </div>
 
     <main class="info-grid">
+        <!-- rental agreement section -->
         <section id="agreement">
             <img id="signed" class="card-img" src="images/agree.webp" alt="Contract Agreement Checkbox" width="600"
                 height="400" loading="lazy">
@@ -87,9 +88,11 @@
             </div>
         </section>
 
+        <!-- reservation form -->
         <section id="reserve-form">
             <h2>Reservation Form</h2>
             <form id="rental-form" method="get" action="thankyou.html">
+                <!-- personal info fieldset -->
                 <fieldset id="personal-info">
                     <legend class="legend">Renter Details</legend>
                     <label class="renter">*Full Name: <input type="text" id="fullname" name="fullname" required
@@ -99,13 +102,13 @@
                             pattern="^[0-9\- ]{10}$" title="Valid 10 digit mobile number" required></label>
                     <label class="renter">*Email: <input type="email" id="email" autocomplete="email"
                             pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" required></label>
-                    <!-- <label class="renter">*State: <select id="state" name="state" required></select></label> -->
                     <label class="renter">Home Country:
                         <select id="country" name="country" required>
                             <option value="" disabled selected>Select a Country</option>
                         </select></label>
                 </fieldset>
 
+                <!-- equipment detail fieldset -->
                 <fieldset id="rental-details">
                     <legend class="legend">Equipment</legend>
                     <label class="details">*Rental Date: <input type="date" id="rent-date" name="rent-date" value=""
@@ -128,6 +131,7 @@
                             max="10" required></label>
                 </fieldset>
 
+                <!-- additional info fieldset -->
                 <fieldset id="extra-info">
                     <legend class="legend">Special Arrangments</legend>
                     <label class="special">Cruise Line: <input type="text" id="cruiseline" name="cruiseline"></label>
@@ -165,7 +169,6 @@
     <!-- scripts -->
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/date.js"></script>
-    <script src="scripts/states.js"></script>
     <script src="scripts/country.js"></script>
 </body>
 
