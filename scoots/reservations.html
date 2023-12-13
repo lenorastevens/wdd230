@@ -93,7 +93,8 @@
                 <fieldset id="personal-info">
                     <legend class="legend">Renter Details</legend>
                     <label class="renter">*Full Name: <input type="text" id="fullname" name="fullname" required
-                            pattern="[A-Za-z ]*" title="Letters and spaces only"></label>
+                            pattern="[A-Za-z' -]*"
+                            title="Please enter letters, spaces, hyphens, and the apostrophe character only"></label>
                     <label class="renter">*Mobile Number: <input type="tel" id="mobile" name="mobile"
                             pattern="^[0-9\- ]{10}$" title="Valid 10 digit mobile number" required></label>
                     <label class="renter">*Email: <input type="email" id="email" autocomplete="email"
