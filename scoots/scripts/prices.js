@@ -43,12 +43,24 @@ function createTable(type, models, vehicleType, reservationType) {
 
     // header
     let headerRow = table.insertRow(-1);
-    let headerRow2 = table.insertRow(-1);
+    // let headerRow2 = table.insertRow(-1);
 
-    headerRow2.insertCell(0).textContent = 'Model';
-    headerRow2.insertCell(1).textContent = 'Max People';
-    headerRow2.insertCell(2).textContent = 'Half Day (3hr)';
-    headerRow2.insertCell(3).textContent = 'Full Day';
+    let headerCell1 = document.createElement('th');
+    headerCell1.textContent = 'Model';
+    headerRow.appendChild(headerCell1);
+
+    let headerCell2 = document.createElement('th');
+    headerCell2.textContent = 'Max People';
+    headerRow.appendChild(headerCell2)
+
+    let headerCell3 = document.createElement('th');
+    headerCell3.textContent = 'Half Day (3hr)';
+    headerRow.appendChild(headerCell3)
+
+    let headerCell4 = document.createElement('th');
+    headerCell4.textContent = 'Full Day';
+    headerRow.appendChild(headerCell4)
+
 
     // table rows
     models.forEach(function (model) {
