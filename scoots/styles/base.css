@@ -18,7 +18,8 @@ content {
     margin: 0 auto;
 }
 
-/* ----- Header ----- */
+
+/* ----- header and logo----- */
 header {
     width: 100%;
     display: flex;
@@ -42,7 +43,8 @@ header {
     border-radius: 15px;
 }
 
-/* ----- Hamburger Button ----- */
+
+/* ----- hamburger button ----- */
 #menu {
     position: absolute;
     top: 8%;
@@ -66,7 +68,8 @@ header {
     content: '✖';
 }
 
-/* ----- Navigation ----- */
+
+/* ----- navigation ----- */
 .navigation {
     display: none;
 }
@@ -84,7 +87,8 @@ header {
     display: block;
 }
 
-/* ----- Hover Styles ----- */
+
+/* ----- nav hover styles ----- */
 .navigation a:hover {
     color: #CBCFF3;
     background-color: #25450D;
@@ -100,13 +104,8 @@ header {
     content: "*";
 }
 
-/* ----- Home Image Styles ----- */
 
-.info-grid {
-    display: block;
-    height: auto;
-}
-
+/* ----- hero section styles ----- */
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -158,6 +157,7 @@ header {
     transform: scale(1.1);
 }
 
+
 /*----- closeable high temps box -----*/
 #high-temp {
     display: flex;
@@ -179,7 +179,9 @@ header {
     cursor: pointer;
 }
 
-/* ----- Main Styles ----- */
+
+/* -------- Main Styles -------- */
+
 .info-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -281,7 +283,7 @@ header {
     padding: 3%;
 }
 
-/* table styles */
+/*----- table styles -----*/
 table {
     border: 5px ridge #25450D;
     border-radius: 15px;
@@ -301,7 +303,7 @@ td {
     padding: 1%;
 }
 
-/* contact form */
+/*----- reservation and contact forms -----*/
 
 #contact-form label,
 #rental-form label {
@@ -381,15 +383,13 @@ form label select:required:valid {
     border-left: rgb(0, 100, 0) solid 6px;
 }
 
-/* ----- Contact Us ----- */
+/* ----- maps styles ----- */
 .maps {
     width: 100%;
     padding: 0;
     margin: 0;
     border-radius: 15px;
 }
-
-
 
 
 /* ----- Footer Styles ----- */
