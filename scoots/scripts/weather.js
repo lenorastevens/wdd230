@@ -9,7 +9,6 @@ async function apiCarmenFetch() {
         const response = await fetch(urlCarmen);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayCarmenCurrent(data);
         } else {
             throw Error(await response.text());
@@ -68,7 +67,6 @@ async function apiPuertaFetch() {
         const response = await fetch(urlPuerta);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayPuertaCurrent(data);
         } else {
             throw Error(await response.text());
@@ -128,7 +126,6 @@ async function apiCarmenForecastFetch() {
         const response = await fetch(urlForecastC);
         if (response.ok) {
             const carmenData = await response.json();
-            console.log(carmenData);
 
             // get high temp for curr day
             const carmenTodayHighTemp = getCurrentDayHighTemp(carmenData);
@@ -216,7 +213,6 @@ async function apiPuertaForecastFetch() {
         const response = await fetch(urlForecastP);
         if (response.ok) {
             const puertaData = await response.json();
-            console.log(puertaData);
 
             // get high temp for curr day
             const puertaTodayHighTemp = getCurrentDayHighTemp(puertaData);
