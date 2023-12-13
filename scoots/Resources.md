@@ -19,7 +19,7 @@ atv line: https://www.pexels.com/photo/row-of-modern-atv-near-hillside-in-daylig
 jeep line: https://www.pexels.com/photo/a-row-of-off-road-cars-parked-on-the-street-17197811/
 
 Reservation Page:
-* lounge chairs:
+* beach sign: https://pixabay.com/photos/beach-mexico-cozumel-sign-travel-2053686/
 * agreement pic: https://pixabay.com/photos/agree-english-consent-contract-1728448/
 
 Contact Page:

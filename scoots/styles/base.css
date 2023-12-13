@@ -291,6 +291,15 @@ fieldset {
     margin: 2%;
 }
 
+#confirmed {
+    background-color: #25450D;
+    border: 2px groove #CBCFF3;
+    border-radius: 15px;
+    color: #CBCFF3;
+    padding: 2%;
+    margin: 2%;
+}
+
 input[type=date],
 input[type=text],
 input[type=email],
