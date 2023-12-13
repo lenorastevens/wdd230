@@ -296,13 +296,17 @@ legend {
 }
 
 #confirmed {
-    background-color: #25450D;
-    border: 2px groove #CBCFF3;
+    border: 5px groove #25450D;
     border-radius: 15px;
-    color: #CBCFF3;
     padding: 2%;
     margin: 2%;
     font-size: 1.2rem;
+}
+
+#confirmed:hover {
+    background-color: #25450D;
+    color: #CBCFF3;
+    font-size: 1.4rem;
 }
 
 input[type=date],
