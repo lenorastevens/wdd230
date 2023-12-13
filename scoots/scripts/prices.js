@@ -42,8 +42,8 @@ function createTable(type, models, vehicleType, reservationType) {
     table.appendChild(caption);
 
     // header
-    let headerRow = table.insertRow(-1);
-    // let headerRow2 = table.insertRow(-1);
+    let thead = table.createTHead();
+    let headerRow = thead.insertRow();
 
     let headerCell1 = document.createElement('th');
     headerCell1.textContent = 'Model';
@@ -63,8 +63,9 @@ function createTable(type, models, vehicleType, reservationType) {
 
 
     // table rows
+    let tbody = table.createTBody();
     models.forEach(function (model) {
-        let bodyRow = table.insertRow();
+        let bodyRow = tbody.insertRow();
         bodyRow.insertCell(0).textContent = model.model;
         bodyRow.insertCell(1).textContent = model['maxPersons'];
         bodyRow.insertCell(2).textContent = model[reservationType].half;
