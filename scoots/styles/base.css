@@ -131,7 +131,7 @@ header {
 #hero-msg h1 {
     background-color: rgb(179, 183, 219, .7);
     border-radius: 20px;
-    border: 1px groove #25450D;
+    border: 3px groove #25450D;
     padding: 2%;
 }
 
