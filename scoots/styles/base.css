@@ -125,6 +125,7 @@ header {
     padding: 1%;
     text-align: center;
     font-size: 1.2em;
+    margin-bottom: 6%;
 }
 
 #last-motto,
@@ -155,6 +156,27 @@ header {
 
 .button-box:hover {
     transform: scale(1.1);
+}
+
+/*----- closeable high temps box -----*/
+#high-temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(179, 183, 219, .7);
+    border: 5px groove #25450D;
+    border-radius: 15px;
+    padding: .5%;
+    margin: 0;
+    grid-column: 1/4;
+    position: relative;
+}
+
+#temp-close {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
 }
 
 /* ----- Main Styles ----- */

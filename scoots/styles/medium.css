@@ -36,6 +36,10 @@
         margin: 10%;
     }
 
+    #high-temp {
+        flex-direction: row
+    }
+
     caption {
         font-size: 1.4rem;
     }

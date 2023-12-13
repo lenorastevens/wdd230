@@ -129,7 +129,10 @@ async function apiCarmenForecastFetch() {
         if (response.ok) {
             const carmenData = await response.json();
             console.log(carmenData);
-            displayCarmenForecast(carmenData);
+
+            // get high temp for curr day
+            const carmenTodayHighTemp = getCurrentDayHighTemp(carmenData);
+            displayCarmenForecast(carmenData, carmenTodayHighTemp);
         } else {
             throw Error(await response.text());
         }
@@ -143,55 +146,49 @@ async function apiCarmenForecastFetch() {
 apiCarmenForecastFetch();
 
 // process forecast data for Playa del Carmen
-function displayCarmenForecast(carmenData) {
+function displayCarmenForecast(carmenData, todayHighTemp) {
     const forcastCarmenList = carmenData.list;
-
     const delCarmenForecast = document.getElementById('del-carmen-forecast');
-
     const carmenTempsByDay = {};
-
     const currentCarmenDayIndex = new Date().getDay();
+
+    let tempContainer = document.getElementById('carmen-temp-msg');
+    let highTemp = document.createElement('h3')
+    highTemp.setAttribute('class', 'temp-msg');
+    highTemp.textContent = `Playa del Carmen: ${todayHighTemp.toFixed(0)}°F`;
+    tempContainer.append(highTemp);
 
     forcastCarmenList.forEach((forecastItem) => {
         // Time and date info for Forecast data
         const timestamp = forecastItem.dt;
         const date = new Date(timestamp * 1000); // Convert timestamp to Date object
         const dayIndex = date.getDay();
-        if (dayIndex === currentCarmenDayIndex) {
-            return; // if today, skip first day
-        }
 
-        const day = date.toLocaleDateString('en-Us', { weekday: 'long' }); //Get the day of the week
+        // Check to see if it's next day and time is 3:00
+        if (dayIndex === (currentCarmenDayIndex + 1) % 7 && date.getHours() === 15) {
+            const day = date.toLocaleDateString('en-US', { weekday: 'long' });
 
-        if (!carmenTempsByDay[day]) {
+            // set values from data
             carmenTempsByDay[day] = {
-                minTemp: forecastItem.main.temp_min,
                 maxTemp: forecastItem.main.temp_max,
                 icon: forecastItem.weather[0].icon,
                 description: forecastItem.weather[0].description,
             };
-        } else {
-            carmenTempsByDay[day].minTemp = Math.min(carmenTempsByDay[day].minTemp, forecastItem.main.temp_min);
-            carmenTempsByDay[day].maxTemp = Math.max(carmenTempsByDay[day].maxTemp, forecastItem.main.temp_max);
         }
-
     });
 
-    let dayCount = 0;
+    // create container data
     for (const day in carmenTempsByDay) {
-        if (dayCount >= 1) {
-            break;
-        }
-
         let forecastInfo = carmenTempsByDay[day];
-
         const iconsrc = `https://openweathermap.org/img/wn/${forecastInfo.icon}.png`;
 
+        // tomorrow temp
         let temps = document.createElement('h5');
         temps.setAttribute('id', 'carmen-forecast-temp');
         temps.setAttribute('class', 'temp-display');
-        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F | ${forecastInfo.minTemp.toFixed(0)}°F`;
+        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F`;
 
+        // tomorrow icon
         let carmenForecastIcon = document.createElement('img');
         carmenForecastIcon.setAttribute('src', iconsrc);
         carmenForecastIcon.setAttribute('id', 'tomorrow-carmen-forecast');
@@ -199,29 +196,31 @@ function displayCarmenForecast(carmenData) {
         carmenForecastIcon.setAttribute('width', "50");
         carmenForecastIcon.setAttribute('height', "50");
 
+        // tomorrow description
         let carmenForecastDesc = document.createElement('h5');
         carmenForecastDesc.setAttribute('id', 'carmen-forecast-desc');
         carmenForecastDesc.setAttribute('class', 'description');
-
         carmenForecastDesc.textContent = forecastInfo.description;
 
+        // add all items to container
         delCarmenForecast.append(temps);
         delCarmenForecast.append(carmenForecastIcon);
         delCarmenForecast.append(carmenForecastDesc);
-
-        dayCount++;
+        break;
     }
-
 }
 
 // fetch current weather API for Terminal Puerta Maya
-async function apiPuertaForecast() {
+async function apiPuertaForecastFetch() {
     try {
         const response = await fetch(urlForecastP);
         if (response.ok) {
             const puertaData = await response.json();
             console.log(puertaData);
-            displayPuertaForecast(puertaData);
+
+            // get high temp for curr day
+            const puertaTodayHighTemp = getCurrentDayHighTemp(puertaData);
+            displayPuertaForecast(puertaData, puertaTodayHighTemp);
         } else {
             throw Error(await response.text());
         }
@@ -231,58 +230,53 @@ async function apiPuertaForecast() {
 }
 
 // call fetch function for Terminal Puerta Maya
-apiPuertaForecast();
+apiPuertaForecastFetch();
 
 // process forecast data for Puerta Maya
-function displayPuertaForecast(puertaData) {
+function displayPuertaForecast(puertaData, todayHighTemp) {
     const puertaForecast = document.getElementById('puerta-maya-forecast');
-
     const forcastPuertaList = puertaData.list;
-
     const puertaTempsByDay = {};
-
     const currentPuertaDayIndex = new Date().getDay();
+
+    // current day high temp
+    let tempContainer = document.getElementById('puerta-temp-msg');
+    let highTemp = document.createElement('h3')
+    highTemp.setAttribute('class', 'temp-msg');
+    highTemp.textContent = `Terminal Puerta Maya: ${todayHighTemp.toFixed(0)}°F`;
+    tempContainer.append(highTemp);
 
     forcastPuertaList.forEach((forecastItem) => {
         // Time and date info for Forecast data
         const timestamp = forecastItem.dt;
         const date = new Date(timestamp * 1000); // Convert timestamp to Date object
         const dayIndex = date.getDay();
-        if (dayIndex === currentPuertaDayIndex) {
-            return; // if today, skip first day
-        }
 
-        const day = date.toLocaleDateString('en-Us', { weekday: 'long' }); //Get the day of the week
+        // check to see if it's next day and time is 3:00
+        if (dayIndex === (currentPuertaDayIndex + 1) % 7 && date.getHours() === 15) {
+            const day = date.toLocaleDateString('en-Us', { weekday: 'long' });
 
-        if (!puertaTempsByDay[day]) {
+            // set values from data
             puertaTempsByDay[day] = {
-                minTemp: forecastItem.main.temp_min,
                 maxTemp: forecastItem.main.temp_max,
                 icon: forecastItem.weather[0].icon,
                 description: forecastItem.weather[0].description,
             };
-        } else {
-            puertaTempsByDay[day].minTemp = Math.min(puertaTempsByDay[day].minTemp, forecastItem.main.temp_min);
-            puertaTempsByDay[day].maxTemp = Math.max(puertaTempsByDay[day].maxTemp, forecastItem.main.temp_max);
         }
-
     });
 
-    let dayCount = 0;
+    // create container data
     for (const day in puertaTempsByDay) {
-        if (dayCount >= 1) {
-            break;
-        }
-
         let forecastInfo = puertaTempsByDay[day];
-
         const iconsrc = `https://openweathermap.org/img/wn/${forecastInfo.icon}.png`;
 
+        // tomorrow temp
         let temps = document.createElement('h5');
         temps.setAttribute('id', 'puerta-forecast-temp');
         temps.setAttribute('class', 'temp-display');
-        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F | ${forecastInfo.minTemp.toFixed(0)}°F`;
+        temps.textContent = `${forecastInfo.maxTemp.toFixed(0)}°F`;
 
+        // tomorrow icon
         let puertaForecastIcon = document.createElement('img');
         puertaForecastIcon.setAttribute('src', iconsrc);
         puertaForecastIcon.setAttribute('id', 'tomorrow-puerta-forecast');
@@ -290,17 +284,51 @@ function displayPuertaForecast(puertaData) {
         puertaForecastIcon.setAttribute('width', "50");
         puertaForecastIcon.setAttribute('height', "50");
 
+        // tomorrow description
         let puertaForecastDesc = document.createElement('h5');
         puertaForecastDesc.setAttribute('id', 'puerta-forecast-desc');
         puertaForecastDesc.setAttribute('class', 'description');
-
         puertaForecastDesc.textContent = forecastInfo.description;
 
+        // add all items to container
         puertaForecast.append(temps);
         puertaForecast.append(puertaForecastIcon);
         puertaForecast.append(puertaForecastDesc);
+        break;
+    }
+}
 
-        dayCount++;
+function getCurrentDayHighTemp(data) {
+    const today = new Date();
+    const currentDayIndex = today.getDay();
+
+    if (data.list) {
+        const todayForecast = data.list.find((item) => {
+            const timestamp = item.dt;
+            const date = new Date(timestamp * 1000);
+            const dayIndex = date.getDay();
+            return dayIndex === currentDayIndex;
+        });
+
+        if (todayForecast) {
+            return todayForecast.main.temp_max;
+        }
     }
 
+    return null;
 }
+
+function addCloseButton(container) {
+    // create a close button
+    const closeButton = document.createElement('span');
+    closeButton.setAttribute('id', 'temp-close');
+    closeButton.innerHTML = '&times;';
+    closeButton.addEventListener('click', function () {
+        container.style.display = 'none';
+    });
+
+    container.appendChild(closeButton);
+}
+
+const highTempSection = document.getElementById('high-temp');
+addCloseButton(highTempSection);
