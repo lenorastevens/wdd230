@@ -361,7 +361,7 @@ form label select:required:valid {
 
 /* ----- Contact Us ----- */
 .maps {
-    width: max-content;
+    max-width: 600px;
     padding: 0;
     margin: 0;
     border-radius: 15px;
