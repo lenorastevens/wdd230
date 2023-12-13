@@ -32,6 +32,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #hero-msg h1 {
+        margin: 10%;
+    }
+
     caption {
         font-size: 1.4rem;
     }
