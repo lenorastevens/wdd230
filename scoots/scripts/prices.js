@@ -36,14 +36,15 @@ function createTable(type, models, vehicleType, reservationType) {
     let tableClass = type.toLowerCase().replace('-', '');
     table.className = tableClass;
 
-    // header
-    let headerRow = table.insertRow(0);
-    let th = document.createElement('th');
-    th.textContent = type;
-    th.colSpan = 4;
-    headerRow.appendChild(th);
+    // caption
+    let caption = document.createElement('caption');
+    caption.textContent = type;
+    table.appendChild(caption);
 
-    let headerRow2 = table.insertRow(1);
+    // header
+    let headerRow = table.insertRow(-1);
+    let headerRow2 = table.insertRow(-1);
+
     headerRow2.insertCell(0).textContent = 'Model';
     headerRow2.insertCell(1).textContent = 'Max People';
     headerRow2.insertCell(2).textContent = 'Half Day (3hr)';

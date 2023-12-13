@@ -32,6 +32,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    caption {
+        font-size: 1.4rem;
+    }
+
     footer {
         margin-top: 8%;
         display: flex;

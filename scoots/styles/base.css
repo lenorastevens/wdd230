@@ -270,6 +270,10 @@ table {
     padding: 3%;
 }
 
+caption {
+    font-size: 1.2rem;
+}
+
 th,
 td {
     border: 2px ridge #25450D;
