@@ -99,7 +99,10 @@
                     <label class="renter">*Email: <input type="email" id="email" autocomplete="email"
                             pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" required></label>
                     <!-- <label class="renter">*State: <select id="state" name="state" required></select></label> -->
-                    <label class="renter">Home Country: <select id="country" name="country"></select></label>
+                    <label class="renter">Home Country:
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected>Select a Country</option>
+                        </select></label>
                 </fieldset>
 
                 <fieldset id="rental-details">
@@ -112,7 +115,6 @@
                         Day</label>
                     <label class="vehicle">*Select Model
                         <select name="vehicle" multiple size="6" required>
-                            <!-- <option value="empty">none selected</option> -->
                             <option value="metro">Honda Metro Scooter</option>
                             <option value="dio">Honda Dio Scooter</option>
                             <option value="pcx150">Honda PCX150 Scooter</option>
