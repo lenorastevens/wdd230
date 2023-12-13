@@ -291,6 +291,10 @@ fieldset {
     margin: 2%;
 }
 
+legend {
+    padding: 1%;
+}
+
 #confirmed {
     background-color: #25450D;
     border: 2px groove #CBCFF3;
@@ -298,6 +302,7 @@ fieldset {
     color: #CBCFF3;
     padding: 2%;
     margin: 2%;
+    font-size: 1.2rem;
 }
 
 input[type=date],
@@ -330,6 +335,22 @@ input[type=submit]:hover {
     background-color: #25450D;
 }
 
+form label input:required {
+    border-left: rgb(131, 0, 0) solid 6px;
+}
+
+form label input:required:valid {
+    border-left: rgb(0, 100, 0) solid 6px;
+}
+
+form label select:required {
+    border-left: rgb(131, 0, 0) solid 6px;
+}
+
+form label select:required:valid {
+    border-left: rgb(0, 100, 0) solid 6px;
+}
+
 /* ----- Contact Us ----- */
 .maps {
     width: max-content;
@@ -350,6 +371,10 @@ footer {
 
 #last {
     margin-top: -30px;
+}
+
+#last-motto {
+    font-size: medium;
 }
 
 footer a {
